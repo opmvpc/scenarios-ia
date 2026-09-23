@@ -53,6 +53,12 @@ function ecrire(scenario: Scenario, s: Sauvegarde | null) {
   } catch { /* navigation privée : la partie continue sans sauvegarde */ }
 }
 
+/** Pour l'accueil : la partie sauvegardée de ce scénario, si elle est encore jouable. Client uniquement. */
+export function partieSauvegardee(scenario: Scenario): Sauvegarde | null {
+  const s = lire(scenario)
+  return s && s.version === hash(JSON.stringify(scenario)) ? s : null
+}
+
 export function usePartie(scenario: Scenario) {
   const route = useRoute()
   const router = useRouter()
