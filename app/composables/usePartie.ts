@@ -132,12 +132,18 @@ export function usePartie(scenario: Scenario) {
     router.replace({ query: { pas: '0' } })
   }
 
-  function reprendre() {
+  /** Reprend la partie sauvegardée ; `pasVoulu` (rechargement avec ?pas=) prime, sans dépasser pasMax. */
+  function reprendre(pasVoulu?: number) {
     if (!existante.value) return
     etat.value = existante.value
     // rejoue les choix : on écarte ceux que le contenu actuel n'accepte plus
     etat.value.choix = construireEcrans(scenario, etat.value.choix).choixValides
-    allerA(etat.value.pas, { historique: false })
+    // ecrans (calculé) tient compte des écrans de préparation et de fin
+    etat.value.pasMax = Math.min(etat.value.pasMax, ecrans.value.length - 1)
+    const cible = pasVoulu !== undefined && Number.isInteger(pasVoulu) && pasVoulu >= 0
+      ? Math.min(pasVoulu, etat.value.pasMax)
+      : etat.value.pas
+    allerA(cible, { historique: false })
   }
 
   function effacer() {
@@ -156,11 +162,14 @@ export function usePartie(scenario: Scenario) {
   }
 
   /** Décision de la ou du décisionnaire sur l'écran courant. */
-  function decider(situation: Situation, option: Option) {
+  function decider(situation: Situation, option: Option, { avancer = true } = {}) {
     if (!etat.value) return
     const i = situation.numero - 1
+    // une décision prise ne s'écrase pas en silence : il faut passer par changerDecision
+    if (etat.value.choix[i] !== undefined) return
     etat.value.choix = [...etat.value.choix.slice(0, i), option.id]
-    suivant()
+    if (avancer) suivant()
+    else sauver()
   }
 
   /** Revenir sur une décision déjà validée : on retire ce choix et les suivants. */

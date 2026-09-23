@@ -88,6 +88,17 @@
     text-wrap: balance;
   }
   p { text-wrap: pretty; }
+  /* le reset de Tailwind annule le centrage natif des dialogues */
+  dialog {
+    margin: auto;
+    width: calc(100% - 2rem);
+    max-height: calc(100dvh - 2rem);
+    overflow: auto;
+    background: var(--papier);
+    color: var(--encre);
+  }
+  /* ::backdrop n'hérite pas toujours des variables : couleur en dur */
+  dialog::backdrop { background: rgb(23 23 28 / 0.6); }
   a { color: inherit; text-underline-offset: 0.18em; text-decoration-thickness: 0.08em; }
   :focus-visible {
     outline: 3px solid var(--encre);
