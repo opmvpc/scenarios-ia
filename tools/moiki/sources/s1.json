@@ -1,0 +1,3456 @@
+{
+  "_id": "6821fd782e5ca6377994814d",
+  "meta": {
+    "customCredits": null,
+    "options": {
+      "allowBack": true,
+      "showStats": true,
+      "isCustomInventory": false
+    },
+    "editorOptions": {
+      "readOnly": {
+        "active": false
+      },
+      "experimentalFeatures": {
+        "graphAlternateViews": false
+      }
+    },
+    "dbPatched": false,
+    "creationDate": "2025-05-12T13:54:00.219Z",
+    "modificationDate": "2025-09-09T11:03:35.406Z",
+    "name": "MétropédIA · Décrypter l'IA  ludique · The Future of AI (Scénario 1)",
+    "description": "Approche ludique de l'activité \"Décrypter l'IA\" de l'axe 4 du projet MétropédIA.",
+    "image": "00f70f65-fe29-4ff7-a563-176dee01c5e0",
+    "tags": [],
+    "author": {
+      "_id": "6821e5172e5ca6377993518e",
+      "firstname": "Thomas",
+      "lastname": "Braibant",
+      "pseudo": null
+    },
+    "lang": "fr",
+    "numWords": 2232,
+    "numSequences": 50,
+    "duration": 332.588,
+    "version": 6,
+    "simplified": false,
+    "expert": false,
+    "ifid": "",
+    "numErrors": 7
+  },
+  "themes": [
+    {
+      "styles": {
+        "textStyle": {
+          "params": {
+            "shadows": []
+          },
+          "type": "longShadow"
+        },
+        "sfx": {
+          "button": {
+            "sound": "75eb5ccd-af51-4176-9a5b-453ac92fc250"
+          },
+          "objectWin": null
+        },
+        "animations": {
+          "objectModal": "zoom",
+          "objectModalDecorator": "star",
+          "objectModalDecoratorColor": "rgba(208, 2, 27, 1)",
+          "sequence": "fade",
+          "sequenceDuration": 500
+        },
+        "background": "rgba(184, 233, 134, 1)",
+        "fontFamily": "Quicksand",
+        "sequenceBackground": "rgba(65, 117, 5, 1)",
+        "sequenceText": "#ffffff",
+        "sequenceTextSize": 1,
+        "sequenceBoldText": "#ffffff",
+        "sequenceBoldLock": true,
+        "buttonBackground": "rgba(65, 117, 5, 1)",
+        "buttonText": "#ffffff",
+        "buttonTextSize": 1,
+        "assetsBackground": "rgba(68, 148, 54, 1)",
+        "assetsFill": "#ffffff",
+        "sequenceRadius": 0.9,
+        "sequenceBorderColor": "#ffffff",
+        "sequenceBorderSize": 0,
+        "buttonRadius": 1,
+        "buttonBorderColor": "#ffffff",
+        "buttonBorderSize": 0,
+        "inventoryBackgroundCustom": false,
+        "inventoryBackground": "rgba(21, 79, 107, 0.27)"
+      },
+      "name": "standard",
+      "identifier": "default",
+      "idName": "default",
+      "customized": true,
+      "_id": "682602412e5ca63779ddaf46"
+    },
+    {
+      "styles": {
+        "textStyle": {
+          "params": {
+            "shadows": []
+          },
+          "type": "sans"
+        },
+        "animations": {
+          "objectModal": "zoom",
+          "objectModalDecorator": "star",
+          "sequence": "unzoom",
+          "sequenceDuration": 500
+        },
+        "background": "rgba(74, 144, 226, 1)",
+        "fontFamily": "Catamaran",
+        "sequenceBackground": "#446a9a",
+        "sequenceText": "#ffffff",
+        "sequenceTextSize": 1,
+        "sequenceBoldText": "#ffffff",
+        "sequenceBoldLock": true,
+        "buttonBackground": "#4eb5f1",
+        "buttonText": "#ffffff",
+        "buttonTextSize": 1,
+        "assetsBackground": "rgba(21, 79, 107, 0.27)",
+        "assetsFill": "#ffffff",
+        "sequenceRadius": 1,
+        "sequenceBorderColor": "#ffffff",
+        "sequenceBorderSize": 0,
+        "buttonRadius": 1,
+        "buttonBorderColor": "#ffffff",
+        "buttonBorderSize": 0,
+        "inventoryBackgroundCustom": false,
+        "inventoryBackground": "rgba(21, 79, 107, 0.27)"
+      },
+      "name": "standard",
+      "identifier": "6c28c7dd-156f-4632-a30c-2d60ff1778b5",
+      "idName": "Sans nom",
+      "customized": true,
+      "_id": "682602412e5ca63779ddaf46"
+    }
+  ],
+  "firstSequence": "intro",
+  "duration": 332.588,
+  "numSequences": 50,
+  "numWords": 2232,
+  "sequences": [
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "d6c2f22d-a9aa-4110-81d8-fe149f303b94",
+        "size": "medium",
+        "kind": "default",
+        "isBefore": false
+      },
+      "id": "intro",
+      "content": "<p>Bienvenue dans l&#39;activité de MétropédIA &quot;Décrypte l&#39;IA en jouant&quot;&nbsp;!</p><p><br/></p><p>Ce parcours ludique a été imaginé au départ du jeu &quot;La Bataille de l&#39;IA&quot; de l&#39;association <strong>Latitudes </strong>qui oeuvre pour un numérique plus responsable.</p><p><br/></p><p>Apprenez-en davantage sur www.latitudes.cc&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "debut-scenario",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineExit": [],
+      "_id": "6821fd782e5ca6377994814e"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "fiche-enjeux",
+      "content": "<h2>Des priorités politiques</h2><p><br/></p><p>Pour mener à bien le projet &quot;Future of AI&quot;, cinq orientations&nbsp;guideront les discussions et les décisions prises&nbsp;:</p><p>1) L&#39;<strong>environnement</strong></p><p>2) Les opportunités <strong>économiques</strong></p><p>3) L&#39;<strong>emploi</strong></p><p>4) La <strong>démocratie</strong></p><p>5) La <strong>santé </strong>et le <strong>bien-être</strong> des personnes</p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "themeId": null,
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf2e"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "2202a846-3972-479c-b831-d76eb98b62c9",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": false
+      },
+      "id": "debut-scenario",
+      "content": "<h2>Un programme ... politique&nbsp;!</h2><p><br/></p><p>Une personnalité politique en vogue souhaite mettre en avant son pays en développant des projets impliquant l’IA sur son territoire. Se pose toutefois la question des différents types d’impact que ce projet risque d&#39;engendrer...</p><p>Pour le moment, ce pays ne possède aucune structure suffisante.</p><p><br/></p><p><strong>Tout reste à construire.</strong></p>",
+      "noContent": false,
+      "final": false,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "next": "decideu-se-politique",
+      "actions": null,
+      "conditions": null,
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf2f"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "8577b88c-8ff9-4724-98e5-6683b138ab9d",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "decideu-se-politique",
+      "content": "<h2>... mais avec qui?</h2><p><br/></p><p>Pour répondre à ces questions, plusieurs <strong>protagonistes </strong>sont sollicités.</p><p><br/></p><p><em>Vous devez maintenant </em><strong><em>choisir </em></strong><em>qui va incarner les rôles de </em><strong><em>décideur/décideuse politique</em></strong><em>, </em><strong><em>citoyen·ne </em></strong><em>et </em><strong><em>data scientist. </em></strong>Si vous êtes + de 3 joueurs, les instructions arrivent.</p><p><br/></p><p>Attention! Chaque fiche de personnage comporte une partie secrète à ne pas révéler.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "citoyenne-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf30"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "9871d851-7449-4e30-b5c6-49dbba0b51d2",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "data-scientist",
+      "content": "<p>La/le responsable politique entre en contact avec un data scientist.</p><p><br/></p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;Data scientist&quot; à la personne qui incarnera ce rôle.</em></p><p><br/></p><p><em>Cliquez maintenant sur l&#39;option correspondant à votre composition d&#39;équipe&nbsp;:</em></p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Version 3 joueurs</p>",
+          "next": "fiche-enjeux",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf33"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Version 4 joueurs ou +</p>",
+          "next": "lobbyiste",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf34"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf32"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "86e37b0e-628e-48e0-a203-2b3b610a9ef5",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "representant-syndical",
+      "content": "<p>Si vous êtes 5 joueurs, distribuez le dernier personnage. Sinon, passez à l&#39;étape suivante.</p><p>***</p><p><em>Si vous êtes 5 joueurs, </em><strong><em>distribuez </em></strong><em>la fiche de personnage &quot;Représentant·e syndical·e&quot; à la personne qui incarnera ce rôle.</em></p>",
+      "noContent": false,
+      "final": false,
+      "next": "fiche-enjeux",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf36"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "3c0633ff-ce91-48bc-a7ce-c2cf3fd0facc",
+        "size": "small",
+        "kind": "default",
+        "isBefore": false,
+        "allowZoom": false
+      },
+      "id": "consulter-fiche",
+      "content": "<p><em>Placez la &quot;</em><strong><em>fiche enjeux&quot;</em></strong><em> au centre de la table. </em></p><p><em>Placez ensuite un pion sur chaque jauge (échelle): il s&#39;agit des 5 grandes orientations du projet.</em></p><p><br/></p><p>Chaque personne prend le temps de lire ses objectifs cachés (<em>&quot;ce que les autres ignorent&quot; </em>sur la fiche) en prenant soin de ne rien dévoiler à personne.</p><p>Puis, à tour de rôle, lisez à voix haute <em>&quot;ce que les autres savent&quot;</em>.</p><p>Quand tout le monde a lu, passez à la suite&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf37"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "b57b8715-6716-4644-9744-bfd791ba2329",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-n-1",
+      "content": "<p>Pour commencer, il faut vous fournir en métaux et terres rares pour concevoir les composants de vos <em>data centers</em>, et notamment les puces électroniques.</p><p><br/></p><p>Qu&#39;allez-vous faire?</p><p><br/></p><p><em>Chaque joueuse et joueur doit convaincre le décideur/la décideuse politique de prendre une décision.</em></p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Travailler avec les partenaires habituels des pays du sud</p>",
+          "next": "1-a-partenaires-sur",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf39"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Travailler avec des partenaires 100% locaux</p>",
+          "next": "1-b-partenaires-locaux",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf3a"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Louer les services d’un partenaire étranger</p>",
+          "next": "1-3-louer-les-services",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf3b"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Importer les métaux et terres rares et assembler les composants localement</p>",
+          "next": "1-4-extraction-assembage",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf3c"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf38"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-a-partenaires-sur",
+      "content": "<p>Vous décidez de travailler avec les partenaires habituels des pays du sud, dits &quot;en voie de développement&quot;.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "1-a-partenaires-sur-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf3d"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "3a3c7618-5b1a-4232-b676-795a0878e5fe",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": false
+      },
+      "id": "1-a-partenaires-sur-1",
+      "content": "<p>Bravo&nbsp;! Vous êtes en bonne voie pour devenir un leader mondial de l’IA&nbsp;!</p><p><br/></p><p>Mais vous réalisez vite que vos décisions ont des conséquences sur la santé des travailleurs des mines. En outre, leurs conditions de travail sont désastreuses...</p><p><br/></p><p><em>Sur la fiche enjeux, bougez les pions comme suit&nbsp;:</em></p><ul><li><em>Economie&nbsp;: + 2</em></li><li><em>Environnement&nbsp;: - 2</em></li><li><em>Santé/bien-être&nbsp;: - 1 </em></li><li><em>Démocratie&nbsp;: - 1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25ef"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25f0"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25f1"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25f2"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf3e"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-b-partenaires-locaux",
+      "content": "<p>Vous décidez de travailler avec des partenaires 100% locaux afin d’extraire les matières premières et d’assembler les composants des futurs<em> datas centers.</em></p><p><br/></p><p>Vous offrez de nouvelles possibilités d&#39;emploi à la population et vous évitez les effets néfastes de la conception des infrastructures sur les travailleurs des pays tiers dont les lois sociales ne sont pas aussi exigeantes que chez vous.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "1-b-partenaires-locaux-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf3f"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-b-partenaires-locaux-1",
+      "content": "<p><strong>Bravo&nbsp;!</strong> <strong>Vous allez concevoir la première &quot;IA locale&quot;, une révolution dans le domaine. </strong></p><p><br/></p><p>Néanmoins, le respect de vos lois environnementales et sociales implique des délocalisations dans certaines zones habitées de votre pays afin d’extraire les matières premières nécessaires à la conception des <em>datas centers</em>... Un imprévu qui génère frustrations et mécontentements. Sans compter que le projet coûte beaucoup plus cher que prévu.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "1-b-partenaires-locaux-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf40"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-3-louer-les-services",
+      "content": "<p>Vous décidez de louer les services d’un partenaire étranger et de ne pas construire les <em>datas centers</em> sur votre sol. Vous axez votre expertise sur le développement de l’IA.</p><p><br/></p><p>Avantages&nbsp;: </p><ul><li>Il n’y a pas de nuisances de la construction de nouvelles infrastructures sur les habitants de votre pays</li><li>Le projet avance rapidement&nbsp;: les <em>datas centers </em>sont déjà construits!</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "1-3-louer-les-services-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf41"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-3-louer-les-services-2",
+      "content": "<p>Bravo&nbsp;! Vous optez pour une <strong>solution alternative porteuse</strong>&nbsp;et n’endossez pas la responsabilité de la conception des infrastructures.</p><p>Cependant, vous instaurez une dépendance financière et technologique par rapport à un Etat tiers. Par ailleurs, nous ne développez pas de compétences nationales en termes de conception.</p><p><br/></p><p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Economie&nbsp;: - 1</em></li><li><em>Santé/bien-être&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25f7"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25f8"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf42"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-4-extraction-assembage",
+      "content": "<p>Pour l’extraction des matières premières, vous choisissez d’importer depuis un pays du sud les métaux et terres rares nécessaires. Pour l’assemblage, vous travaillez avec des partenaires locaux basés sur votre territoire.</p><p><br/></p><p>Les avantages&nbsp;sont les suivants&nbsp;:  </p><ul><li>Vous offrez de quelques nouvelles possibilités de travail à la population</li><li>Vous évitez en partie les effets néfastes de la conception des infrastructures sur la population d’autres pays</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "1-4-extraction-assembage-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf43"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-4-extraction-assembage-2",
+      "content": "<p>Bravo&nbsp;! Votre approche nuancée impressionne plusieurs pays voisins. Vos avancées sont modestes mais durables. Vous gardez toutefois l&#39;inconvénient d&#39;impacter négativement la santé des travailleurs des mines, qui subissent les mauvaises conditions de travail dans leur propre pays.</p><p><br/></p><p><em>Sur la fiche enjeux, bougez les pions comme suit&nbsp;:</em></p><ul><li><em>Economie&nbsp;: + 1</em></li><li><em>Emploi&nbsp;: + 1 </em></li><li><em>Démocratie&nbsp;: + 1</em></li><li><em>Environnement&nbsp;: - 1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25fb"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25fc"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25fd"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b25fe"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf44"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "076d33b2-71a8-43fd-8897-7ccd1b1d98c1",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-n-1-conclusion",
+      "content": "<p>Le projet &quot;Future of AI&quot; avance à grands pas!</p><p>Toutefois, vous vous rendez compte qu&#39;il implique déjà de nombreuses conséquences pour le moins... imprévues.</p><p><br/></p><p>Il est temps de planifier la suite...</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-2-intro",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf45"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "8fe0d77c-e001-4e50-903b-207d15159b9f",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-2-intro",
+      "content": "<h2><strong>\tSituation n° 2</strong></h2><p><strong>Gérer la consommation</strong></p><p><br/></p><p>Les installations sont construites. Il va maintenant falloir gérer leur consommation.</p><p>Où trouver l&#39;eau pour refroidir les <em>datas centers</em> et l&#39;électricité requise à son fonctionnement?</p><p>Comment financer ces nouveaux coûts?</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967baf"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "58cd7d9a-9f4a-4731-b4e1-6549283d3c98",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "reponse-a-modele-vertueux-limite",
+      "content": "<p>Votre solution inspire à l&#39;étranger&nbsp;: elle allie connaissance du territoire et prise de conscience environnementale.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "reponse-a-modele-vertueux-limite-2-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb0"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "situation-2-choix-2",
+      "content": "<p>Au diable l’environnement&nbsp;! «&nbsp;Future of AI&nbsp;» n’a pas été imaginé pour s’embarrasser de contraintes sociales ou environnementales&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-2-modele-competitif-nefaste",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb1"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "reponse-a-modele-vertueux-limite-2-1",
+      "content": "<p>Toutefois, votre choix présente certaines limites&nbsp;:</p><p><br/></p><ul><li>Impossibilité d&#39;extension des <em>datas centers</em></li><li>Expropriations conséquentes: trois villages devront être délocalisés et des indemnisations payées aux personnes expropriées.</li><li>Bilan environnemental mitigé&nbsp;: la biodiversité de la Vallée du Lion en sera affectée.</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "reponse-a-modele-vertueux-limite-fiche",
+      "actions": null,
+      "conditions": null,
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb2"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "reponse-a-modele-vertueux-limite-fiche",
+      "content": "<p><em>Bougez comme suit les jauges sur la fiche enjeux&nbsp;:</em></p><p><br/></p><ul><li><em>Environnement&nbsp;: +1</em></li><li><em>Emploi&nbsp;: +1</em></li><li><em>Santé/bien-être&nbsp;: -1</em></li><li><em>Economie&nbsp;: -1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-3-une-nouvelle-ia-mais-pour-qui",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2605"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2606"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2607"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2608"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb3"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "7fbda0b4-8d33-445f-8697-4e2edf81ad84",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-2-modele-competitif-nefaste",
+      "content": "<p>Entouré·e des meilleurs techniciens, votre modèle est puissant mais gourmand en ressources.</p><p><br/></p><p>Il nécessite des coupes budgétaires assez conséquentes, la vente de données pas toujours en phase avec la législation européenne et vous vous attirez la colère de nombreuses organisations citoyennes. Mais le projet rapporte (c&#39;est ce qui compte, non?)&nbsp;! De nombreux contrats sont signés et l’économie est florissante… pour le moment.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-2-modele-competitif-nefaste-fiche",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb4"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "situation-2-modele-competitif-nefaste-fiche",
+      "content": "<p><em>Bougez comme suit les jauges sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Economie&nbsp;: +2</em></li><li><em>Emploi&nbsp;: +1</em></li><li><em>Environnement&nbsp;: -2</em></li><li><em>Démocratie&nbsp;: - 1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-3-une-nouvelle-ia-mais-pour-qui",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b260b"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b260c"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b260d"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b260e"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb5"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "9afbd379-18be-44e7-b00b-e49dc9a9d5ea",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-3-une-nouvelle-ia-mais-pour-qui",
+      "content": "<h2><strong>Situation n°3</strong></h2><p><strong>A qui servira l&#39;IA?</strong></p><h2>·</h2><p>Vos infrastructures sont prêtes et les questions liées à la consommation réglées. Mais a qui bénéficiera ce nouveau système d&#39;IA?</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Offrir l&#39;IA sans restriction</p>",
+          "next": "s-3-ia-grand-public",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bb7"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Offrir l&#39;IA aux entreprises uniquement</p>",
+          "next": "s-3-ia-entreprises-3",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bb8"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": [
+                {
+                  "target": "@s-2-choix-3-2",
+                  "condition": "not-by",
+                  "animation": false,
+                  "_id": "68a5cd4fe6db010875967bba"
+                }
+              ]
+            },
+            "kind": "passage"
+          },
+          "content": "<p>Limiter l&#39;usage de l&#39;IA aux services publics</p>",
+          "next": "s-3-ia-services-publics",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bb9"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bb6"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-1",
+      "content": "<p>Vous disposez d’une richesse rare sur votre territoire&nbsp;: une cascade immense que tous vos voisins vous envient&nbsp;! Cette vaste étendue d’eau se déverse naturellement dans la célèbre «&nbsp;Vallée du Lion&nbsp;». L’énergie hydroélectrique qu’elle pourrait générer est suffisante pour répondre aux besoins de votre installation actuelle. En outre, elle permet un captage d’eau nécessaire au refroidissement des <em>data centers</em>. </p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": [
+                {
+                  "target": "@1-3-louer-les-services-2",
+                  "condition": "not-by",
+                  "animation": false,
+                  "_id": "68a5cd4fe6db010875967bbf"
+                }
+              ]
+            },
+            "kind": "passage"
+          },
+          "content": "<p>Utiliser l&#39;énergie hydraulique</p>",
+          "next": "reponse-a-modele-vertueux-limite",
+          "actions": [],
+          "conditions": [
+            {
+              "query": {
+                "params": [
+                  {
+                    "target": "@1-3-louer-les-services",
+                    "condition": "not-by",
+                    "animation": false,
+                    "_id": "68a5cd4fe6db010875967bbe"
+                  }
+                ]
+              },
+              "kind": "passage",
+              "_id": "68a5cd4fe6db010875967bbd"
+            }
+          ],
+          "_id": "68a5cd4fe6db010875967bbc"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": [
+                {
+                  "target": "@1-3-louer-les-services-2",
+                  "condition": "by",
+                  "animation": false,
+                  "_id": "68a5cd4fe6db010875967bc1"
+                }
+              ]
+            },
+            "kind": "passage"
+          },
+          "content": "<p>Je ne peux pas: mes installations sont à l&#39;étranger</p>",
+          "next": "s-2-choix-5",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc0"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bbb"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-4",
+      "content": "<p>Quatre options s&#39;offrent à vous.</p><p><br/></p><ul><li>Choisir un <strong>modèle vertueux</strong> mais limité</li><li>Choisir un <strong>modèle compétitif</strong> mais dommageable pour l&#39;environnement</li><li>Booster l&#39;<strong>économie</strong> mais pas que&nbsp;!</li><li>Réorienter vos objectifs en faveur de la <strong>collectivité</strong></li></ul><p><br/></p><p><em>Chaque joueuse et joueur doit convaincre le décideur/la décideuse politique de prendre une décision.</em></p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Un modèle vertueux</p>",
+          "next": "s-2-choix-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc3"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Un modèle compétitif</p>",
+          "next": "situation-2-choix-2",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc4"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Booster l&#39;économie</p>",
+          "next": "s-2-choix-3-2",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc5"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Un autre projet</p>",
+          "next": "s-2-choix-4-2",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc6"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bc2"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "f63a9913-8379-4aa9-9a7f-d994acf7f2c0",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-2-choix-4-2",
+      "content": "<p>Les<em> datas centers</em>&nbsp;? Nous pouvons les utiliser pour la collectivité&nbsp;! La puissance de l’IA mise au service de projets forts et vertueux, voilà un programme porteur&nbsp;!</p><p><br/></p><p>Vous décidez de réorienter vos ambitions pour un futur plus durable. Le changement climatique est un enjeu bien trop important pour priver les universités et les services publiques d’un système d&#39;IA digne de ce nom.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-4-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bc7"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "5facbe87-c542-4483-843b-0ecc20fa1cf6",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-2-choix-4-3",
+      "content": "<p>A court terme, le projet coûte cher. Mais toutes les projections réalisées montrent que les bénéfices à long terme dépassent de loin le cout du projet&nbsp;pour la collectivité.</p><p>La détection plus rapide des feux de forêts, les progrès fulgurants&nbsp;dans le domaine de l’imagerie médicale ou la remise à l’emploi de personnes demandeuses d’emploi n’en sont que quelques exemples!</p><p><br/></p><p>Et ils permettent à l’Etat de réaliser des économies substantielles.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-4-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bc8"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-4-4",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Environnement&nbsp;: +2</em></li><li><em>Emploi&nbsp;: +1</em></li><li><em>Santé/bien-être&nbsp;: +1</em></li><li><em>Démocratie&nbsp;: +1</em></li><li><em>Economie&nbsp;: -1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "isHappyEnd": true,
+      "next": "s-2-choix-4-5",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2623"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2624"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2625"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2626"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2627"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bc9"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "35ffb3d4-b8c4-4eb5-aea3-49fcae0d32bd",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-2-choix-3-2",
+      "content": "<p>Vous souhaitez booster votre économie sans sacrifier la démocratie.</p><p>Vous imaginez donc un cadre juridique souple et novateur qui implique que pour utiliser votre nouvelle solution d’IA, les entreprises devront s’installer sur votre territoire et payer une taxe raisonnable pour l’utiliser. Les retombées de cette taxe permettront notamment de payer l&#39;électricité (achetée à l&#39;étranger) nécessaire au fonctionnement des infrastructures.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-3-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bca"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-3-3",
+      "content": "<p>Et ça marche&nbsp;!</p><p>Votre IA est puissante, européenne et respecte tous les standards imposés par l’Union européenne.</p><p>C’est loin d’être le cas pour les technologies américaines, dont les firmes sont contraintes de retirer leurs chatbot du marché européen (bonne nouvelle pour vous).</p><p>De plus, les bénéfices engrangés par cette taxe sont aussi mobilisés pour refinancer les services publics qui battent de l’aile&nbsp;: soins de santé et enseignement en priorité&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-3-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bcb"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "2f05083b-0b48-424b-af87-233449e7d5fb",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": false
+      },
+      "id": "s-2-choix-3-4",
+      "content": "<p>Votre programme étonne et fait des émules l’étranger. Mais si votre IA est puissante, elle est gourmande en énergie et ne génère pas les emplois escomptés… en tout cas à court terme. Un stress hydrique apparait aussi dans certaines régions...</p><p><br/></p><p><em>Bougez comme suit les jauges sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Economie&nbsp;: +2</em></li><li><em>Santé/bien-être&nbsp;: +2</em></li><li><em>Démocratie&nbsp;: +1</em></li><li><em>Emploi&nbsp;: -1</em></li><li><em>Environnement&nbsp;: -2</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-3-une-nouvelle-ia-mais-pour-qui",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b262b"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b262c"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b262d"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b262e"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b262f"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bcc"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-ia-grand-public-fiche",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Environnement&nbsp;: -2</em></li><li><em>Economie&nbsp;: -1</em></li><li><em>Démocratie&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-4",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2631"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2632"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2633"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bcd"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "0d407424-7579-4799-a972-d3600cb08b27",
+        "size": "small",
+        "kind": "default",
+        "isBefore": false,
+        "allowZoom": true
+      },
+      "id": "s-3-ia-grand-public",
+      "content": "<p>Votre solution plait au grand public mais elle génère beaucoup plus de consommation que prévu. Sur plan environnemental, votre solution est désastreuse.</p><p><br/></p><p>Par ailleurs, trop peu de gens d’utilisateurs paient l’abonnement qui génère de trop faibles retours sur investissement.</p><p><br/></p><p>L’inférence (l’utilisation de l’IA) par le grand public est très négative pour l’environnement.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-ia-grand-public-fiche",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bce"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-ia-entreprises-3",
+      "content": "<p>Votre décision permet aux entreprises de rester compétitives sur le plan international. Par ailleurs, l’impact environnemental de votre système d’IA est une réalité mais est limité par l’usage des seules entreprises. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-ia-entreprises-2-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bcf"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-ia-entreprises-2-1",
+      "content": "<p>Votre stratégie présente néanmoins un défaut de taille&nbsp;: les services publics et les citoyens s’indignent que de l’argent public soit dépensé dans une stratégie ne bénéficiant pas au système démocratique&nbsp;! En outre, les conséquences à court terme du développement du nouveau système d’IA font perde une série d’emplois, en particulier dans les métiers de la création visuelle.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-ia-entreprises-choix",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd0"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-ia-entreprises-choix",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><p><br/></p><ul><li><em>Economie&nbsp;: +2</em></li><li><em>Démocratie&nbsp;: - 1</em></li><li><em>Emploi&nbsp;: -1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-4",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2638"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2639"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b263a"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd1"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-ia-services-publics",
+      "content": "<p>Votre choix est ambitieux et ne plait pas directement à la population. Cependant, après quelques mois, les collectivités, puis peu à peu les citoyennes et citoyens se rendent compte de la justesse de votre choix&nbsp;: utiliser un outil puissant, en le limitant pour des raisons démocratiques. </p><p><br/></p><p>Créer des vidéos de chat, c’est sympa, mais ça ne sert pas vraiment l’intérêt général...</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-ia-services-publics-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd2"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "fin-de-jeu-2",
+      "content": "<p><strong>Vous voici à la fin du jeu&nbsp;!</strong></p><p><br/></p><p>Vous l&#39;avez écourté pour des raisons démocratiques.</p><p>Félicitations pour ce choix audacieux et pas si utopique.</p><p><br/></p><p>L&#39;objectif de ce parcours ludique était de provoquer la discussion en groupe. La personne dont le personnage à remporté la partie s&#39;empare de la <strong>fiche de clôture </strong><em>(ou, à défaut, la ou le décisionnaire politique). </em></p><p>Vous pouvez maintenant fermer cette fenêtre et découvrir la<strong> </strong>fiche de clôture.</p>",
+      "noContent": false,
+      "final": true,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "actions": null,
+      "conditions": null,
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd3"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-ia-services-publics-1",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><p><br/></p><ul><li><em>Environnement&nbsp;: + 1</em></li><li><em>Economie&nbsp;: +1</em></li><li><em>Démocratie&nbsp;: +1</em></li><li><em>Santé/bien-être&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-4",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b263e"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b263f"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2640"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2641"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd4"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "327f83d5-467c-4ab9-88ff-490212b03da0",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "citoyenne-1",
+      "content": "<p>Le décideur politique entre en contact avec une <strong>citoyenne </strong>engagée dans la préservation de l&#39;environnement.</p><p><br/></p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;Citoyenne ou citoyen&quot; à la personne qui incarnera ce rôle.</em></p><p><br/></p><p><em>Cette personne garde sa fiche secrète pour l&#39;instant&nbsp;!</em></p>",
+      "noContent": false,
+      "final": false,
+      "next": "data-scientist",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf31"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "ff2ec5e8-6f5e-448f-9ff1-4da3736059b5",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "lobbyiste",
+      "content": "<p>Le décideur politique entre en contact avec un lobbyiste.</p><p><br/></p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;</em><strong><em>Lobbyiste</em></strong><em>&quot; à la personne qui incarnera ce rôle.</em></p>",
+      "noContent": false,
+      "final": false,
+      "next": "representant-syndical",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "682602412e5ca63779ddaf35"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "e7360a26-0599-41a0-a74d-acc69da343e8",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "consulter-fiche-1",
+      "content": "<h2><strong>\tSituation n° 1&nbsp;</strong></h2><p><strong>Concevoir de nouveaux <em>data centers </em></strong></p><h1>·</h1><p>Pour mener le projet &quot;Future of AI&quot; dans votre pays, il faut construire des infrastructures capables de faire fonctionner les IA génératives.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd7"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-a-partenaires-sur-2",
+      "content": "<p>Les avantages&nbsp;de cette méthode sont nombreux&nbsp;:</p><p><br/></p><ul><li>Vous aurez facilement accès à un grand nombre de ressources diversifiées nécessaires à la conception des infrastructures (comme les terres et métaux rares);</li><li>Ces matières premières seront au meilleur prix du marché, tout comme la main d&#39;oeuvre;</li><li>Vos partenaires sont déjà compétents dans l’assemblage des composants.</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "1-a-partenaires-sur-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd8"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "1-b-partenaires-locaux-2",
+      "content": "<p>Vos décisions entraînent les conséquences suivantes.</p><p><br/></p><p><em>Sur la fiche enjeux, bougez les pions comme suit&nbsp;:</em></p><ul><li><em>Emploi&nbsp;: + 2</em></li><li><em>Environnement&nbsp;: + 2</em></li><li><em>Economie&nbsp;: - 1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2647"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2648"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71613e6db0108759b2649"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bd9"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "fin-de-jeu-3",
+      "content": "<p><strong>Vous voici à la fin du jeu&nbsp;!</strong></p><p><br/></p><p>L&#39;objectif de ce parcours ludique était de provoquer la discussion en groupe. La personne dont le personnage à remporté la partie s&#39;empare de la <strong>fiche de clôture </strong><em>(ou, à défaut, la ou le décisionnaire politique). </em></p><p><br/></p><p>&gt; Vous pouvez maintenant fermer cette fenêtre et découvrir la<strong> </strong>fiche de clôture.</p>",
+      "noContent": false,
+      "final": true,
+      "isHappyEnd": true,
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bda"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-5",
+      "content": "<p>Etant donné que vous avez fait le choix de louer les infrastructures d&#39;un partenaire étranger, vous ne pouvez pas choisir cette option, qui n&#39;a pas vraiment de sens.</p><p><br/></p><p>La biodiversité de la Vallée du Lion n&#39;en sera que mieux conservée.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a5cd4fe6db010875967bdc"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "fin-de-jeu-4",
+      "content": "<p>Votre fiche devrait indiquer les valeurs suivantes sur les différentes échelles&nbsp;:</p><p><br/></p><ul><li>Environnement = <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"4316ee3e-cff4-4442-96af-76118dbb457a\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;4316ee3e-cff4-4442-96af-76118dbb457a&quot;,&quot;name&quot;:&quot;Environnement&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Environnement</span>‌</li><li>Economie =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"a2d51eb8-9291-46e8-b29f-0a6dddca8a26\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;a2d51eb8-9291-46e8-b29f-0a6dddca8a26&quot;,&quot;name&quot;:&quot;Economie&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Economie</span>‌</li><li>Santé/bien-être =‌‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"8d00bf87-c5ae-41ee-8b17-f1cc75b58482\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;8d00bf87-c5ae-41ee-8b17-f1cc75b58482&quot;,&quot;name&quot;:&quot;Santé/bien-être&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Santé/bien-être</span>‌</li><li>Démocratie =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"9274d389-8a7c-4e63-b9d8-767bf19872e6\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;9274d389-8a7c-4e63-b9d8-767bf19872e6&quot;,&quot;name&quot;:&quot;Démocratie&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Démocratie</span></li><li>Emploi =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"000aa3c2-c0bc-4537-abd5-c077cab56079\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;000aa3c2-c0bc-4537-abd5-c077cab56079&quot;,&quot;name&quot;:&quot;Emploi&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Emploi</span>‌</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [
+        "4316ee3e-cff4-4442-96af-76118dbb457a",
+        "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+        "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+        "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+        "000aa3c2-c0bc-4537-abd5-c077cab56079"
+      ],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a71613e6db0108759b264c"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-4-5",
+      "content": "<p>Votre fiche devrait indiquer les valeurs suivantes&nbsp;:</p><p><br/></p><ul><li>Environnement = <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"4316ee3e-cff4-4442-96af-76118dbb457a\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;4316ee3e-cff4-4442-96af-76118dbb457a&quot;,&quot;name&quot;:&quot;Environnement&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Environnement</span>‌</li><li>Economie =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"a2d51eb8-9291-46e8-b29f-0a6dddca8a26\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;a2d51eb8-9291-46e8-b29f-0a6dddca8a26&quot;,&quot;name&quot;:&quot;Economie&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Economie</span>‌</li><li>Santé/bien-être =‌‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"8d00bf87-c5ae-41ee-8b17-f1cc75b58482\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;8d00bf87-c5ae-41ee-8b17-f1cc75b58482&quot;,&quot;name&quot;:&quot;Santé/bien-être&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Santé/bien-être</span>‌</li><li>Démocratie =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"9274d389-8a7c-4e63-b9d8-767bf19872e6\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;9274d389-8a7c-4e63-b9d8-767bf19872e6&quot;,&quot;name&quot;:&quot;Démocratie&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Démocratie</span></li><li>Emploi =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"000aa3c2-c0bc-4537-abd5-c077cab56079\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;000aa3c2-c0bc-4537-abd5-c077cab56079&quot;,&quot;name&quot;:&quot;Emploi&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Emploi</span>‌</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [
+        "4316ee3e-cff4-4442-96af-76118dbb457a",
+        "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+        "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+        "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+        "000aa3c2-c0bc-4537-abd5-c077cab56079"
+      ],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68a71613e6db0108759b264d"
+    }
+  ],
+  "counters": [
+    {
+      "gauge": null,
+      "id": "4316ee3e-cff4-4442-96af-76118dbb457a",
+      "name": "Environnement",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68a5cd4fe6db010875967bdd"
+    },
+    {
+      "gauge": null,
+      "id": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+      "name": "Emploi",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68a5cd4fe6db010875967bde"
+    },
+    {
+      "id": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+      "name": "Economie",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68a5cd4fe6db010875967bdf"
+    },
+    {
+      "id": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+      "name": "Démocratie",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68a5cd4fe6db010875967be0"
+    },
+    {
+      "id": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+      "name": "Santé/bien-être",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68a5cd4fe6db010875967be1"
+    }
+  ],
+  "flags": [],
+  "textvars": [],
+  "assets": [],
+  "sounds": [],
+  "images": [],
+  "routines": [],
+  "events": [],
+  "success": [],
+  "files": [
+    {
+      "metadata": {
+        "credits": "Star by Tarjo Sugiono from Noun Project",
+        "creator": "Tarjo Sugiono",
+        "license": "BY",
+        "raw": {
+          "nounId": "7880314",
+          "permalink": "/icon/star-7880314/",
+          "compression": "183.57 kB -> 20.35 kB",
+          "s3key": "live/6821fd782e5ca6377994814d/7d87ce89-e100-4d05-9c22-44e03fb4b80a.svg"
+        }
+      },
+      "id": "1bf20759-65dc-44a4-95bc-e8fcec8d9018",
+      "size": 20353,
+      "mime": "image/svg+xml",
+      "kind": "icon",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/7d87ce89-e100-4d05-9c22-44e03fb4b80a.svg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf47"
+    },
+    {
+      "metadata": {
+        "credits": "Femme politique devant bibliothèque.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Décideur politique.jpg",
+          "compression": "1.66 Mo -> 133.7 kB",
+          "mimeType": "image/jpeg",
+          "width": 1001,
+          "height": 1500,
+          "s3key": "live/6821fd782e5ca6377994814d/9a4932e5-0b38-4a2a-8b8d-6b91505d6218.jpg"
+        }
+      },
+      "id": "8577b88c-8ff9-4724-98e5-6683b138ab9d",
+      "size": 133699,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/9a4932e5-0b38-4a2a-8b8d-6b91505d6218.jpg",
+      "label": "Décideur politique.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf48"
+    },
+    {
+      "metadata": {
+        "credits": "Homme souriant en costume bleu.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "lobbyist.jpg",
+          "compression": "2.27 Mo -> 96.42 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/067f3441-91df-42d6-83ef-79ab62f7604e.jpg"
+        }
+      },
+      "id": "ff2ec5e8-6f5e-448f-9ff1-4da3736059b5",
+      "size": 96416,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/067f3441-91df-42d6-83ef-79ab62f7604e.jpg",
+      "label": "lobbyist.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf49"
+    },
+    {
+      "metadata": {
+        "credits": "Data scientist travaillant sur son ordinateur.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "DATASC~1.JPG",
+          "compression": "1.61 Mo -> 97.02 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/bc23fc71-8f73-4b60-b8d5-375fdfadde4e.jpg"
+        }
+      },
+      "id": "9871d851-7449-4e30-b5c6-49dbba0b51d2",
+      "size": 97021,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/bc23fc71-8f73-4b60-b8d5-375fdfadde4e.jpg",
+      "label": "DATASC~1.JPG",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf4a"
+    },
+    {
+      "metadata": {
+        "credits": "Jeune femme fixant l'objectif.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "citoyenne - pexels-radwanmenzer-17205337.jpg",
+          "compression": "1.02 Mo -> 39.66 kB",
+          "mimeType": "image/jpeg",
+          "width": 600,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/c502e5e2-df9f-4fcc-810f-16cd2c48fa19.jpg"
+        }
+      },
+      "id": "327f83d5-467c-4ab9-88ff-490212b03da0",
+      "size": 39658,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/c502e5e2-df9f-4fcc-810f-16cd2c48fa19.jpg",
+      "label": "citoyenne - pexels-radwanmenzer-17205337.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf4b"
+    },
+    {
+      "metadata": {
+        "credits": "Personnes manifestant dans la rue",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "synd.-pexels-ketchumcommunity-1464223.jpg",
+          "compression": "977.77 kB -> 169.07 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/cd9eccae-6b8a-40d1-b6d7-f853ddfdc24e.jpg"
+        }
+      },
+      "id": "86e37b0e-628e-48e0-a203-2b3b610a9ef5",
+      "size": 169071,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/cd9eccae-6b8a-40d1-b6d7-f853ddfdc24e.jpg",
+      "label": "synd.-pexels-ketchumcommunity-1464223.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf4c"
+    },
+    {
+      "metadata": {
+        "credits": "Jeu de 6 cartes posé sur une table.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "cartes pexels-pixabay-279009.jpg",
+          "compression": "952.78 kB -> 50.88 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/de252f47-5834-4387-ba89-e42336cac63b.jpg"
+        }
+      },
+      "id": "7fbda0b4-8d33-445f-8697-4e2edf81ad84",
+      "size": 50877,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/de252f47-5834-4387-ba89-e42336cac63b.jpg",
+      "label": "cartes pexels-pixabay-279009.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf4d"
+    },
+    {
+      "metadata": {
+        "credits": "mine ",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "territoire pexels-gizemt.jpg",
+          "compression": "2.52 Mo -> 112.05 kB",
+          "mimeType": "image/jpeg",
+          "width": 675,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/ee0aca53-7b8a-4969-acd2-a768cd23f9c2.jpg"
+        }
+      },
+      "id": "04818156-5aae-4e91-aa4f-5f5e817d2a07",
+      "size": 112051,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/ee0aca53-7b8a-4969-acd2-a768cd23f9c2.jpg",
+      "label": "territoire pexels-gizemt.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf4e"
+    },
+    {
+      "metadata": {
+        "credits": "cables",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "data centers pexels-brett-.jpg",
+          "compression": "1.57 Mo -> 79.2 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/3f81a5fd-155f-4201-bbcd-d3cf7b979176.jpg"
+        }
+      },
+      "id": "076d33b2-71a8-43fd-8897-7ccd1b1d98c1",
+      "size": 79202,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/3f81a5fd-155f-4201-bbcd-d3cf7b979176.jpg",
+      "label": "data centers pexels-brett-.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf4f"
+    },
+    {
+      "metadata": {
+        "credits": "lignes de code",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "code pexels-jorge-.jpg",
+          "compression": "169.9 kB -> 54.97 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/5efbff60-6e2e-466b-937f-328ac9b9f9c3.jpg"
+        }
+      },
+      "id": "ead1ee38-fb5d-406d-abc1-726a87986424",
+      "size": 54968,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/5efbff60-6e2e-466b-937f-328ac9b9f9c3.jpg",
+      "label": "code pexels-jorge-.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf50"
+    },
+    {
+      "metadata": {
+        "credits": "goute d'eau tombant dans une eau stagnante",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "water pexels-ha.jpg",
+          "compression": "1.23 Mo -> 51.75 kB",
+          "mimeType": "image/jpeg",
+          "width": 600,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/19dadf48-d106-433c-8a31-e2eabccfff24.jpg"
+        }
+      },
+      "id": "6e244d3c-a1ab-4071-ae2b-cb6dc57352ee",
+      "size": 51754,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/19dadf48-d106-433c-8a31-e2eabccfff24.jpg",
+      "label": "water pexels-ha.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf51"
+    },
+    {
+      "metadata": {
+        "credits": "mine - 2",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "pexels-ch.jpg",
+          "compression": "3.81 Mo -> 221.2 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/c892d554-2bea-4ab0-becf-bd47107e141e.jpg"
+        }
+      },
+      "id": "b57b8715-6716-4644-9744-bfd791ba2329",
+      "size": 221204,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/c892d554-2bea-4ab0-becf-bd47107e141e.jpg",
+      "label": "pexels-ch.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "682602412e5ca63779ddaf52"
+    },
+    {
+      "metadata": {
+        "credits": "electronic hit.mp3 by Rvgerxini",
+        "creator": "Rvgerxini",
+        "license": "CC",
+        "raw": {
+          "freesoundId": 479945,
+          "duration": 1.35227
+        }
+      },
+      "id": "75eb5ccd-af51-4176-9a5b-453ac92fc250",
+      "size": 12192,
+      "mime": "audio/mpeg",
+      "kind": "sound",
+      "origin": "freesound",
+      "url": "https://cdn.freesound.org/previews/479/479945_9453283-lq.mp3",
+      "label": "tech",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf0"
+    },
+    {
+      "metadata": {
+        "credits": "Un barrage",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "12499567374_b.jpg",
+          "compression": "269.46 kB -> 163.92 kB",
+          "mimeType": "image/jpeg",
+          "width": 1024,
+          "height": 681,
+          "s3key": "live/6821fd782e5ca6377994814d/bcad7109-a157-4a04-ab36-83dddf4944a0.jpg"
+        }
+      },
+      "id": "58cd7d9a-9f4a-4731-b4e1-6549283d3c98",
+      "size": 163923,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/bcad7109-a157-4a04-ab36-83dddf4944a0.jpg",
+      "label": "12499567374_b.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf1"
+    },
+    {
+      "metadata": {
+        "credits": "Un canadair larguant de l'eau",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "image-from-ra.jpg",
+          "compression": "60.8 kB -> 47.71 kB",
+          "mimeType": "image/jpeg",
+          "width": 1000,
+          "height": 668,
+          "s3key": "live/6821fd782e5ca6377994814d/1ea8abaf-f837-4dae-806e-fe2e1c185a07.jpg"
+        }
+      },
+      "id": "5facbe87-c542-4483-843b-0ecc20fa1cf6",
+      "size": 47711,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/1ea8abaf-f837-4dae-806e-fe2e1c185a07.jpg",
+      "label": "image-from-ra.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf2"
+    },
+    {
+      "metadata": {
+        "credits": "Trois blocs en bois comportant chacun une lettre 'T', 'A' et 'X' et couvert de quelques pièces de monnaie",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Anti-Avoidanc.jpg",
+          "compression": "24.4 kB -> 24.3 kB",
+          "mimeType": "image/jpeg",
+          "width": 624,
+          "height": 416,
+          "s3key": "live/6821fd782e5ca6377994814d/b2bdcf84-8864-4ab5-b471-59d750519006.jpg"
+        }
+      },
+      "id": "35ffb3d4-b8c4-4eb5-aea3-49fcae0d32bd",
+      "size": 24296,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/b2bdcf84-8864-4ab5-b471-59d750519006.jpg",
+      "label": "Anti-Avoidanc.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf3"
+    },
+    {
+      "metadata": {
+        "credits": "Un bouton de clavier d'ordinateur comportant les mots 'open data'",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Open_data_key.jpg",
+          "compression": "5.53 kB -> 5.53 kB",
+          "mimeType": "image/jpeg",
+          "width": 220,
+          "height": 120,
+          "s3key": "live/6821fd782e5ca6377994814d/ebfc7990-f5e2-42ad-924f-e8b03e50ec20.jpg"
+        }
+      },
+      "id": "f63a9913-8379-4aa9-9a7f-d994acf7f2c0",
+      "size": 5531,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/ebfc7990-f5e2-42ad-924f-e8b03e50ec20.jpg",
+      "label": "Open_data_key.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf4"
+    },
+    {
+      "metadata": {
+        "credits": "Mistral AI, \"Modèle Large 2 de Mistral AI. Analyse du cycle de vie\", Notre contribution pour la création d'un standard environnemental mondial pour l'IA. 2 juillet 2025, en ligne sur : https://mistral.ai/fr/news/our-contribution-to-a-global-environmental-standard-for-ai",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "ACV Mistral.jpg",
+          "compression": "254.8 kB -> 107.84 kB",
+          "mimeType": "image/jpeg",
+          "width": 611,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/87a6cc78-cf42-4c6e-b323-6dd854103d8a.jpg"
+        }
+      },
+      "id": "0d407424-7579-4799-a972-d3600cb08b27",
+      "size": 107841,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/87a6cc78-cf42-4c6e-b323-6dd854103d8a.jpg",
+      "label": "ACV Mistral.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf5"
+    },
+    {
+      "metadata": {
+        "credits": "quiet by THOMAS NG from Noun Project",
+        "creator": "THOMAS NG",
+        "license": "BY",
+        "raw": {
+          "nounId": "6757162",
+          "permalink": "/icon/quiet-6757162/",
+          "compression": "55.34 kB -> 6.9 kB",
+          "s3key": "live/6821fd782e5ca6377994814d/f8692030-6ad7-4ae5-9e5e-eb1988d33c31.svg"
+        }
+      },
+      "id": "282ee782-712a-4f9a-9e05-4f8fb46783fb",
+      "size": 6902,
+      "mime": "image/svg+xml",
+      "kind": "icon",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/f8692030-6ad7-4ae5-9e5e-eb1988d33c31.svg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf6"
+    },
+    {
+      "metadata": {
+        "credits": "Logo de l'association Latitudes",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "images.png",
+          "compression": "4.66 kB -> 4.66 kB",
+          "mimeType": "image/png",
+          "width": 461,
+          "height": 109,
+          "s3key": "live/6821fd782e5ca6377994814d/4832c90a-fe96-49c8-a586-070233c1d365.png"
+        }
+      },
+      "id": "d6c2f22d-a9aa-4110-81d8-fe149f303b94",
+      "size": 4663,
+      "mime": "image/png",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/4832c90a-fe96-49c8-a586-070233c1d365.png",
+      "label": "images.png",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf7"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/aerial-view-of-people-walking-on-raod-IBaVuZsJJTo",
+        "creator": "Ryoji Iwata",
+        "raw": {
+          "unsplashId": "IBaVuZsJJTo",
+          "thumb": "https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyfHxwZW9wbGV8ZW58MHwwfHx8MTc1NTY5MjgwOHww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "9afbd379-18be-44e7-b00b-e49dc9a9d5ea",
+      "size": 279040,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyfHxwZW9wbGV8ZW58MHwwfHx8MTc1NTY5MjgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf8"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/water-droplets-V-afy242gY4",
+        "creator": "Johnny Brown",
+        "raw": {
+          "unsplashId": "V-afy242gY4",
+          "thumb": "https://images.unsplash.com/photo-1514907707149-eca420f5de51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8d2F0ZXJ8ZW58MHwwfHx8MTc1NTY5Mjg4Nnww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "8fe0d77c-e001-4e50-903b-207d15159b9f",
+      "size": 81849,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1514907707149-eca420f5de51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8d2F0ZXJ8ZW58MHwwfHx8MTc1NTY5Mjg4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bf9"
+    },
+    {
+      "metadata": {
+        "credits": "Aperçu de la fiche enjeux",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Décrypte l'IA - Fiche enjeux.png",
+          "compression": "447.89 kB -> 382.9 kB",
+          "mimeType": "image/png",
+          "width": 2000,
+          "height": 1414,
+          "s3key": "live/6821fd782e5ca6377994814d/4280dac8-a733-4c5d-8fe8-74da45e0a188.png"
+        }
+      },
+      "id": "3c0633ff-ce91-48bc-a7ce-c2cf3fd0facc",
+      "size": 382901,
+      "mime": "image/png",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/4280dac8-a733-4c5d-8fe8-74da45e0a188.png",
+      "label": "Décrypte l'IA - Fiche enjeux.png",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bfa"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/an-aerial-view-of-a-large-industrial-building-N9pLLb_M8DQ",
+        "creator": "Geoffrey Moffett",
+        "raw": {
+          "unsplashId": "N9pLLb_M8DQ",
+          "thumb": "https://images.unsplash.com/photo-1715026323215-a2dbb71272f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMXx8ZGF0YSUyMGNlbnRlcnN8ZW58MHwwfHx8MTc1NTY5NDEyOXww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "e7360a26-0599-41a0-a74d-acc69da343e8",
+      "size": 172724,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1715026323215-a2dbb71272f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMXx8ZGF0YSUyMGNlbnRlcnN8ZW58MHwwfHx8MTc1NTY5NDEyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bfb"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/view-of-stadium-interior-ySA9uj7zSmw",
+        "creator": "Marius",
+        "raw": {
+          "unsplashId": "ySA9uj7zSmw",
+          "thumb": "https://images.unsplash.com/photo-1554007460-791a7b8945d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwzfHxwb2xpdGljc3xlbnwwfDB8fHwxNzU1Njk0NDQ5fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "2202a846-3972-479c-b831-d76eb98b62c9",
+      "size": 168546,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1554007460-791a7b8945d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwzfHxwb2xpdGljc3xlbnwwfDB8fHwxNzU1Njk0NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bfc"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/green-trees-in-dessert-during-daytime-8aWeV4Y_5zY",
+        "creator": "Grant Durr",
+        "raw": {
+          "unsplashId": "8aWeV4Y_5zY",
+          "thumb": "https://images.unsplash.com/photo-1557430915-f17195b7b8ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyNnx8d2F0ZXIlMjBzY2FyY2l0eXxlbnwwfDB8fHwxNzU1Njk0OTI3fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "2f05083b-0b48-424b-af87-233449e7d5fb",
+      "size": 251751,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1557430915-f17195b7b8ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyNnx8d2F0ZXIlMjBzY2FyY2l0eXxlbnwwfDB8fHwxNzU1Njk0OTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bfd"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/white-truck-near-green-trees-Tr62wgWpkq4",
+        "creator": "Jonatan Lewczuk",
+        "raw": {
+          "unsplashId": "Tr62wgWpkq4",
+          "thumb": "https://images.unsplash.com/photo-1527466578461-52f86fffc561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNXx8d29ya2VycyUyMGNvbmdvJTIwbWluaW5nfGVufDB8MHx8fDE3NTU2OTYxMDF8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "3a3c7618-5b1a-4232-b676-795a0878e5fe",
+      "size": 330972,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1527466578461-52f86fffc561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNXx8d29ya2VycyUyMGNvbmdvJTIwbWluaW5nfGVufDB8MHx8fDE3NTU2OTYxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68a5cd4fe6db010875967bfe"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/aerial-photography-of-city-52gEprMkp7M",
+        "creator": "Dennis Kummer",
+        "raw": {
+          "unsplashId": "52gEprMkp7M",
+          "thumb": "https://images.unsplash.com/photo-1480843669328-3f7e37d196ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2VudGVyc3xlbnwwfDB8fHwxNzU2MTEwNjU3fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "00f70f65-fe29-4ff7-a563-176dee01c5e0",
+      "size": 323807,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1480843669328-3f7e37d196ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw4fHxkYXRhJTIwY2VudGVyc3xlbnwwfDB8fHwxNzU2MTEwNjU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1f4e306af44d2f6122fc"
+    }
+  ]
+}

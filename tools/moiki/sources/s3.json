@@ -1,0 +1,4552 @@
+{
+  "_id": "68ac1ebd306af44d2f611837",
+  "meta": {
+    "customCredits": null,
+    "options": {
+      "allowBack": true,
+      "showStats": true,
+      "isCustomInventory": false
+    },
+    "editorOptions": {
+      "readOnly": {
+        "active": false
+      },
+      "experimentalFeatures": {
+        "graphAlternateViews": false
+      }
+    },
+    "creationDate": "2025-08-25T08:28:45.651Z",
+    "modificationDate": "2026-08-31T11:59:20.988Z",
+    "publishDate": null,
+    "dbPatched": false,
+    "name": "MétropédIA · Décrypter l'IA  ludique · Notre âme est-elle câblée? (Scénario 3)",
+    "description": "Approche ludique de l'activité \"Décrypter l'IA\" de l'axe 4 du projet MétropédIA.",
+    "image": "3f7e360a-8411-4e55-b088-9b9b22dd1f30",
+    "tags": [],
+    "author": {
+      "_id": "6821e5172e5ca6377993518e",
+      "firstname": "Thomas",
+      "lastname": "Braibant",
+      "pseudo": null
+    },
+    "lang": "fr",
+    "numWords": 2676,
+    "numSequences": 60,
+    "duration": 398.78400000000005,
+    "version": 6,
+    "simplified": false,
+    "expert": false,
+    "ifid": "",
+    "numErrors": 38
+  },
+  "themes": [
+    {
+      "styles": {
+        "textStyle": {
+          "params": {
+            "shadows": []
+          },
+          "type": "longShadow"
+        },
+        "sfx": {
+          "button": {
+            "sound": "75eb5ccd-af51-4176-9a5b-453ac92fc250"
+          },
+          "objectWin": null
+        },
+        "animations": {
+          "objectModal": "zoom",
+          "objectModalDecorator": "star",
+          "objectModalDecoratorColor": "rgba(208, 2, 27, 1)",
+          "sequence": "fade",
+          "sequenceDuration": 500
+        },
+        "background": "rgba(184, 233, 134, 1)",
+        "fontFamily": "Quicksand",
+        "sequenceBackground": "rgba(65, 117, 5, 1)",
+        "sequenceText": "#ffffff",
+        "sequenceTextSize": 1,
+        "sequenceBoldText": "#ffffff",
+        "sequenceBoldLock": true,
+        "buttonBackground": "rgba(65, 117, 5, 1)",
+        "buttonText": "#ffffff",
+        "buttonTextSize": 1,
+        "assetsBackground": "rgba(68, 148, 54, 1)",
+        "assetsFill": "#ffffff",
+        "sequenceRadius": 0.9,
+        "sequenceBorderColor": "#ffffff",
+        "sequenceBorderSize": 0,
+        "buttonRadius": 1,
+        "buttonBorderColor": "#ffffff",
+        "buttonBorderSize": 0,
+        "inventoryBackgroundCustom": false,
+        "inventoryBackground": "rgba(21, 79, 107, 0.27)"
+      },
+      "name": "standard",
+      "identifier": "default",
+      "idName": "default",
+      "customized": true,
+      "_id": "682602412e5ca63779ddaf46"
+    },
+    {
+      "styles": {
+        "textStyle": {
+          "params": {
+            "shadows": []
+          },
+          "type": "sans"
+        },
+        "animations": {
+          "objectModal": "zoom",
+          "objectModalDecorator": "star",
+          "sequence": "unzoom",
+          "sequenceDuration": 500
+        },
+        "background": "rgba(74, 144, 226, 1)",
+        "fontFamily": "Catamaran",
+        "sequenceBackground": "#446a9a",
+        "sequenceText": "#ffffff",
+        "sequenceTextSize": 1,
+        "sequenceBoldText": "#ffffff",
+        "sequenceBoldLock": true,
+        "buttonBackground": "#4eb5f1",
+        "buttonText": "#ffffff",
+        "buttonTextSize": 1,
+        "assetsBackground": "rgba(21, 79, 107, 0.27)",
+        "assetsFill": "#ffffff",
+        "sequenceRadius": 1,
+        "sequenceBorderColor": "#ffffff",
+        "sequenceBorderSize": 0,
+        "buttonRadius": 1,
+        "buttonBorderColor": "#ffffff",
+        "buttonBorderSize": 0,
+        "inventoryBackgroundCustom": false,
+        "inventoryBackground": "rgba(21, 79, 107, 0.27)"
+      },
+      "name": "standard",
+      "identifier": "6c28c7dd-156f-4632-a30c-2d60ff1778b5",
+      "idName": "Sans nom",
+      "customized": true,
+      "_id": "682602412e5ca63779ddaf46"
+    }
+  ],
+  "firstSequence": "intro",
+  "duration": 398.78400000000005,
+  "numSequences": 60,
+  "numWords": 2676,
+  "sequences": [
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "d6c2f22d-a9aa-4110-81d8-fe149f303b94",
+        "size": "medium",
+        "kind": "default",
+        "isBefore": false
+      },
+      "id": "intro",
+      "content": "<p>Bienvenue dans l&#39;activité de MétropédIA &quot;Décrypte l&#39;IA en jouant&quot;&nbsp;!</p><p><br/></p><p>Ce parcours ludique a été imaginé au départ du jeu &quot;La Bataille de l&#39;IA&quot; de l&#39;association <strong>Latitudes </strong>qui oeuvre pour un numérique plus responsable.</p><p><br/></p><p>Apprenez-en davantage sur www.latitudes.cc&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "debut-scenario",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f611795"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "4db4ee05-ac3f-449e-9bd3-9aa1b5efbef3",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "fiche-enjeux",
+      "content": "<h2>Des priorités politiques</h2><p><br/></p><p>Pour mener à bien vos prises de décision, cinq orientations&nbsp;guideront les discussions et les décisions prises&nbsp;:</p><p>1) L&#39;<strong>environnement</strong></p><p>2) Les opportunités <strong>économiques</strong></p><p>3) L&#39;<strong>emploi</strong></p><p>4) La <strong>démocratie</strong></p><p>5) La <strong>santé </strong>et le <strong>bien-être</strong> des personnes</p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "themeId": null,
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f611796"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "3f7e360a-8411-4e55-b088-9b9b22dd1f30",
+        "size": "small",
+        "isBefore": true
+      },
+      "id": "debut-scenario",
+      "content": "<p><strong>Notre âme est-elle câblée?</strong></p><p>Ce scénario met en lumière les aspects artistiques mais aussi psychologiques et philosophiques du débat de société que provoque aujourd&#39;hui l&#39;émergence de l&#39;intelligence artificielle générative. </p>",
+      "noContent": false,
+      "final": false,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "next": "decideu-se-politique",
+      "actions": null,
+      "conditions": null,
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f611797"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "fbf03427-73ca-408e-9d06-f36bd143b877",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "decideu-se-politique",
+      "content": "<h2>Une équipe de campagne</h2><p></p><p>Vous êtes responsable politique mais ... vous ne comprenez <em>rien </em>à l&#39;IA. Vous vous entourez de proches conseillers issus du monde politique, citoyen et technique afin de prendre les bonnes décisions.</p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;Décideur/décideuse politique&quot; à la personne de votre choix. </em>Chaque fiche comporte une partie secrète !</p>",
+      "noContent": false,
+      "final": false,
+      "next": "citoyenne-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f611798"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "9871d851-7449-4e30-b5c6-49dbba0b51d2",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "data-scientist",
+      "content": "<p>La/le responsable politique entre en contact avec un data scientist.</p><p><br/></p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;Data scientist&quot; à la personne qui incarnera ce rôle.</em></p><p><br/></p><p><em>Cliquez maintenant sur l&#39;option correspondant à votre composition d&#39;équipe&nbsp;:</em></p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Version 3 joueurs</p>",
+          "next": "fiche-enjeux",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf33"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Version 4 ou 5 joueurs</p>",
+          "next": "lobbyiste",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf34"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f611799"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "3c0633ff-ce91-48bc-a7ce-c2cf3fd0facc",
+        "size": "small",
+        "kind": "default",
+        "isBefore": false,
+        "allowZoom": false
+      },
+      "id": "consulter-fiche",
+      "content": "<p><em>Placez la &quot;</em><strong><em>fiche enjeux&quot;</em></strong><em> au centre de la table. </em></p><p><em>Placez ensuite un pion sur chaque jauge (échelle): il s&#39;agit des 5 grandes orientations du projet.</em></p><p><br/></p><p>Chaque personne prend le temps de lire ses objectifs cachés (<em>&quot;ce que les autres ignorent&quot; </em>sur la fiche) en prenant soin de ne rien dévoiler à personne.</p><p>Puis, à tour de rôle, lisez à voix haute <em>&quot;ce que les autres savent&quot;</em>.</p><p>Quand tout le monde a lu, passez à la suite&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f61179c"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "situation-n-1",
+      "content": "<p>Suite à cet incident récent, vous êtes dans une situation délicate. Vous faites appel à votre équipe afin d’être conseillé·e. </p><p><br/></p><p>Qu&#39;allez-vous faire? </p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p><strong>Interdire l’IA en contexte artistique</strong></p>",
+          "next": "choix-verite-alt",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf39"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p><strong>Réguler par la création d’une instance adéquate</strong></p>",
+          "next": "reguler-l-ia",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf3a"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p><strong>Laisser libre cours à la créativité et booster la croissance</strong></p>",
+          "next": "limiter-l-ia",
+          "actions": [],
+          "conditions": [],
+          "_id": "682602412e5ca63779ddaf3b"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f61179d"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "situation-n-1-conclusion",
+      "content": "<p>Comme quoi, tout ne se passe pas toujours comme prévu...</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-2-intro",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117a1"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "be32dbbf-6633-498a-badb-05dc11618741",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-2-intro",
+      "content": "<h2><strong>\tSituation n° 2</strong></h2><h2><strong>Bonjour <em>Dominique</em></strong><sup><em>®</em></sup></h2><p>Une nouvelle tendance est récemment apparue&nbsp;dans la société. Partout où la solitude est présente, les gens commencent à utiliser <em>Dominique</em><sup><em>®</em></sup>, un système d’IA qui s’intègre à de nombreux supports&nbsp;: téléphone, ordinateur, console de chambre d’hôpital, robots domestiques. Son but&nbsp;? <em>«&nbsp;Faire en sorte que les patients se sentent mieux, moins seuls et accompagnés&nbsp;»</em>.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117a2"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-4",
+      "content": "<p>Aujourd’hui, <em>Dominique</em><sup><em>® </em></sup>n’en est qu’au stade de prototype. Vous devez maintenant décider ce que vous allez faire&nbsp;avec la multiplication de systèmes d’IA&nbsp;: l’intégrer officiellement dans les soins de santé, l’interdire, ou trouver une alternative.</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Intégrer <em>Dominique</em><sup><em>®</em></sup> dans les soins de santé</p>",
+          "next": "app-euro",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc3"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Interdire l’usage de cette IA à des fins médicales</p>",
+          "next": "negocier-avec-les-gafam",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc4"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Choisir une voie alternative...</p>",
+          "next": "open-data",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc5"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117a3"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "438e7a0e-b558-447f-843a-36524ba9b1a0",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-2-choix-3-3",
+      "content": "<p>Si <em>Dominique</em><sup><em>® </em></sup>est populaire, ce système n’en est pas moins la création d’une entreprise qui capitalise sur les données de santé des patients. Il n’est pas certain que l’Union européenne soit en phase avec ce système. Après analyse, vos juristes vous alertent sur la politique de rétention de données inhabituelles pour une application de ce genre. Vous avez fait le bon choix&nbsp;! </p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-3-5",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117a7"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-2-choix-3-4",
+      "content": "<p>Assez rapidement, votre projet est un succès et le secteur des soins de santé se relève, mobilisant ce système d’IA, pourtant encore à l’état de prototype, à bon escient&nbsp;!</p><p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Emploi&nbsp;: +1</em></li><li><em>Santé/bien-être&nbsp;: +2</em></li><li><em>Environnement&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-menace-intro",
+      "actions": [
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3524"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3526"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3525"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117a8"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "9072c518-cc25-4590-9487-50799c7e9f82",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-3-ia-entreprises-choix",
+      "content": "<p>Avec les bénéfices issus des amendes administratives que la CSNL décerne aux pratiques abusives sur Internet, vous parvenez à renforcer votre contrôle démocratique en ligne: Bien joué&nbsp;!</p><p>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</p><ul><li>Démocratie&nbsp;: +2</li><li>Santé/bien-être&nbsp;: +1</li><li>Environnement&nbsp;: +1</li><li>Emploi&nbsp;: +1</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-4",
+      "actions": [
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3530"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3531"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68aecd9f306af44d2f69bc89"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68aecd9f306af44d2f69bc8a"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117ad"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "6376d073-7242-4648-9355-8ef3b7b8e16e",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-3-ia-services-publics-1",
+      "content": "<p>Le bilan de votre politique est très tranché&nbsp;: bon économiquement, il est désastreux en termes de politique sociale et démocratique. Le transhumanisme ne fait pas l&#39;unanimité...</p><p><br/></p><p>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</p><ul><li>Emploi&nbsp;: +1</li><li>Economie&nbsp;: +2</li><li>Démocratie&nbsp;: -1</li><li>Santé/bien-être&nbsp;: -1</li><li>Environnement&nbsp;: -1</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-4",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3535"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3536"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3537"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a732d8e6db0108759daec6"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68aecfe8306af44d2f6a08b8"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117b1"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "327f83d5-467c-4ab9-88ff-490212b03da0",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "citoyenne-1",
+      "content": "<p>Afin d&#39;ancrer vos actions dans une légitimé démocratique suffisante, vous consultez une <strong>citoyenne </strong>engagée dans la préservation de l&#39;environnement.</p><p><br/></p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;Citoyenne ou citoyen&quot; à la personne qui incarnera ce rôle.</em></p><p><br/></p><p><em>Cette personne garde sa fiche secrète pour l&#39;instant&nbsp;!</em></p>",
+      "noContent": false,
+      "final": false,
+      "next": "data-scientist",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117b6"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "ff2ec5e8-6f5e-448f-9ff1-4da3736059b5",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "lobbyiste",
+      "content": "<p>Le décideur politique entre en contact avec un lobbyiste.</p><p><br/></p><p><strong><em>Distribuez </em></strong><em>la fiche de personnage &quot;</em><strong><em>Lobbyiste</em></strong><em>&quot; à la personne qui incarnera ce rôle.</em></p>",
+      "noContent": false,
+      "final": false,
+      "next": "representant-syndical",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117b7"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "3f7e360a-8411-4e55-b088-9b9b22dd1f30",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "consulter-fiche-1",
+      "content": "<h2><strong>\tSituation n° 1&nbsp;</strong></h2><p><strong><em>Ceci n&#39;est pas une bière</em></strong></p><p><strong>···</strong></p><p>Récemment, le néo prompteur José Tagritte a fait parler de lui… Influent créateur du MPS (<em>Mouvement du Prompting Satirique</em>), il revendique farouchement l’usage de l’IA comme moyen d’expression artistique. Imposteur pour les unes, génie pour les autres, Tagritte était inconnu il y a 6 mois.</p><p>Aujourd’hui, il est votre pire cauchemar&nbsp;…</p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117b8"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "fin-de-jeu-3",
+      "content": "<p><strong>Vous voici à la fin du jeu&nbsp;!</strong></p><p><br/></p><p>L&#39;objectif de ce parcours ludique était de provoquer la discussion en groupe. La personne dont le personnage à remporté la partie s&#39;empare de la <strong>fiche de clôture </strong><em>(ou, à défaut, la ou le décisionnaire politique). </em></p><p><br/></p><p>&gt; Vous pouvez maintenant fermer cette fenêtre et découvrir la<strong> </strong>fiche de clôture.</p>",
+      "noContent": false,
+      "final": true,
+      "isHappyEnd": true,
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117b9"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "fin-de-jeu-4",
+      "content": "<p>Votre fiche enjeux devrait indiquer les valeurs suivantes&nbsp;sur les 5 jauges&nbsp;:</p><p><br/></p><ul><li>Environnement = <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"4316ee3e-cff4-4442-96af-76118dbb457a\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;4316ee3e-cff4-4442-96af-76118dbb457a&quot;,&quot;name&quot;:&quot;Environnement&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Environnement</span>‌</li><li>Economie =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"a2d51eb8-9291-46e8-b29f-0a6dddca8a26\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;a2d51eb8-9291-46e8-b29f-0a6dddca8a26&quot;,&quot;name&quot;:&quot;Economie&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Economie</span>‌</li><li>Santé/bien-être =‌‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"8d00bf87-c5ae-41ee-8b17-f1cc75b58482\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;8d00bf87-c5ae-41ee-8b17-f1cc75b58482&quot;,&quot;name&quot;:&quot;Santé/bien-être&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Santé/bien-être</span>‌</li><li>Démocratie =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"9274d389-8a7c-4e63-b9d8-767bf19872e6\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;9274d389-8a7c-4e63-b9d8-767bf19872e6&quot;,&quot;name&quot;:&quot;Démocratie&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Démocratie</span></li><li>Emploi =‌ <span class=\"ql-moikivar\" contenteditable=\"false\" data-var-id=\"000aa3c2-c0bc-4537-abd5-c077cab56079\" data-var-op=\"value\" data-value=\"{&quot;id&quot;:&quot;000aa3c2-c0bc-4537-abd5-c077cab56079&quot;,&quot;name&quot;:&quot;Emploi&quot;,&quot;op&quot;:&quot;value&quot;}\">[value:]Emploi</span>‌</li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [
+        "4316ee3e-cff4-4442-96af-76118dbb457a",
+        "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+        "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+        "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+        "000aa3c2-c0bc-4537-abd5-c077cab56079"
+      ],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117ba"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "situation-n-3",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Démocratie&nbsp;: -1</em></li><li><em>Environnement&nbsp;: -1</em></li><li><em>Emploi&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb613"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb614"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb615"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117bb"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "d6e05155-30a7-4da0-9542-d0acce0ae39d",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "reguler-l-ia",
+      "content": "<p>Vous décidez de réguler l’usage des systèmes d’IA. Plutôt que d’interdire, vous créer la CCA&nbsp;: la <em>Commission pour la Création Augmentée</em>. Elle est chargée de recueillir les plaintes des acteurs et actrices de l’art mobilisant l’IA et, si elle constate un préjudice pour autrui, est habilitée à supprimer les œuvres ainsi créées et à décerner des sanctions.</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Créer la CCA</p>",
+          "next": "reguler-l-ia-2",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb617"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Non merci, trop compliqué tout ça</p>",
+          "next": "situation-n-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb618"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117bf"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "reguler-l-ia-1",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Economie&nbsp;: +1</em></li><li><em>Emploi&nbsp;: +1</em></li><li><em>Démocratie&nbsp;: +2</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68c00cb5306af44d2ffa99a8"
+        },
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb61b"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb61a"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117c2"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "a779ff84-b96c-44ad-a437-19e49cae3706",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "limiter-l-ia",
+      "content": "<p>Vous décidez de dédommager les acteurs du secteur brassicole qui s’estiment lésés. </p><p>Et vous encouragez par là même la création par l’IA, une superbe expression artistique de la modernité, selon vous&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Ok pour dédommager (et booster l’industrie)&nbsp;!</p>",
+          "next": "limiter-l-ia-2",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb61e"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Non, les industriels vont trop loin</p>",
+          "next": "situation-n-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb61f"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117c6"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "limiter-l-ia-1",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Economie&nbsp;: -1</em></li><li><em>Emploi&nbsp;: +1</em></li><li><em>Santé/bien-être&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1-conclusion",
+      "actions": [
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb621"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb622"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb623"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117c9"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "010cd9c1-2125-46d3-a28c-b58c49b892fd",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "choix-verite-alt",
+      "content": "<p>Il faut protéger l’industrie&nbsp;brassicole&nbsp;!</p><p><br/></p><p>Vous pouvez choisir de protéger l’industrie brassicole des préjudices à leurs marques en interdisant l’utilisation des systèmes d’IA en contexte de création artistique. Vous êtes soutenu par vos voisins qui suivent votre idée&nbsp;! </p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Protéger l&#39;industrie brassicole</p>",
+          "next": "choix-verite-alt-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb625"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Les industriels exagèrent et puis… je n’aime pas la Beffe</p>",
+          "next": "situation-n-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb626"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117cd"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "reseau-social-euro-1",
+      "content": "<p>Bienvenue <em>Dominique</em><sup><em>® </em></sup>! C’est ce qu’on peut lire dans beaucoup d’hôpitaux, maisons de repos ou centres de santé mentale. </p><p>Votre solution est un succès&nbsp;instantané&nbsp;! Elle permet d’une part de faire des économies dans les soins de santé en licenciant pas mal de monde, mais aussi d’augmenter l’efficacité de traitement des «&nbsp;plaintes&nbsp;» des patients (qui ne sont finalement que des clients des hôpitaux, non?).</p>",
+      "noContent": false,
+      "final": false,
+      "next": "reseau-social-euro-3-fiche",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117d0"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "reseau-social-euro-3",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Santé/bien-être&nbsp;: -1</em></li><li><em>Emploi&nbsp;: -1</em></li><li><em>Economie&nbsp;: +1 </em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-menace-intro",
+      "actions": [
+        {
+          "params": {
+            "target": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb629"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb62a"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a727c7e6db0108759cb62c"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117d1"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "fcc63df8-5065-4593-b05c-85bd3758535b",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "reseau-social-euro-3-fiche",
+      "content": "<p>Mais un jour, le drame arrive&nbsp;: un patient met fin à ses jours en laissant un mot&nbsp;:&nbsp;«&nbsp;Dominique avait raison, cela ne servait plus à rien de vivre…&nbsp;». C&#39;est le premier d&#39;une longue série...</p><p>Une grande bataille juridique relative à la responsabilité du décès survient. Et vous êtes dans le collimateur des familles des victimes. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "reseau-social-euro-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117d6"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "d484c357-7875-484e-b9ba-4aeb16681346",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "negocier-avec-les-gafam",
+      "content": "<p>Vous ne souhaitez pas que le domaine des soins de santé soit contaminé par la prolifération des systèmes d’IA…</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Interdire l’IA dans le secteur de la santé</p>",
+          "next": "negocier-avec-les-gafam-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb634"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Non, c’est trop radical&nbsp;</p>",
+          "next": "s-2-choix-4",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a727c7e6db0108759cb635"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117db"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "negocier-avec-les-gafam-1",
+      "content": "<p>Premier point positif de votre démarche&nbsp;: la limitation drastique de l’IA au secteur de la santé implique un léger ‘gain’ environnemental. Moins de technologie, moins d’émissions CO2. Mais si votre solution séduit une partie du corps médical, une autre s’insurge contre &quot;le manque de nuance de votre texte&quot; qui met des bâtons dans les roues des spécialistes de l’imagerie médicale (qui utilisent l’IA tous les jours).</p>",
+      "noContent": false,
+      "final": false,
+      "next": "negocier-avec-les-gafam-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117de"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "02dc470c-f974-4f62-b0c6-8f98d460d450",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "negocier-avec-les-gafam-2",
+      "content": "<p>Mais c’est aussi un problème pour les spécialistes du cancer qui, grâce à l’IA, conduisent des recherches toujours plus concluantes permettent de lutter efficacement contre la maladie. Au vu des levées de boucliers, vous n’êtes plus très à l’aise avec votre choix, il faut le dire.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "negocier-avec-les-gafam-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117df"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "negocier-avec-les-gafam-3",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Santé/bien-être&nbsp;: -1</em></li><li><em>Economie&nbsp;: -1</em></li><li><em>Environnement&nbsp;: +1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-menace-intro",
+      "actions": [
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a732d8e6db0108759daef2"
+        },
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a732d8e6db0108759daef4"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a732d8e6db0108759daef5"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117e0"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "9c3e76a6-0541-4d45-8019-78a4a580e165",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "app-euro",
+      "content": "<p>Vous voulez faire de <em>Dominique</em><sup><em>® </em></sup>une véritable accompagnatrice thérapeutique. Cela règlera beaucoup de problème de santé, c’est certain.</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": null,
+          "content": "<p>Ok, faire de <em>Dominique</em><sup><em>®</em></sup> une accompagnatrice thérapeutique</p>",
+          "next": "reseau-social-euro-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bbc"
+        },
+        {
+          "showCondition": null,
+          "content": "<p>Non merci, les patients ont besoin de vrais soignants pour les écouter</p>",
+          "next": "s-2-choix-4",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bc0"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117e5"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "80d582e8-e37d-4df9-ad37-a014278ce997",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "open-data",
+      "content": "<p>L’assistance aux patients, c’est bien. Mais le personnel médical le fait déjà. Vous ne niez pas l’utilité de l’IA pour la santé, mais il faut avancer avec prudence.La recherche, ça prend du temps, mais c&#39;est par là qu&#39;il faut commencer.</p>",
+      "noContent": false,
+      "final": null,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Lancer un projet de recherche pour un système d’IA au service de la santé</p>",
+          "next": "s-2-choix-3-3",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daefa"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Ça sera trop cher, la croissance n’attend pas&nbsp;!</p>",
+          "next": "s-2-choix-4",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daefb"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117e8"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "45bef84e-e674-4e52-b7de-aae140d24cd9",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-3-menace-intro",
+      "content": "<h2><strong>Situation n°3</strong></h2><h2><strong>Regarder nos souvenirs</strong></h2><p>···</p><p>Une entreprise belge lance NeoOculus. Un «&nbsp;œil&nbsp;augmenté&nbsp;permettant d’enregistrer ses meilleurs souvenirs sur le cloud&nbsp;», selon célèbre entrepreneur à la base du projet. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-menace-intro-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117eb"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "ministere-cree",
+      "content": "<p><em>Vos décisions entraînent les conséquences suivantes&nbsp;sur la fiche enjeux&nbsp;:</em></p><ul><li><em>Démocratie&nbsp;: -1 </em></li><li><em>Economie&nbsp;: +2</em></li><li><em>Environnement&nbsp;: -1</em></li><li><em>Santé/bien-être&nbsp;: -1</em></li></ul>",
+      "noContent": false,
+      "final": false,
+      "next": "fin-de-jeu-4",
+      "actions": [
+        {
+          "params": {
+            "target": "4316ee3e-cff4-4442-96af-76118dbb457a",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3528"
+        },
+        {
+          "params": {
+            "target": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+            "subTargets": [],
+            "modifier": "add",
+            "value": 2,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b3529"
+        },
+        {
+          "params": {
+            "target": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68a71721e6db0108759b352a"
+        },
+        {
+          "params": {
+            "target": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+            "subTargets": [],
+            "modifier": "sub",
+            "value": 1,
+            "valueType": "numeric",
+            "minValueType": "numeric",
+            "minValue": -1,
+            "maxValueType": "numeric",
+            "maxValue": -1,
+            "animation": false
+          },
+          "kind": "counter",
+          "condition": null,
+          "_id": "68aecd9f306af44d2f69bcc4"
+        }
+      ],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117ef"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "649c32dc-5344-432b-86e8-07d00e87a5e1",
+        "size": "small",
+        "isBefore": true
+      },
+      "id": "riposte-digitale",
+      "content": "<p>Avant de vous lancer, vous souhaitez investiguer&nbsp;: qui est vraiment derrière NeoOculus, quels sont les risques psychosociaux liés à cette technologie, quel en est le cout environnemental&nbsp;?</p>",
+      "noContent": false,
+      "final": null,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Oui, enquêter</p>",
+          "next": "riposte",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daf05"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Non, ça risque d’être très impopulaire (ca va couter du temps et de l&#39;argent)</p>",
+          "next": "situation-3-neooculus",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daf06"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117f3"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "19bbe043-c635-4852-a52b-718583389028",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "riposte",
+      "content": "<p>Vous lancez une vaste opération en mobilisant plusieurs de vos équipes. Vous cherchez à comprendre comment fonctionne l’implant, quelles données sont stockées par NeoOculus, etc. Grâce à vos équipes, vous vous rendez compte que le projet est en fait piloté par une entreprise américaine intéressée par l’accumulation de <em>données organiques*</em> afin d’entrainer un modèle d’IA considéré comme un «&nbsp;cerveau artificiel&nbsp;».</p>",
+      "noContent": false,
+      "final": false,
+      "next": "riposte-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117f6"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "406bb927-f841-4a05-8270-cf30bfa7db6f",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "diplomatie",
+      "content": "<p><em>Notre âme est cablée&nbsp;! </em>soutiennent les partisans du MTB, le <em>Mouvement Transhumaniste Belge</em>. Le transhumanisme, affirment ces derniers, permettra à la population de <em>«&nbsp;prolonger sa durée de vie, de mieux vivre les effets du changement climatique et transcender son existence&nbsp;»</em>.</p>",
+      "noContent": false,
+      "final": null,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Financer les projets transhumanistes</p>",
+          "next": "diplomatie-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daf09"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Non merci, ces gens sont fous</p>",
+          "next": "situation-3-neooculus",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daf0a"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117f7"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "diplomatie-1",
+      "content": "<p>Après NeoOculus, vous soutenez DoubleBrain, une entreprise qui table sur le clonage partiel du cerveau humain grâce à la &quot;duplication des données organiques qu&#39;il contient, sous forme numérique&quot;. Un projet qui s’avère en fait peu porteur sur le plan politique, même si la compétitivité des entreprises belges fait parler d’elle.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "diplomatie-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117fa"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "diplomatie-2",
+      "content": "<p>Mais les problèmes de santé s’aggravent. Et les difficultés liées au vivre ensemble se creusent&nbsp;entre les membres du MTB et la population dans son ensemble. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-ia-services-publics-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117fb"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "riposte-1",
+      "content": "<p>L’investigation est encore en cours mais vous n’avez pas besoin de plus d’informations pour y mettre un terme. Vous allouez le reste des budgets au secteur des soins de santé et fermez la porte à NeoOculus.</p><p><br/></p><p>Par ailleurs, vous créez la Commission de Sauvegarde des Libertés Numériques (CSLN).</p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-3-ia-entreprises-choix",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117fd"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "477ebdb0-7419-496c-9378-b3e33ab575c7",
+        "size": "small",
+        "isBefore": false,
+        "allowZoom": true
+      },
+      "id": "consulter-fiche-2",
+      "content": "<p>Il y a quelques jours, José&nbsp;Tagritte a fait grand bruit avec son oeuvre <em>Ceci n’est pas une bière</em>. Dès sa sortie, Tagritte a souligné, en toute transparence, vouloir «&nbsp;provoquer le débat autour de la présence de l’IA dans le monde de l’art&nbsp;». Et il admet sans peine que, comme les reste de ses œuvres, <em>Ceci n’est pas une bière</em> a été entièrement générée par IA. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b92"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "b6ac0ebb-9ac2-4546-a2e8-af644f7c3730",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "consulter-fiche-3",
+      "content": "<p>Le problème est que le débat ne s’est pas arrêté au monde de l’art… En effet, l’œuvre a proliféré sur Internet, rencontrant un succès retentissant. Mais, celle-ci a été perçue par certains industriels de la bière comme une attaque directe à leur marque. &quot;Sous couvert d’un débat artistique&quot;, s’offusque le porte-parole de l’Abbé InBeffe, grand producteur belge, &quot;Tagritte tient des propos ouvertement dénigrants pour notre marque de bière&quot;.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b93"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "consulter-fiche-4",
+      "content": "<h2><strong>L’IA peut-elle générer des œuvres d’art&nbsp;?</strong></h2><h2><strong> </strong></h2><p>C’est la difficile question à laquelle vous et votre équipe êtes confrontées aujourd’hui. Depuis quelques temps, le mécontentement monte dans le monde de la culture: «&nbsp;L’IA est une menace&nbsp;! Il faut la réguler&nbsp;! Nous perdons nos emplois&nbsp;!&nbsp;». Le problème est complexe, car tous les artistes ne pensent pas de la même manière…</p>",
+      "noContent": false,
+      "final": false,
+      "next": "consulter-fiche-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b94"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "choix-verite-alt-1",
+      "content": "<p>Votre décision fait plaisir aux grands groupes brassicoles. Mais elle n’a aucun impact sur le plan économique pour eux. En revanche, l’Union des graphistes vous bénit et vous faites la une du monde de l’art&nbsp;!</p>",
+      "noContent": false,
+      "final": false,
+      "next": "choix-verite-alt-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b96"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "choix-verite-alt-2",
+      "content": "<p>Votre décision calme aussi le mouvement de grogne du monde l’art mais le MPS (Mouvement du Prompting Satirique) saisit la justice pour «&nbsp;atteinte à la liberté d’expression&nbsp;»&nbsp;! Le MPS est vite rejoint par une série d’entreprises qui craignent une perte de compétitivité face aux concurrents étrangers qui, eux, ne sont pas privés de systèmes d’IA pour créer du contenu.&nbsp;</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-n-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b97"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "reguler-l-ia-2",
+      "content": "<p>Votre solution permet aux différents acteurs d’entrer en contact les uns avec les autres. Vous jetez les bases d’un système de régulation inédit. Au début, c’est le chaos, la fraude est monnaie courante. Mais au bout d’un certain temps, vous parvenez à améliorer le cadre législatif de la CCA pour correspondre à la réalité. Tout est aidé par les performances de logiciels de détection. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "reguler-l-ia-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b98"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "c460e955-4871-443f-b7f1-08de0be62289",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "reguler-l-ia-3",
+      "content": "<p>Au fil du temps, l’art du prompting devient une démarche potentiellement artistique (presque) comme une autre. Vos choix emportent la confiance du plus grand nombre. Et les gens se réintéressent à la démarche de création des artistes.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "reguler-l-ia-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aebdcf306af44d2f689b99"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "limiter-l-ia-2",
+      "content": "<p>Mais il y a un imprévu&nbsp;: à l’annonce des dédommagements, il y a subitement plus d’acteurs que prévu. Tous utilisent le même argumentaire et le «&nbsp;risque&nbsp;de préjudice&nbsp;» est soulevé&nbsp;: «&nbsp;que se passera-t-il si notre marque est la cible du MPS&nbsp;?&nbsp;» (Mouvement du Prompting Satirique) </p>",
+      "noContent": false,
+      "final": false,
+      "next": "limiter-l-ia-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bcd8"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "limiter-l-ia-3",
+      "content": "<p>Vous croulez sous les demandes de dédommagements, et cela coute très cher au gouvernement. Les spécialistes du prompting, eux, accumulent des bénéfices comme jamais auparavant: ils vendent leurs prompts sur Internet, leurs oeuvres sur le marché de l&#39;art... </p>",
+      "noContent": false,
+      "final": false,
+      "next": "limiter-l-ia-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bcd9"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "limiter-l-ia-4",
+      "content": "<p>Cependant, un fait inattendu arrive&nbsp;: le fameux Tagritte et le MPS se mettent à distribuer les fonds récoltés auprès d’institutions de santé mentale, sous-financé ces derniers temps par votre ministère de la santé. Et ils prennent un soin particulier à souligner qu&#39;à défaut du soutien gouvernemental, ce sont les citoyens qui doivent s&#39;en charger.</p>",
+      "noContent": false,
+      "final": false,
+      "next": "limiter-l-ia-1",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bcda"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "dec28d43-8d46-4d58-bbd9-6e95c887307f",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "s-2-choix-3-5",
+      "content": "<p>Vous placez plusieurs équipes sur ce projet de recherche qui vous tient à cœur&nbsp;: développer une IA «&nbsp;frugale&nbsp;» (à plus faible cout environnemental) pour les hôpitaux, en priorité. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "s-2-choix-3-4",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bcdb"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "73b4e4ad-7f97-47f3-b5a5-04dd08bde6b8",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "situation-3-neooculus",
+      "content": "<p>Après l’art, la santé… et maintenant le transhumanisme… C’est vraiment fatiguant la politique. Vous sollicitez vos proches conseillers afin de prendre une décision. D’autant que la commission d’éthique chargée de l’étude du projet ne voit pas d’un bon œil (sans mauvais jeu de mot) ce nouvel implant sorti tout droit d’une mauvaise série de science-fiction…</p>",
+      "noContent": false,
+      "final": false,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p><strong>Accueillir NeoOculus bras ouverts</strong></p>",
+          "next": "ok-neo-oculus",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bb7"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Enquêter sur le projet</p>",
+          "next": "riposte-digitale",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bb8"
+        },
+        {
+          "showCondition": null,
+          "content": "<p>Financer les projets transhumanistes</p>",
+          "next": "diplomatie",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a5cd4fe6db010875967bb9"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117d7"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "s-3-menace-intro-1",
+      "content": "<p>Avant même que les consultations des instances compétentes n’aient pu avoir lieu, NeoOculus fait déjà la une des journaux et est présenté comme un projet «&nbsp;unique au monde&nbsp;» et «&nbsp;un boost incroyable pour l’économie belge&nbsp;».</p>",
+      "noContent": false,
+      "final": false,
+      "next": "situation-3-neooculus",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bce0"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "d6e05155-30a7-4da0-9542-d0acce0ae39d",
+        "size": "small",
+        "isBefore": true
+      },
+      "id": "ok-neo-oculus",
+      "content": "<p>Vous pourriez décider d’accueillir ce projet fou d’implant oculaire intelligent avec la conviction ferme qu’il améliorera le quotidien des citoyennes et citoyens en «&nbsp;réduisant les risques de criminalité par l’enregistrement potentiel des criminels par les victimes&nbsp;»&nbsp;! En plus, il apportera une belle croissance économique à votre pays, c&#39;est certain.</p>",
+      "noContent": false,
+      "final": null,
+      "isHappyEnd": null,
+      "httplabel": null,
+      "httplink": null,
+      "actions": [],
+      "conditions": [],
+      "choices": [
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>C’est parti pour NeoOculus</p>",
+          "next": "ok-neo-oculus-1",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daefe"
+        },
+        {
+          "showCondition": {
+            "query": {
+              "params": []
+            }
+          },
+          "content": "<p>Non merci, c’est un cauchemar…</p>",
+          "next": "situation-3-neooculus",
+          "actions": [],
+          "conditions": [],
+          "_id": "68a732d8e6db0108759daeff"
+        }
+      ],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68ac1ebd306af44d2f6117ec"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "f9823665-f741-4653-8b84-efedd646b957",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "ok-neo-oculus-1",
+      "content": "<p>Vous outrepassez la décision de la commission d’éthique qui fustige un projet <em>«&nbsp;de surveillance de masse, faisant de chaque personne implantée un sujet de surveillance permanent&nbsp;»</em>. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "ok-neo-oculus-2",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bce4"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "id": "ok-neo-oculus-2",
+      "content": "<p>Un problème émerge toutefois&nbsp;: NeoOculus vous demande l’accès aux données personnelles des citoyens implantés afin de préparer son projet suivant&nbsp;: DoubleBrain. Après tout, on n’est pas à une entorse démocratique près…</p>",
+      "noContent": false,
+      "final": false,
+      "next": "ok-neo-oculus-3",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bce5"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "f4155320-4e62-4952-89de-7ec9831840db",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "ok-neo-oculus-3",
+      "content": "<p>NeoOculus est un succès commercial (même si votre gouvernement ne voit pas encore les retombées positives du projet en termes de lutte contre la criminalité). Mais très vite, les conséquences psychosociales des personnes implantées se multiplient. La reconnaissance par IA embarquée permet de générer des <em>deep fakes</em> en «&nbsp;live&nbsp;» et certaines personnes font l’expérience d’un nouveau type de trouble mental. </p>",
+      "noContent": false,
+      "final": false,
+      "next": "ministere-cree",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68aecd9f306af44d2f69bce6"
+    },
+    {
+      "soundLoop": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "soundSfx": {
+        "params": {
+          "volume": 1,
+          "delay": 0,
+          "speed": 1
+        }
+      },
+      "timer": {
+        "active": false
+      },
+      "image": {
+        "id": "86e37b0e-628e-48e0-a203-2b3b610a9ef5",
+        "size": "small",
+        "kind": "circular",
+        "isBefore": true
+      },
+      "id": "representant-syndical",
+      "content": "<p>Si vous êtes 5 joueurs, distribuez le dernier personnage. Sinon, passez à l&#39;étape suivante.</p><p>***</p><p><em>Si vous êtes 5 joueurs, </em><strong><em>distribuez </em></strong><em>la fiche de personnage &quot;Représentant·e syndical·e&quot; à la personne qui incarnera ce rôle.</em></p>",
+      "noContent": false,
+      "final": false,
+      "next": "fiche-enjeux",
+      "actions": [],
+      "conditions": [],
+      "choices": [],
+      "usedVariables": [],
+      "routineId": null,
+      "routineExit": [],
+      "_id": "68c008e7306af44d2ff9f2d0"
+    }
+  ],
+  "counters": [
+    {
+      "gauge": null,
+      "id": "4316ee3e-cff4-4442-96af-76118dbb457a",
+      "name": "Environnement",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68ac1ebd306af44d2f6117ff"
+    },
+    {
+      "gauge": null,
+      "id": "000aa3c2-c0bc-4537-abd5-c077cab56079",
+      "name": "Emploi",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68ac1ebd306af44d2f611800"
+    },
+    {
+      "id": "a2d51eb8-9291-46e8-b29f-0a6dddca8a26",
+      "name": "Economie",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68ac1ebd306af44d2f611801"
+    },
+    {
+      "id": "9274d389-8a7c-4e63-b9d8-767bf19872e6",
+      "name": "Démocratie",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68ac1ebd306af44d2f611802"
+    },
+    {
+      "id": "8d00bf87-c5ae-41ee-8b17-f1cc75b58482",
+      "name": "Santé/bien-être",
+      "defaultValue": 0,
+      "min": -5,
+      "max": 5,
+      "_id": "68ac1ebd306af44d2f611803"
+    }
+  ],
+  "flags": [],
+  "textvars": [],
+  "assets": [],
+  "sounds": [],
+  "images": [],
+  "routines": [],
+  "events": [],
+  "success": [],
+  "files": [
+    {
+      "metadata": {
+        "credits": "Star by Tarjo Sugiono from Noun Project",
+        "creator": "Tarjo Sugiono",
+        "license": "BY",
+        "raw": {
+          "nounId": "7880314",
+          "permalink": "/icon/star-7880314/",
+          "compression": "183.57 kB -> 20.35 kB",
+          "s3key": "live/6821fd782e5ca6377994814d/7d87ce89-e100-4d05-9c22-44e03fb4b80a.svg"
+        }
+      },
+      "id": "1bf20759-65dc-44a4-95bc-e8fcec8d9018",
+      "size": 20353,
+      "mime": "image/svg+xml",
+      "kind": "icon",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/7d87ce89-e100-4d05-9c22-44e03fb4b80a.svg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611806"
+    },
+    {
+      "metadata": {
+        "credits": "Femme politique devant bibliothèque.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Décideur politique.jpg",
+          "compression": "1.66 Mo -> 133.7 kB",
+          "mimeType": "image/jpeg",
+          "width": 1001,
+          "height": 1500,
+          "s3key": "live/6821fd782e5ca6377994814d/9a4932e5-0b38-4a2a-8b8d-6b91505d6218.jpg"
+        }
+      },
+      "id": "8577b88c-8ff9-4724-98e5-6683b138ab9d",
+      "size": 133699,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/9a4932e5-0b38-4a2a-8b8d-6b91505d6218.jpg",
+      "label": "Décideur politique.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611807"
+    },
+    {
+      "metadata": {
+        "credits": "Homme souriant en costume bleu.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "lobbyist.jpg",
+          "compression": "2.27 Mo -> 96.42 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/067f3441-91df-42d6-83ef-79ab62f7604e.jpg"
+        }
+      },
+      "id": "ff2ec5e8-6f5e-448f-9ff1-4da3736059b5",
+      "size": 96416,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/067f3441-91df-42d6-83ef-79ab62f7604e.jpg",
+      "label": "lobbyist.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611808"
+    },
+    {
+      "metadata": {
+        "credits": "Data scientist travaillant sur son ordinateur.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "DATASC~1.JPG",
+          "compression": "1.61 Mo -> 97.02 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/bc23fc71-8f73-4b60-b8d5-375fdfadde4e.jpg"
+        }
+      },
+      "id": "9871d851-7449-4e30-b5c6-49dbba0b51d2",
+      "size": 97021,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/bc23fc71-8f73-4b60-b8d5-375fdfadde4e.jpg",
+      "label": "DATASC~1.JPG",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611809"
+    },
+    {
+      "metadata": {
+        "credits": "Jeune femme fixant l'objectif.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "citoyenne - pexels-radwanmenzer-17205337.jpg",
+          "compression": "1.02 Mo -> 39.66 kB",
+          "mimeType": "image/jpeg",
+          "width": 600,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/c502e5e2-df9f-4fcc-810f-16cd2c48fa19.jpg"
+        }
+      },
+      "id": "327f83d5-467c-4ab9-88ff-490212b03da0",
+      "size": 39658,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/c502e5e2-df9f-4fcc-810f-16cd2c48fa19.jpg",
+      "label": "citoyenne - pexels-radwanmenzer-17205337.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61180a"
+    },
+    {
+      "metadata": {
+        "credits": "Personnes manifestant dans la rue",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "synd.-pexels-ketchumcommunity-1464223.jpg",
+          "compression": "977.77 kB -> 169.07 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/cd9eccae-6b8a-40d1-b6d7-f853ddfdc24e.jpg"
+        }
+      },
+      "id": "86e37b0e-628e-48e0-a203-2b3b610a9ef5",
+      "size": 169071,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/cd9eccae-6b8a-40d1-b6d7-f853ddfdc24e.jpg",
+      "label": "synd.-pexels-ketchumcommunity-1464223.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61180b"
+    },
+    {
+      "metadata": {
+        "credits": "Jeu de 6 cartes posé sur une table.",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "cartes pexels-pixabay-279009.jpg",
+          "compression": "952.78 kB -> 50.88 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/de252f47-5834-4387-ba89-e42336cac63b.jpg"
+        }
+      },
+      "id": "7fbda0b4-8d33-445f-8697-4e2edf81ad84",
+      "size": 50877,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/de252f47-5834-4387-ba89-e42336cac63b.jpg",
+      "label": "cartes pexels-pixabay-279009.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61180c"
+    },
+    {
+      "metadata": {
+        "credits": "mine ",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "territoire pexels-gizemt.jpg",
+          "compression": "2.52 Mo -> 112.05 kB",
+          "mimeType": "image/jpeg",
+          "width": 675,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/ee0aca53-7b8a-4969-acd2-a768cd23f9c2.jpg"
+        }
+      },
+      "id": "04818156-5aae-4e91-aa4f-5f5e817d2a07",
+      "size": 112051,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/ee0aca53-7b8a-4969-acd2-a768cd23f9c2.jpg",
+      "label": "territoire pexels-gizemt.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61180d"
+    },
+    {
+      "metadata": {
+        "credits": "cables",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "data centers pexels-brett-.jpg",
+          "compression": "1.57 Mo -> 79.2 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/3f81a5fd-155f-4201-bbcd-d3cf7b979176.jpg"
+        }
+      },
+      "id": "076d33b2-71a8-43fd-8897-7ccd1b1d98c1",
+      "size": 79202,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/3f81a5fd-155f-4201-bbcd-d3cf7b979176.jpg",
+      "label": "data centers pexels-brett-.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61180e"
+    },
+    {
+      "metadata": {
+        "credits": "lignes de code",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "code pexels-jorge-.jpg",
+          "compression": "169.9 kB -> 54.97 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/5efbff60-6e2e-466b-937f-328ac9b9f9c3.jpg"
+        }
+      },
+      "id": "ead1ee38-fb5d-406d-abc1-726a87986424",
+      "size": 54968,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/5efbff60-6e2e-466b-937f-328ac9b9f9c3.jpg",
+      "label": "code pexels-jorge-.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61180f"
+    },
+    {
+      "metadata": {
+        "credits": "goute d'eau tombant dans une eau stagnante",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "water pexels-ha.jpg",
+          "compression": "1.23 Mo -> 51.75 kB",
+          "mimeType": "image/jpeg",
+          "width": 600,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/19dadf48-d106-433c-8a31-e2eabccfff24.jpg"
+        }
+      },
+      "id": "6e244d3c-a1ab-4071-ae2b-cb6dc57352ee",
+      "size": 51754,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/19dadf48-d106-433c-8a31-e2eabccfff24.jpg",
+      "label": "water pexels-ha.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611810"
+    },
+    {
+      "metadata": {
+        "credits": "mine - 2",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "pexels-ch.jpg",
+          "compression": "3.81 Mo -> 221.2 kB",
+          "mimeType": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "s3key": "live/6821fd782e5ca6377994814d/c892d554-2bea-4ab0-becf-bd47107e141e.jpg"
+        }
+      },
+      "id": "b57b8715-6716-4644-9744-bfd791ba2329",
+      "size": 221204,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/c892d554-2bea-4ab0-becf-bd47107e141e.jpg",
+      "label": "pexels-ch.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611811"
+    },
+    {
+      "metadata": {
+        "credits": "electronic hit.mp3 by Rvgerxini",
+        "creator": "Rvgerxini",
+        "license": "CC",
+        "raw": {
+          "freesoundId": 479945,
+          "duration": 1.35227
+        }
+      },
+      "id": "75eb5ccd-af51-4176-9a5b-453ac92fc250",
+      "size": 12192,
+      "mime": "audio/mpeg",
+      "kind": "sound",
+      "origin": "freesound",
+      "url": "https://cdn.freesound.org/previews/479/479945_9453283-lq.mp3",
+      "label": "tech",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611812"
+    },
+    {
+      "metadata": {
+        "credits": "Un barrage",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "12499567374_b.jpg",
+          "compression": "269.46 kB -> 163.92 kB",
+          "mimeType": "image/jpeg",
+          "width": 1024,
+          "height": 681,
+          "s3key": "live/6821fd782e5ca6377994814d/bcad7109-a157-4a04-ab36-83dddf4944a0.jpg"
+        }
+      },
+      "id": "58cd7d9a-9f4a-4731-b4e1-6549283d3c98",
+      "size": 163923,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/bcad7109-a157-4a04-ab36-83dddf4944a0.jpg",
+      "label": "12499567374_b.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611813"
+    },
+    {
+      "metadata": {
+        "credits": "Un canadair larguant de l'eau",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "image-from-ra.jpg",
+          "compression": "60.8 kB -> 47.71 kB",
+          "mimeType": "image/jpeg",
+          "width": 1000,
+          "height": 668,
+          "s3key": "live/6821fd782e5ca6377994814d/1ea8abaf-f837-4dae-806e-fe2e1c185a07.jpg"
+        }
+      },
+      "id": "5facbe87-c542-4483-843b-0ecc20fa1cf6",
+      "size": 47711,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/1ea8abaf-f837-4dae-806e-fe2e1c185a07.jpg",
+      "label": "image-from-ra.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611814"
+    },
+    {
+      "metadata": {
+        "credits": "Trois blocs en bois comportant chacun une lettre 'T', 'A' et 'X' et couvert de quelques pièces de monnaie",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Anti-Avoidanc.jpg",
+          "compression": "24.4 kB -> 24.3 kB",
+          "mimeType": "image/jpeg",
+          "width": 624,
+          "height": 416,
+          "s3key": "live/6821fd782e5ca6377994814d/b2bdcf84-8864-4ab5-b471-59d750519006.jpg"
+        }
+      },
+      "id": "35ffb3d4-b8c4-4eb5-aea3-49fcae0d32bd",
+      "size": 24296,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/b2bdcf84-8864-4ab5-b471-59d750519006.jpg",
+      "label": "Anti-Avoidanc.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611815"
+    },
+    {
+      "metadata": {
+        "credits": "Un bouton de clavier d'ordinateur comportant les mots 'open data'",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Open_data_key.jpg",
+          "compression": "5.53 kB -> 5.53 kB",
+          "mimeType": "image/jpeg",
+          "width": 220,
+          "height": 120,
+          "s3key": "live/6821fd782e5ca6377994814d/ebfc7990-f5e2-42ad-924f-e8b03e50ec20.jpg"
+        }
+      },
+      "id": "f63a9913-8379-4aa9-9a7f-d994acf7f2c0",
+      "size": 5531,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/ebfc7990-f5e2-42ad-924f-e8b03e50ec20.jpg",
+      "label": "Open_data_key.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611816"
+    },
+    {
+      "metadata": {
+        "credits": "Mistral AI, \"Modèle Large 2 de Mistral AI. Analyse du cycle de vie\", Notre contribution pour la création d'un standard environnemental mondial pour l'IA. 2 juillet 2025, en ligne sur : https://mistral.ai/fr/news/our-contribution-to-a-global-environmental-standard-for-ai",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "ACV Mistral.jpg",
+          "compression": "254.8 kB -> 107.84 kB",
+          "mimeType": "image/jpeg",
+          "width": 611,
+          "height": 900,
+          "s3key": "live/6821fd782e5ca6377994814d/87a6cc78-cf42-4c6e-b323-6dd854103d8a.jpg"
+        }
+      },
+      "id": "0d407424-7579-4799-a972-d3600cb08b27",
+      "size": 107841,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/87a6cc78-cf42-4c6e-b323-6dd854103d8a.jpg",
+      "label": "ACV Mistral.jpg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611817"
+    },
+    {
+      "metadata": {
+        "credits": "quiet by THOMAS NG from Noun Project",
+        "creator": "THOMAS NG",
+        "license": "BY",
+        "raw": {
+          "nounId": "6757162",
+          "permalink": "/icon/quiet-6757162/",
+          "compression": "55.34 kB -> 6.9 kB",
+          "s3key": "live/6821fd782e5ca6377994814d/f8692030-6ad7-4ae5-9e5e-eb1988d33c31.svg"
+        }
+      },
+      "id": "282ee782-712a-4f9a-9e05-4f8fb46783fb",
+      "size": 6902,
+      "mime": "image/svg+xml",
+      "kind": "icon",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/f8692030-6ad7-4ae5-9e5e-eb1988d33c31.svg",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611818"
+    },
+    {
+      "metadata": {
+        "credits": "Logo de l'association Latitudes",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "images.png",
+          "compression": "4.66 kB -> 4.66 kB",
+          "mimeType": "image/png",
+          "width": 461,
+          "height": 109,
+          "s3key": "live/6821fd782e5ca6377994814d/4832c90a-fe96-49c8-a586-070233c1d365.png"
+        }
+      },
+      "id": "d6c2f22d-a9aa-4110-81d8-fe149f303b94",
+      "size": 4663,
+      "mime": "image/png",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/4832c90a-fe96-49c8-a586-070233c1d365.png",
+      "label": "images.png",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611819"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/aerial-view-of-people-walking-on-raod-IBaVuZsJJTo",
+        "creator": "Ryoji Iwata",
+        "raw": {
+          "unsplashId": "IBaVuZsJJTo",
+          "thumb": "https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyfHxwZW9wbGV8ZW58MHwwfHx8MTc1NTY5MjgwOHww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "9afbd379-18be-44e7-b00b-e49dc9a9d5ea",
+      "size": 279040,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyfHxwZW9wbGV8ZW58MHwwfHx8MTc1NTY5MjgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61181a"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/water-droplets-V-afy242gY4",
+        "creator": "Johnny Brown",
+        "raw": {
+          "unsplashId": "V-afy242gY4",
+          "thumb": "https://images.unsplash.com/photo-1514907707149-eca420f5de51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8d2F0ZXJ8ZW58MHwwfHx8MTc1NTY5Mjg4Nnww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "8fe0d77c-e001-4e50-903b-207d15159b9f",
+      "size": 81849,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1514907707149-eca420f5de51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8d2F0ZXJ8ZW58MHwwfHx8MTc1NTY5Mjg4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61181b"
+    },
+    {
+      "metadata": {
+        "credits": "Aperçu de la fiche enjeux",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Décrypte l'IA - Fiche enjeux.png",
+          "compression": "447.89 kB -> 382.9 kB",
+          "mimeType": "image/png",
+          "width": 2000,
+          "height": 1414,
+          "s3key": "live/6821fd782e5ca6377994814d/4280dac8-a733-4c5d-8fe8-74da45e0a188.png"
+        }
+      },
+      "id": "3c0633ff-ce91-48bc-a7ce-c2cf3fd0facc",
+      "size": 382901,
+      "mime": "image/png",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/6821fd782e5ca6377994814d/4280dac8-a733-4c5d-8fe8-74da45e0a188.png",
+      "label": "Décrypte l'IA - Fiche enjeux.png",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61181c"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/an-aerial-view-of-a-large-industrial-building-N9pLLb_M8DQ",
+        "creator": "Geoffrey Moffett",
+        "raw": {
+          "unsplashId": "N9pLLb_M8DQ",
+          "thumb": "https://images.unsplash.com/photo-1715026323215-a2dbb71272f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMXx8ZGF0YSUyMGNlbnRlcnN8ZW58MHwwfHx8MTc1NTY5NDEyOXww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "e7360a26-0599-41a0-a74d-acc69da343e8",
+      "size": 172724,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1715026323215-a2dbb71272f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMXx8ZGF0YSUyMGNlbnRlcnN8ZW58MHwwfHx8MTc1NTY5NDEyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61181d"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/view-of-stadium-interior-ySA9uj7zSmw",
+        "creator": "Marius",
+        "raw": {
+          "unsplashId": "ySA9uj7zSmw",
+          "thumb": "https://images.unsplash.com/photo-1554007460-791a7b8945d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwzfHxwb2xpdGljc3xlbnwwfDB8fHwxNzU1Njk0NDQ5fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "2202a846-3972-479c-b831-d76eb98b62c9",
+      "size": 168546,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1554007460-791a7b8945d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwzfHxwb2xpdGljc3xlbnwwfDB8fHwxNzU1Njk0NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61181e"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/green-trees-in-dessert-during-daytime-8aWeV4Y_5zY",
+        "creator": "Grant Durr",
+        "raw": {
+          "unsplashId": "8aWeV4Y_5zY",
+          "thumb": "https://images.unsplash.com/photo-1557430915-f17195b7b8ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyNnx8d2F0ZXIlMjBzY2FyY2l0eXxlbnwwfDB8fHwxNzU1Njk0OTI3fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "2f05083b-0b48-424b-af87-233449e7d5fb",
+      "size": 251751,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1557430915-f17195b7b8ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyNnx8d2F0ZXIlMjBzY2FyY2l0eXxlbnwwfDB8fHwxNzU1Njk0OTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61181f"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/white-truck-near-green-trees-Tr62wgWpkq4",
+        "creator": "Jonatan Lewczuk",
+        "raw": {
+          "unsplashId": "Tr62wgWpkq4",
+          "thumb": "https://images.unsplash.com/photo-1527466578461-52f86fffc561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNXx8d29ya2VycyUyMGNvbmdvJTIwbWluaW5nfGVufDB8MHx8fDE3NTU2OTYxMDF8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "3a3c7618-5b1a-4232-b676-795a0878e5fe",
+      "size": 330972,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1527466578461-52f86fffc561?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNXx8d29ya2VycyUyMGNvbmdvJTIwbWluaW5nfGVufDB8MHx8fDE3NTU2OTYxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611820"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/text-hb3vg1wl5x0",
+        "creator": "hayleigh b",
+        "raw": {
+          "unsplashId": "hb3vg1wl5x0",
+          "thumb": "https://images.unsplash.com/photo-1609464628634-afeabb0093b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxM3x8cG9saXRpY3MlMjB0ZWNofGVufDB8MHx8fDE3NTU2OTQzMTB8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "094a1e7e-3736-4625-b60d-e44dbdac243d",
+      "size": 163946,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1609464628634-afeabb0093b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxM3x8cG9saXRpY3MlMjB0ZWNofGVufDB8MHx8fDE3NTU2OTQzMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611821"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/team-freestanding-letters-RxOrX1iW15A",
+        "creator": "Merakist",
+        "raw": {
+          "unsplashId": "RxOrX1iW15A",
+          "thumb": "https://images.unsplash.com/photo-1562577308-c8b2614b9b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNHx8cG9saXRpY2FsJTIwdGVhbXxlbnwwfDB8fHwxNzU1NzgxMTA4fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "42a610e7-25f7-4df7-bd43-ee6ea10c626d",
+      "size": 56965,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1562577308-c8b2614b9b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNHx8cG9saXRpY2FsJTIwdGVhbXxlbnwwfDB8fHwxNzU1NzgxMTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611822"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/red-paint-on-white-pavement-JqWvPQZXhIc",
+        "creator": "Marija Zaric",
+        "raw": {
+          "unsplashId": "JqWvPQZXhIc",
+          "thumb": "https://images.unsplash.com/photo-1543087944-222eb2559a1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw4fHxkZW1vY3JhY3l8ZW58MHwwfHx8MTc1NTc4MTY5M3ww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "7d8d72d6-92dc-4657-938e-28a5effcfd60",
+      "size": 281151,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1543087944-222eb2559a1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw4fHxkZW1vY3JhY3l8ZW58MHwwfHx8MTc1NTc4MTY5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611823"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/neon-signage-xv7-GlvBLFw",
+        "creator": "Prateek Katyal",
+        "raw": {
+          "unsplashId": "xv7-GlvBLFw",
+          "thumb": "https://images.unsplash.com/photo-1554177255-61502b352de3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw3fHxzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzU1NzgxODY0fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "f4b5afe5-5c77-4173-9283-f68b186a9194",
+      "size": 38308,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1554177255-61502b352de3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw3fHxzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzU1NzgxODY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611824"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/black-android-smartphone-on-orange-surface-K1NHgQKTso8",
+        "creator": "Brian McGowan",
+        "raw": {
+          "unsplashId": "K1NHgQKTso8",
+          "thumb": "https://images.unsplash.com/photo-1585719022717-87adb5bc279d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw5fHxmYWtlJTIwbmV3c3xlbnwwfDB8fHwxNzU1NzgyMDgyfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "d5362ddf-6b60-4731-904d-aa43000bcfb1",
+      "size": 63189,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1585719022717-87adb5bc279d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw5fHxmYWtlJTIwbmV3c3xlbnwwfDB8fHwxNzU1NzgyMDgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611825"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-close-up-of-a-book-with-an-open-page-5tuY0M62_1I",
+        "creator": "Brett Jordan",
+        "raw": {
+          "unsplashId": "5tuY0M62_1I",
+          "thumb": "https://images.unsplash.com/photo-1648737208697-a123e3165613?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMHx8cmVndWxhdGlvbnN8ZW58MHwwfHx8MTc1NTc4MjExMXww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "9f9f37d8-ef5f-4095-a47d-340111b61cef",
+      "size": 108519,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1648737208697-a123e3165613?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMHx8cmVndWxhdGlvbnN8ZW58MHwwfHx8MTc1NTc4MjExMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611826"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/stop-road-sign-on-sidewalk-near-forest-FgY6bF6emj0",
+        "creator": "Sam Xu",
+        "raw": {
+          "unsplashId": "FgY6bF6emj0",
+          "thumb": "https://images.unsplash.com/photo-1518749031467-bb37f48aee10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxsaW1pdGF0aW9uc3xlbnwwfDB8fHwxNzU1NzgyMTI5fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "411840e6-4324-4bda-a8d5-401568454d0a",
+      "size": 127337,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1518749031467-bb37f48aee10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxsaW1pdGF0aW9uc3xlbnwwfDB8fHwxNzU1NzgyMTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611827"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/an-aerial-view-of-a-wooden-walkway-in-the-woods-gYgDcCYob_s",
+        "creator": "Marcus Urbenz",
+        "raw": {
+          "unsplashId": "gYgDcCYob_s",
+          "thumb": "https://images.unsplash.com/photo-1722475996685-53184f6f038f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyfHxwYXRoc3xlbnwwfDB8fHwxNzU1NzgzMjAyfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "1589d007-c9d4-4478-a795-9e3116d9122f",
+      "size": 253316,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1722475996685-53184f6f038f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyfHxwYXRoc3xlbnwwfDB8fHwxNzU1NzgzMjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611828"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/white-and-black-letter-b-9xp4F57ATzs",
+        "creator": "Glen Carrie",
+        "raw": {
+          "unsplashId": "9xp4F57ATzs",
+          "thumb": "https://images.unsplash.com/photo-1604065985083-86231f74c233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8ZWxlY3Rpb24lMjByZXN1bHRzfGVufDB8MHx8fDE3NTU3ODQwMzl8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "1bfec91d-7774-4315-8600-12ef357cb250",
+      "size": 81227,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1604065985083-86231f74c233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8ZWxlY3Rpb24lMjByZXN1bHRzfGVufDB8MHx8fDE3NTU3ODQwMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611829"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/white-and-blue-bird-flying-Ty0M8OnO_34",
+        "creator": "Jason Dent",
+        "raw": {
+          "unsplashId": "Ty0M8OnO_34",
+          "thumb": "https://images.unsplash.com/photo-1587321066078-939f6f2b67fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw3fHxlbGVjdGlvbiUyMHJlc3VsdHN8ZW58MHwwfHx8MTc1NTc4NDAzOXww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "b3c584d9-9332-46c8-8a58-2ac672f9861d",
+      "size": 139896,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1587321066078-939f6f2b67fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw3fHxlbGVjdGlvbiUyMHJlc3VsdHN8ZW58MHwwfHx8MTc1NTc4NDAzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61182a"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/black-iphone-4-on-brown-wooden-table-EQSPI11rf68",
+        "creator": "dole777",
+        "raw": {
+          "unsplashId": "EQSPI11rf68",
+          "thumb": "https://images.unsplash.com/photo-1579869847557-1f67382cc158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzU1NzgxODY0fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "5794f581-7efc-4743-8ad2-d891f0c94268",
+      "size": 48159,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1579869847557-1f67382cc158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzU1NzgxODY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61182b"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/person-holding-smartphone-0VGG7cqTwCo",
+        "creator": "Rodion Kutsaiev",
+        "raw": {
+          "unsplashId": "0VGG7cqTwCo",
+          "thumb": "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOHx8c29jaWFsJTIwbWVkaWF8ZW58MHwwfHx8MTc1NTc4MTg2NHww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "a2c0cbb9-1f70-45f8-a644-58a3f3ae9ca4",
+      "size": 72475,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOHx8c29jaWFsJTIwbWVkaWF8ZW58MHwwfHx8MTc1NTc4MTg2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61182c"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/colorful-software-or-web-code-on-a-computer-monitor-Skf7HxARcoc",
+        "creator": "Markus Spiske",
+        "raw": {
+          "unsplashId": "Skf7HxARcoc",
+          "thumb": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw0fHxvcGVuJTIwZGF0YXxlbnwwfDB8fHwxNzU1Nzg2MTM4fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "438e7a0e-b558-447f-843a-36524ba9b1a0",
+      "size": 161494,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw0fHxvcGVuJTIwZGF0YXxlbnwwfDB8fHwxNzU1Nzg2MTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61182d"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-man-holding-a-laptop-nXgwS1PZ29U",
+        "creator": "Hitesh Choudhary",
+        "raw": {
+          "unsplashId": "nXgwS1PZ29U",
+          "thumb": "https://images.unsplash.com/photo-1664651337318-16019bfc06cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8aW50ZXJuZXQlMjBnb29kfGVufDB8MHx8fDE3NTU3ODYzOTB8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "af79fb9c-d229-4b69-89ee-8ab6e7ae91ec",
+      "size": 71340,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1664651337318-16019bfc06cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8aW50ZXJuZXQlMjBnb29kfGVufDB8MHx8fDE3NTU3ODYzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61182e"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-woman-standing-in-front-of-a-sign-that-says-less-social-media-e1xl7iby_Ug",
+        "creator": "Jon Tyson",
+        "raw": {
+          "unsplashId": "e1xl7iby_Ug",
+          "thumb": "https://images.unsplash.com/photo-1712331669095-c845e0b4cacf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw2fHxiYWQlMjBzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzU1Nzg2NDIxfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "9dd82d2c-a804-4afc-96d9-fc33d38031e9",
+      "size": 99651,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1712331669095-c845e0b4cacf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw2fHxiYWQlMjBzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzU1Nzg2NDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f61182f"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/red-and-white-heart-shaped-lights-Z6oGNmpeoa0",
+        "creator": "Nick Romanov",
+        "raw": {
+          "unsplashId": "Z6oGNmpeoa0",
+          "thumb": "https://images.unsplash.com/photo-1586036308218-5ed6553c98b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw4fHxpbnRlcm5ldCUyMGludmFkZXJzfGVufDB8MHx8fDE3NTU3ODY2NDh8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "aa642769-b286-4614-bf4f-62dc019211bd",
+      "size": 90136,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1586036308218-5ed6553c98b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw4fHxpbnRlcm5ldCUyMGludmFkZXJzfGVufDB8MHx8fDE3NTU3ODY2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611830"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/text-heNwUmEtZzo",
+        "creator": "David Pupăză",
+        "raw": {
+          "unsplashId": "heNwUmEtZzo",
+          "thumb": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw1fHxpbnRlcm5ldCUyMGludmFkZXJzfGVufDB8MHx8fDE3NTU3ODY2NDh8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "608d7adf-d008-4147-96a2-3d10dbfee7ef",
+      "size": 294886,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw1fHxpbnRlcm5ldCUyMGludmFkZXJzfGVufDB8MHx8fDE3NTU3ODY2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611831"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-tall-building-sitting-on-the-side-of-a-road-HGkxR-GdKFs",
+        "creator": "Urvish Oza",
+        "raw": {
+          "unsplashId": "HGkxR-GdKFs",
+          "thumb": "https://images.unsplash.com/photo-1732723417765-72d05fa0d8b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8bWluaXN0cnklMjBidWlsZGluZ3xlbnwwfDB8fHwxNzU1Nzg3MjAxfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "d6e05155-30a7-4da0-9542-d0acce0ae39d",
+      "size": 166698,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1732723417765-72d05fa0d8b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8bWluaXN0cnklMjBidWlsZGluZ3xlbnwwfDB8fHwxNzU1Nzg3MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611832"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/two-people-shaking-hands-over-a-wooden-table-NzIV4vOBA7s",
+        "creator": "Rock Staar",
+        "raw": {
+          "unsplashId": "NzIV4vOBA7s",
+          "thumb": "https://images.unsplash.com/photo-1638262052640-82e94d64664a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOHx8aW50ZXJuYXRpb25hbCUyMGFncmVlbWVudHxlbnwwfDB8fHwxNzU1Nzg3MzA5fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "406bb927-f841-4a05-8270-cf30bfa7db6f",
+      "size": 87720,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1638262052640-82e94d64664a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOHx8aW50ZXJuYXRpb25hbCUyMGFncmVlbWVudHxlbnwwfDB8fHwxNzU1Nzg3MzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611833"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/silhouette-of-bench-on-grass-field-during-sunset-9k5ibNJ7vUw",
+        "creator": "Jan Huber",
+        "raw": {
+          "unsplashId": "9k5ibNJ7vUw",
+          "thumb": "https://images.unsplash.com/photo-1609667843393-ec977a377543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8bm9ib2R5fGVufDB8MHx8fDE3NTU3ODc3MzR8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "6548594b-66ff-41d3-9990-dfe4587fd110",
+      "size": 77000,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1609667843393-ec977a377543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8bm9ib2R5fGVufDB8MHx8fDE3NTU3ODc3MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ebd306af44d2f611834"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-colorful-abstract-background-with-wavy-lines-Ac02zYZs22Y",
+        "creator": "Maxim Berg",
+        "raw": {
+          "unsplashId": "Ac02zYZs22Y",
+          "thumb": "https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw1fHxBSSUyMGFydHxlbnwwfDB8fHwxNzU2MTEwNTY3fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "3f7e360a-8411-4e55-b088-9b9b22dd1f30",
+      "size": 317306,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1672239272089-250c32c3e2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw1fHxBSSUyMGFydHxlbnwwfDB8fHwxNzU2MTEwNTY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68ac1ef6306af44d2f611c37"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-purple-and-red-background-with-hexagonal-shapes-eHckTKxBGq8",
+        "creator": "Marcel Strauß",
+        "raw": {
+          "unsplashId": "eHckTKxBGq8",
+          "thumb": "https://images.unsplash.com/photo-1637099536974-22c1d38eed51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNHx8cG9saXRpY3MlMjB0ZWFtfGVufDB8MHx8fDE3NTYyNzk0ODd8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "fbf03427-73ca-408e-9d06-f36bd143b877",
+      "size": 33066,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1637099536974-22c1d38eed51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNHx8cG9saXRpY3MlMjB0ZWFtfGVufDB8MHx8fDE3NTYyNzk0ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aebdcf306af44d2f689bd1"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/road-signs-in-different-city-directions-DFqxXsj56Sk",
+        "creator": "Robin Glauser",
+        "raw": {
+          "unsplashId": "DFqxXsj56Sk",
+          "thumb": "https://images.unsplash.com/photo-1555667316-74c72ee7757d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOHx8Y2hvaWNlc3xlbnwwfDB8fHwxNzU2MjgwMDYzfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "4db4ee05-ac3f-449e-9bd3-9aa1b5efbef3",
+      "size": 148792,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1555667316-74c72ee7757d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOHx8Y2hvaWNlc3xlbnwwfDB8fHwxNzU2MjgwMDYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aebdcf306af44d2f689bd2"
+    },
+    {
+      "metadata": {
+        "credits": "Simulacre de peinture du tableau 'Ceci n'est pas une pipe' de Magritte, montrant un verre de bière blonde plein comportant une gravure de la marque fictive 'Beffe'. ",
+        "creator": null,
+        "license": "user",
+        "raw": {
+          "name": "Beffe 1.png",
+          "compression": "2.99 Mo -> 1.28 Mo",
+          "mimeType": "image/png",
+          "width": 600,
+          "height": 900,
+          "s3key": "live/68ac1ebd306af44d2f611837/11e321b6-f6b4-4709-99ce-c718b5e8a51e.png"
+        }
+      },
+      "id": "477ebdb0-7419-496c-9378-b3e33ab575c7",
+      "size": 1276648,
+      "mime": "image/png",
+      "kind": "image",
+      "origin": "s3",
+      "url": "https://moiki-s3-fr.s3.fr-par.scw.cloud/live/68ac1ebd306af44d2f611837/11e321b6-f6b4-4709-99ce-c718b5e8a51e.png",
+      "label": "Beffe 1.png",
+      "isLoop": false,
+      "tags": [],
+      "_id": "68aebdcf306af44d2f689bd3"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/keg-lot-turDB7NNu2c",
+        "creator": "Elevate",
+        "raw": {
+          "unsplashId": "turDB7NNu2c",
+          "thumb": "https://images.unsplash.com/photo-1532634702-ef41af0a8e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwzMHx8YmVlciUyMGluZHVzdHJ5fGVufDB8MHx8fDE3NTYyODEyMjV8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "b6ac0ebb-9ac2-4546-a2e8-af644f7c3730",
+      "size": 106987,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1532634702-ef41af0a8e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwzMHx8YmVlciUyMGluZHVzdHJ5fGVufDB8MHx8fDE3NTYyODEyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aebdcf306af44d2f689bd4"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/industrial-machine-28U1dQ9FUSg",
+        "creator": "Crystal Kwok",
+        "raw": {
+          "unsplashId": "28U1dQ9FUSg",
+          "thumb": "https://images.unsplash.com/photo-1513828418004-7aa1c7e5c824?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxM3x8YmVlciUyMGluZHVzdHJ5fGVufDB8MHx8fDE3NTYyODEyMjV8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "010cd9c1-2125-46d3-a28c-b58c49b892fd",
+      "size": 134882,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1513828418004-7aa1c7e5c824?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxM3x8YmVlciUyMGluZHVzdHJ5fGVufDB8MHx8fDE3NTYyODEyMjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aebdcf306af44d2f689bd5"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/man-wearing-black-t-shirt-close-up-photography-Qs_Zkak27Jk",
+        "creator": "Felicia Buitenwerf",
+        "raw": {
+          "unsplashId": "Qs_Zkak27Jk",
+          "thumb": "https://images.unsplash.com/photo-1565689157206-0fddef7589a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw5fHxkaXNjdXNzaW9ufGVufDB8MHx8fDE3NTYyODIyNDh8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "c460e955-4871-443f-b7f1-08de0be62289",
+      "size": 72150,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1565689157206-0fddef7589a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw5fHxkaXNjdXNzaW9ufGVufDB8MHx8fDE3NTYyODIyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aebdcf306af44d2f689bd6"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/person-holding-1-us-dollar-bill-GQ5uX_BlfmY",
+        "creator": "Sasun Bughdaryan",
+        "raw": {
+          "unsplashId": "GQ5uX_BlfmY",
+          "thumb": "https://images.unsplash.com/photo-1617203441790-5723a811b7fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxoYW5kJTIwbW9uZXl8ZW58MHwwfHx8MTc1NjI4Mjc4Mnww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "a779ff84-b96c-44ad-a437-19e49cae3706",
+      "size": 36318,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1617203441790-5723a811b7fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxoYW5kJTIwbW9uZXl8ZW58MHwwfHx8MTc1NjI4Mjc4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd24"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/closeup-photo-of-white-robot-arm-jIBMSMs4_kA",
+        "creator": "Possessed Photography",
+        "raw": {
+          "unsplashId": "jIBMSMs4_kA",
+          "thumb": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw3fHxyb2JvdHxlbnwwfDB8fHwxNzU2MjgzMzgxfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "be32dbbf-6633-498a-badb-05dc11618741",
+      "size": 74424,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHw3fHxyb2JvdHxlbnwwfDB8fHwxNzU2MjgzMzgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd25"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/white-and-black-robot-BUeZ0NmEEdI",
+        "creator": "Possessed Photography",
+        "raw": {
+          "unsplashId": "BUeZ0NmEEdI",
+          "thumb": "https://images.unsplash.com/photo-1564157212225-38fcc211e977?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMHx8cm9ib3QlMjBjb21wYW5pb258ZW58MHwwfHx8MTc1NjI4MzY2Mnww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "9c3e76a6-0541-4d45-8019-78a4a580e165",
+      "size": 71050,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1564157212225-38fcc211e977?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMHx8cm9ib3QlMjBjb21wYW5pb258ZW58MHwwfHx8MTc1NjI4MzY2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd26"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-bottle-of-medicine-sitting-on-top-of-a-table-DhEQCtxSHXI",
+        "creator": "ANIRUDH",
+        "raw": {
+          "unsplashId": "DhEQCtxSHXI",
+          "thumb": "https://images.unsplash.com/photo-1633171036157-78d53387fdc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMnx8QUklMjBoZWFsdGh8ZW58MHwwfHx8MTc1NjI4MzkxMHww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "fcc63df8-5065-4593-b05c-85bd3758535b",
+      "size": 15945,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1633171036157-78d53387fdc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMnx8QUklMjBoZWFsdGh8ZW58MHwwfHx8MTc1NjI4MzkxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd27"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/white-and-red-x-logo-um3hiJN6f2c",
+        "creator": "Claudio Schwarz",
+        "raw": {
+          "unsplashId": "um3hiJN6f2c",
+          "thumb": "https://images.unsplash.com/photo-1613256168695-b13ed5ba9500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxOHx8aGVhbHRoJTIwQUl8ZW58MHwwfHx8MTc1NjI4NDE4M3ww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "d484c357-7875-484e-b9ba-4aeb16681346",
+      "size": 16581,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1613256168695-b13ed5ba9500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxOHx8aGVhbHRoJTIwQUl8ZW58MHwwfHx8MTc1NjI4NDE4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd28"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-doctor-holding-a-tablet-V5seIsOiZx0",
+        "creator": "Fotos",
+        "raw": {
+          "unsplashId": "V5seIsOiZx0",
+          "thumb": "https://images.unsplash.com/photo-1659353888477-6e6aab941b55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNXx8bWVkaWNhbCUyMEFJfGVufDB8MHx8fDE3NTYyODQzMDh8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "02dc470c-f974-4f62-b0c6-8f98d460d450",
+      "size": 66765,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1659353888477-6e6aab941b55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxNXx8bWVkaWNhbCUyMEFJfGVufDB8MHx8fDE3NTYyODQzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd29"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-close-up-of-a-blue-and-green-structure-v-3ujvHWuz0",
+        "creator": "Google DeepMind",
+        "raw": {
+          "unsplashId": "v-3ujvHWuz0",
+          "thumb": "https://images.unsplash.com/photo-1717501218198-816a64915f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyN3x8QUklMjByZXNlYXJjaHxlbnwwfDB8fHwxNzU2Mjg0NDY3fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "80d582e8-e37d-4df9-ad37-a014278ce997",
+      "size": 97816,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1717501218198-816a64915f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyN3x8QUklMjByZXNlYXJjaHxlbnwwfDB8fHwxNzU2Mjg0NDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd2a"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-close-up-of-a-group-of-different-colored-objects-_aU_AxlS04E",
+        "creator": "Google DeepMind",
+        "raw": {
+          "unsplashId": "_aU_AxlS04E",
+          "thumb": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMnx8QUklMjByZXNlYXJjaHxlbnwwfDB8fHwxNzU2Mjg0NDY3fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "dec28d43-8d46-4d58-bbd9-6e95c887307f",
+      "size": 38008,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMnx8QUklMjByZXNlYXJjaHxlbnwwfDB8fHwxNzU2Mjg0NDY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd2b"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-blue-firework-ball-on-a-black-background-JcEEIM963oM",
+        "creator": "Luke Jones",
+        "raw": {
+          "unsplashId": "JcEEIM963oM",
+          "thumb": "https://images.unsplash.com/photo-1727434032765-9c4df88b6e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxleWUlMjBBSXxlbnwwfDB8fHwxNzU2Mjg0ODI2fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "45bef84e-e674-4e52-b7de-aae140d24cd9",
+      "size": 121532,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1727434032765-9c4df88b6e02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHxleWUlMjBBSXxlbnwwfDB8fHwxNzU2Mjg0ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd2c"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-close-up-of-an-eyeball-with-blurry-lights-in-the-background-_zSssvKk1V8",
+        "creator": "Abdelrahman A. Elyamany",
+        "raw": {
+          "unsplashId": "_zSssvKk1V8",
+          "thumb": "https://images.unsplash.com/photo-1635357011749-f315642e735f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8ZXllJTIwQUl8ZW58MHwwfHx8MTc1NjI4NDgyNnww&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "73b4e4ad-7f97-47f3-b5a5-04dd08bde6b8",
+      "size": 63179,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1635357011749-f315642e735f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyMXx8ZXllJTIwQUl8ZW58MHwwfHx8MTc1NjI4NDgyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd2d"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/security-cameras-monitor-the-surroundings-from-all-angles-dRD0kiIoUuw",
+        "creator": "Carl Tronders",
+        "raw": {
+          "unsplashId": "dRD0kiIoUuw",
+          "thumb": "https://images.unsplash.com/photo-1746483081251-6a07e55172a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxM3x8bWFzcyUyMHN1cnZlaWxsYW5jZXxlbnwwfDB8fHwxNzU2Mjg1NTQzfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "f9823665-f741-4653-8b84-efedd646b957",
+      "size": 114174,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1746483081251-6a07e55172a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxM3x8bWFzcyUyMHN1cnZlaWxsYW5jZXxlbnwwfDB8fHwxNzU2Mjg1NTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd2e"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/person-holding-round-blue-frame-5T0MpCaw7gM",
+        "creator": "Sasun Bughdaryan",
+        "raw": {
+          "unsplashId": "5T0MpCaw7gM",
+          "thumb": "https://images.unsplash.com/photo-1611187401018-15b06c75718f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMXx8c2VhcmNoJTIwaW52ZXN0aWdhdGlvbnxlbnwwfDB8fHwxNzU2Mjg1ODA1fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "649c32dc-5344-432b-86e8-07d00e87a5e1",
+      "size": 62460,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1611187401018-15b06c75718f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMXx8c2VhcmNoJTIwaW52ZXN0aWdhdGlvbnxlbnwwfDB8fHwxNzU2Mjg1ODA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd2f"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/closeup-photo-of-black-and-white-apple-keyboard-keys-oA7MMRxTVzo",
+        "creator": "Sam Albury",
+        "raw": {
+          "unsplashId": "oA7MMRxTVzo",
+          "thumb": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8ZCVDMyVBOW1vY3JhdGljJTIwY29udHJvbCUyMGludGVybmV0fGVufDB8MHx8fDE3NTYyODYyODl8MA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "9072c518-cc25-4590-9487-50799c7e9f82",
+      "size": 70812,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyOXx8ZCVDMyVBOW1vY3JhdGljJTIwY29udHJvbCUyMGludGVybmV0fGVufDB8MHx8fDE3NTYyODYyODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd30"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/raJrSL-LfVg",
+        "creator": "Wiki Sinaloa",
+        "raw": {
+          "unsplashId": "raJrSL-LfVg",
+          "thumb": "https://images.unsplash.com/photo-1732780769402-b4ca6455ded0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMnx8dGVjaCUyMG1lbnRhbCUyMGhlYWx0aHxlbnwwfDB8fHwxNzU2Mjg2MzM2fDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "f4155320-4e62-4952-89de-7ec9831840db",
+      "size": 95703,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1732780769402-b4ca6455ded0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxMnx8dGVjaCUyMG1lbnRhbCUyMGhlYWx0aHxlbnwwfDB8fHwxNzU2Mjg2MzM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecd9f306af44d2f69bd31"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/black-and-yellow-printed-paper-HfFoo4d061A",
+        "creator": "Ferenc Almasi",
+        "raw": {
+          "unsplashId": "HfFoo4d061A",
+          "thumb": "https://images.unsplash.com/photo-1610986602538-431d65df4385?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyNHx8c2VhcmNoJTIwZGF0YXxlbnwwfDB8fHwxNzU2Mjg2NDkwfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "19bbe043-c635-4852-a52b-718583389028",
+      "size": 68176,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1610986602538-431d65df4385?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwyNHx8c2VhcmNoJTIwZGF0YXxlbnwwfDB8fHwxNzU2Mjg2NDkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecfe8306af44d2f6a0959"
+    },
+    {
+      "metadata": {
+        "credits": "https://unsplash.com/photos/a-group-of-people-with-their-arms-around-each-other-RR8pG2TbWrg",
+        "creator": "Marek Piwnicki",
+        "raw": {
+          "unsplashId": "RR8pG2TbWrg",
+          "thumb": "https://images.unsplash.com/photo-1655574432005-88a27cfaf12c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHx0cmFuc2h1bWFuaXNtZXxlbnwwfDB8fHwxNzU2Mjg2NzgzfDA&ixlib=rb-4.1.0&q=80&w=200"
+        }
+      },
+      "id": "6376d073-7242-4648-9355-8ef3b7b8e16e",
+      "size": 48904,
+      "mime": "image/jpeg",
+      "kind": "image",
+      "origin": "unsplash",
+      "url": "https://images.unsplash.com/photo-1655574432005-88a27cfaf12c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTk5NzB8MHwxfHNlYXJjaHwxfHx0cmFuc2h1bWFuaXNtZXxlbnwwfDB8fHwxNzU2Mjg2NzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "tags": [],
+      "_id": "68aecfe8306af44d2f6a095a"
+    }
+  ]
+}
