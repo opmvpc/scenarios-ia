@@ -1,17 +1,5 @@
 import tailwindcss from '@tailwindcss/vite'
-import { parse } from 'yaml'
-import type { Plugin } from 'vite'
-
-/** Importe les fichiers `.yaml` comme des modules JSON (contenu des scénarios). */
-function yamlPlugin(): Plugin {
-  return {
-    name: 'scenarios-yaml',
-    transform(code, id) {
-      if (!/\.ya?ml$/.test(id)) return null
-      return { code: `export default ${JSON.stringify(parse(code))}`, map: null }
-    },
-  }
-}
+import { yamlPlugin } from './tools/vite-yaml'
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-09-01',

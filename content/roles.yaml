@@ -1,0 +1,31 @@
+# Rôles : texte des fiches personnages plastifiées (recto public, verso secret).
+# `objectif` = « Ce que les autres ignorent » ; lecture « au moins » (ADR-004).
+- id: decideur
+  nom: Décisionnaire politique
+  aPartirDe: 3
+  public: Vous êtes la seule ou le seul à posséder un pouvoir de décision. C'est vous qui placez les pions sur les jauges en fin de tour.
+  image: roles/decideur
+- id: citoyen
+  nom: Citoyenne ou citoyen
+  aPartirDe: 3
+  public: Vous êtes une personne civile engagée dans la préservation de l'environnement.
+  objectif: { env: 1, dem: 1, san: 1 }
+  image: roles/citoyen
+- id: data
+  nom: Data scientist
+  aPartirDe: 3
+  public: Vous êtes expert·e en science des données, capable de recueillir, d'analyser et de mettre en relation les données à caractère informatique.
+  objectif: { dem: 1, san: 1, emp: -1, env: -1 }
+  image: roles/data
+- id: lobbyiste
+  nom: Lobbyiste
+  aPartirDe: 4
+  public: Vous travaillez pour une grande entreprise technologique.
+  objectif: { eco: 2, emp: 1, env: -1 }
+  image: roles/lobbyiste
+- id: syndicat
+  nom: Représentant·e syndical·e
+  aPartirDe: 5
+  public: Vous êtes un ou une syndicaliste engagé·e dans la protection des droits des travailleurs et travailleuses du numérique (toutes filières confondues).
+  objectif: { emp: 2, dem: 2, san: 1 }
+  image: roles/syndicat

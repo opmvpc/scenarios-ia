@@ -201,3 +201,55 @@ relecture, régénération ciblée des ratés.
 - Validation des retouches d'équilibrage.
 - Hébergement et URL définitive (les QR codes se calculent depuis l'URL
   courante, donc rien à refaire).
+
+---
+
+## 9. Révision après critiques (24/09/2026)
+
+Rapports : `docs/research/2026-09-24-critique-plan-fable.md` et
+`…-critique-plan-opus.md`. Changements retenus :
+
+**Contenu et règles**
+- Schéma par décisions (ADR-005). Plus d'écran « proposition » : options en
+  accordéon, avec présentation, argument pour / contre, bouton de validation.
+- Objectifs lus littéralement, « au moins » = ≥ (ADR-004) ; une seule retouche
+  d'effet (Citoyen·ne S2). Test : chaque rôle gagne sur ≥ 2 suites, jamais toutes.
+- Variantes conditionnelles de textes (S1 après « Louer », S2 `riposte-2`),
+  propositions S3 au conditionnel, portée cohérente en S3 sit. 2, liste de
+  coquilles d'Opus.
+- Coupe de 10-15 % des redondances ; préparation en 2 écrans.
+- Écran sensible S3 (suicide) : sobre, sans illustration, signalé à l'enseignant·e.
+- Fin anticipée S1 gérée partout (progression, bilan, révélation).
+- Glossaire en note sous le texte, pas en popover.
+- Écran « personne ne gagne » (~65 % des parties) aussi soigné que les autres.
+
+**Déroulé de partie**
+- Horloge de partie dans la barre (« 12 min · situation 2 »), bouton
+  « Lancer 3 min » sur l'écran décision, signal visuel à la fin.
+- Tour de parole de 30 s avant le débat (désactivable).
+- Mandat facultatif de la ou du décisionnaire : 2 priorités annoncées à la
+  préparation, « mandat tenu ? » à la révélation.
+- Rotation des lecteur·rices par situation ; la ou le décisionnaire lit les options.
+- Retour arrière libre, sauf pour franchir une décision validée : confirmation,
+  « replacez les pions à… », trace dans la frise.
+- Espace / Entrée ne valident jamais une décision ; pas de raccourcis 1-4.
+- « Bougez vos pions » toujours dans l'ordre de la fiche papier, 5 lignes,
+  vrai signe moins ; ligne d'état compacte dans l'en-tête.
+- Révélation en deux temps : chacun·e lit son objectif, puis « Vérifier ».
+- Débriefing : questions liées aux choix réellement faits, puis questions
+  générales ; clôture en 3 points à retenir + fiche dépliable.
+- Reprise horodatée (« reprendre / nouvelle partie »), expiration, « terminer
+  et effacer » ; sauvegarde versionnée ; Wake Lock.
+
+**Enseignant·e**
+- Page « projecteur » : compte à rebours 30 min avec phases, 3 QR codes.
+- Code de partie à la clôture, comparaison des groupes sur la page projecteur.
+- Carte des chemins par scénario et mémo incidents.
+
+**Technique**
+- `typescript@~5.9` (TS 7 casse vue-tsc) ; `/jouer/**` en `ssr: false` ;
+  pas de `ref` au niveau module ; routes prérendues listées explicitement.
+- Images dans `app/assets/img` via `import.meta.glob` (URL hachées, base URL
+  gérée, existence vérifiée) ; grain en CSS ; `srcset`, `lazy`.
+- QR codes calculés côté client.
+- ~25 illustrations plutôt que 50 ; sujets sans visages ; cadrage vignette.
