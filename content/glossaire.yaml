@@ -1,2 +1,62 @@
-# Glossaire : termes balisés [[…]] dans les textes. Définitions en une ligne.
-[]
+# Glossaire : termes balisés [[…]] dans les textes (première occurrence par écran).
+# `variantes` : autres formes reconnues (pluriel, synonymes). Définition en une ligne.
+- terme: AI Act
+  variantes: [règlement européen sur l'IA]
+  definition: Règlement de l'Union européenne, adopté en 2024, qui encadre les systèmes d'IA selon leur niveau de risque.
+- terme: biais algorithmique
+  variantes: [biais algorithmiques]
+  definition: Traitement injuste produit par un algorithme, souvent hérité des données biaisées qui ont servi à l'entraîner.
+- terme: bot
+  variantes: [bots]
+  definition: Programme qui publie, aime ou répond automatiquement sur les réseaux sociaux, souvent en se faisant passer pour une vraie personne.
+- terme: chatbot
+  variantes: [chatbots, agent conversationnel, agents conversationnels]
+  definition: Programme avec lequel on discute par écrit ou à l'oral, comme ChatGPT.
+- terme: cloud
+  variantes: [nuage]
+  definition: Serveurs distants, accessibles par Internet, où l'on stocke ses données et fait tourner des services.
+- terme: data center
+  variantes: [data centers, centre de données, centres de données]
+  definition: Bâtiment rempli de serveurs qui stockent des données et font tourner des services en ligne, dont les IA.
+- terme: deepfake
+  variantes: [deepfakes, deep fake, deep fakes, hypertrucage]
+  definition: Image, vidéo ou voix truquée par l'IA pour faire dire ou faire à quelqu'un ce qu'il n'a jamais dit ou fait.
+- terme: données organiques
+  definition: Dans le jeu, données produites par de vraies personnes (messages, clics, photos, voire signaux du corps), très recherchées pour entraîner les IA. Ce n'est pas un terme technique établi.
+- terme: données ouvertes
+  variantes: [open data]
+  definition: Données publiques mises à la disposition de toutes et tous, librement réutilisables.
+- terme: énergie hydroélectrique
+  variantes: [hydroélectricité, énergie hydraulique]
+  definition: Électricité produite par la force de l'eau qui tombe ou s'écoule (cascade, barrage).
+- terme: fact-checker
+  variantes: [fact-checkers, fact checker, fact checkers, fact-checking]
+  definition: Journaliste qui vérifie les faits et les sources d'une information avant ou après sa diffusion.
+- terme: fake news
+  variantes: [infox]
+  definition: Fausse information diffusée comme une vraie, pour tromper ou faire réagir.
+- terme: IA frugale
+  definition: IA conçue pour consommer peu d'énergie, de calcul et de données.
+- terme: IA générative
+  variantes: [IA génératives, intelligence artificielle générative]
+  definition: IA qui produit du contenu nouveau (texte, image, son, vidéo) à partir d'une demande écrite.
+- terme: inférence
+  definition: Utilisation d'une IA déjà entraînée ; chaque question posée consomme du calcul, donc de l'énergie.
+- terme: prompt
+  variantes: [prompts, prompting, prompteur, prompteurs, néo-prompteur, néo-prompteurs]
+  definition: Instruction écrite donnée à une IA générative ; le prompting est l'art de la formuler.
+- terme: soft power
+  definition: Influence d'un pays obtenue par la persuasion (culture, diplomatie, image) plutôt que par la force.
+- terme: souveraineté numérique
+  definition: Capacité d'un pays à maîtriser ses données, ses infrastructures et ses outils numériques sans dépendre d'acteurs étrangers.
+- terme: stress hydrique
+  definition: Situation où une région demande plus d'eau qu'elle n'en a de disponible.
+- terme: terres rares
+  variantes: [terre rare, métaux rares]
+  definition: Groupe de 17 métaux indispensables à l'électronique, dont l'extraction pollue beaucoup.
+- terme: transhumanisme
+  variantes: [transhumaniste, transhumanistes]
+  definition: Courant qui veut « augmenter » l'être humain par la technologie (implants, vie prolongée…).
+- terme: vérité alternative
+  variantes: [vérités alternatives]
+  definition: Affirmation fausse présentée comme une autre version, tout aussi valable, des faits.

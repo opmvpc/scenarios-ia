@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitest/config'
-import { yamlPlugin } from './tools/vite-yaml'
+import { yamlPlugin } from './tools/vite-yaml.ts'
 
 export default defineConfig({
   plugins: [yamlPlugin()],

@@ -193,3 +193,19 @@
     scroll-behavior: auto !important;
   }
 }
+
+@layer components {
+  .terme {
+    text-decoration: underline dotted;
+    text-decoration-thickness: 0.09em;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--accent);
+  }
+  .terme-appel {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.62em;
+    color: var(--accent-texte);
+    margin-left: 0.08em;
+  }
+}

@@ -1,0 +1,260 @@
+# Scénario 2 · La Bataille des données
+# Adapté de « Décrypter l’IA en jouant » (T. Braibant & S. Corrillon, EPHEC,
+# projet MétropédIA, CC BY-NC-SA 4.0). Changements : docs/research/reecriture-s2.md.
+id: s2
+numero: 2
+slug: la-bataille-des-donnees
+titre: La Bataille des données
+sousTitre: Élections, réseaux sociaux et manipulation des données
+accroche: |
+  Les temps sont à la campagne politique et les débats autour du numérique sont multiples !
+
+  Votre parti doit s’entourer des meilleurs spécialistes afin de convaincre votre électorat que la toile n’est pas une zone de non-droit !
+themes: [réseaux sociaux, désinformation, données, démocratie]
+duree: 30
+image: s2/couverture
+preparation:
+  equipe: |
+    Afin de mener une campagne au plus proche des réalités, la ou le décisionnaire politique consulte plusieurs protagonistes.
+
+    Pour ancrer ses actions dans une légitimité démocratique suffisante, elle ou il s’entoure d’abord d’une citoyenne ou d’un citoyen engagé·e dans la préservation de l’environnement, puis de spécialistes du numérique.
+  fiche: |
+    Des priorités politiques : pour mener à bien votre mandat, cinq orientations guideront les discussions et les décisions prises.
+
+    - l’environnement ;
+    - les opportunités économiques ;
+    - l’emploi ;
+    - la démocratie ;
+    - la santé et le bien-être des personnes.
+prologue: []
+situations:
+  - id: campagne
+    numero: 1
+    titre: La campagne fait rage
+    image: s2/campagne
+    intro:
+      - texte: |
+          La campagne électorale bat son plein. Vous savez que votre parti politique n’est pas suffisamment présent sur Internet et, en particulier, sur les réseaux sociaux.
+
+          Il vous faut aussi renforcer votre positionnement politique en matière de numérique.
+    question: |
+      Plusieurs types de stratégies s’offrent à vous :
+
+      - générer du clic grâce à un usage (limité ?) de « [[vérités alternatives]] »…
+      - réguler les systèmes d’IA qui déstabilisent le système démocratique ;
+      - limiter drastiquement l’usage de l’IA.
+
+      Qu’allez-vous faire ?
+    options:
+      - id: verite-alternative
+        carte: Utiliser la vérité alternative
+        detail: |
+          Vous pourriez utiliser la « vérité alternative » pour faire parler de vous. Il est prouvé que ça rapporte des voix, car l’actualité sensationnaliste, c’est ça que les gens veulent !
+
+          Et l’IA pourrait vous y aider grâce à des [[bots]] déployés sur les réseaux sociaux. À vous la victoire !
+        pour: Le sensationnalisme rapporte des voix, et des bots peuvent le diffuser pour vous.
+        contre: Hors de question de faire campagne à coups de fausses informations.
+        valider: Utiliser la vérité alternative
+        consequences:
+          - texte: |
+              Vos bots diffusent vos « vérités alternatives » sur les réseaux sociaux, et l’on parle beaucoup de vous.
+        effets: { eco: 1, env: -1, dem: -2 }
+        resume: Vous avez fait campagne à coups de « vérités alternatives ».
+        debrief: Pourquoi l’actualité sensationnaliste attire-t-elle autant, et qui en paie le prix dans une démocratie ?
+      - id: reguler-ia
+        carte: Réguler l’IA
+        detail: |
+          Vous pourriez utiliser les réseaux sociaux et l’espace médiatique en général pour dénoncer l’usage abusif de l’IA par d’autres partis politiques.
+
+          Durant votre campagne, vous proposeriez un cadre juridique clair empêchant les abus liés à l’usage intempestif de l’IA.
+        pour: Un cadre juridique clair pour empêcher les abus de l’IA.
+        contre: Réguler, ça freine l’économie !
+        valider: OK pour réguler
+        consequences:
+          - texte: |
+              Durant votre campagne, vous dénoncez l’usage abusif de l’IA par les autres partis et défendez un cadre juridique clair contre ses abus.
+        effets: { dem: 1, san: 1, eco: -1 }
+        resume: Vous avez fait campagne pour réguler l’IA.
+        debrief: Réguler freine-t-il vraiment l’économie, comme on l’a peut-être entendu à votre table ?
+      - id: limiter-ia
+        carte: Limiter l’IA
+        detail: |
+          Vous êtes de la vieille école : vous pourriez suggérer de supprimer l’accès aux IA pour tous les partis politiques en campagne.
+
+          Vous proposeriez un projet de loi qui limiterait largement le recours aux systèmes d’IA par les citoyennes et citoyens, ainsi que par le monde politique !
+        pour: Supprimer l’accès aux IA pour tous les partis en campagne, sans exception.
+        contre: Il ne faut pas exagérer…
+        valider: C’est clair, il faut limiter l’IA
+        consequences:
+          - texte: |
+              Durant votre campagne, vous défendez votre projet de loi : le recours à l’IA serait largement limité, pour la population comme pour le monde politique.
+        # Retouche d’équilibrage (ADR-004) : san +1 ajouté (origine : env +1, dem +1, eco -1).
+        effets: { env: 1, dem: 1, eco: -1, san: 1 }
+        resume: Vous avez fait campagne pour limiter drastiquement l’IA.
+        debrief: Interdire plutôt que réguler, est-ce réaliste ? Qui y gagne et qui y perd ?
+    conclusion:
+      - texte: |
+          La campagne touche peu à peu à son terme et les résultats finissent par tomber…
+  - id: temps-des-choix
+    numero: 2
+    titre: Le temps des choix
+    image: s2/temps-des-choix
+    intro:
+      - texte: |
+          Vous avez été élu·e ! Votre plan a fonctionné (et vous avez été bien conseillé·e).
+
+          Mais très vite après votre élection, un scandale émerge : certaines personnalités publiques ont manipulé des données afin de remporter davantage de voix. Cela ne vous étonne pas (peut-être étiez-vous lié·e à ces « incidents » de campagne ?)…
+    question: |
+      Quoi qu’il en soit, il serait intéressant d’en faire un combat politique ! Plusieurs possibilités s’offrent à vous.
+
+      Qu’allez-vous faire ?
+    options:
+      - id: reseau-social-europeen
+        carte: Créer votre propre réseau social
+        detail: |
+          Après ce scandale, pourquoi ne pas lancer votre propre réseau social, européen et soumis à vos règles ? Vous ne recourriez plus qu’à des alternatives européennes : les plateformes qui ne respecteraient pas vos règles seraient bannies, et des journalistes vérifieraient les contenus. De quoi rendre Internet plus sain… à condition d’en assumer le prix.
+        pour: Un Internet plus sain, où des journalistes vérifient les contenus.
+        contre: Un choix risqué d’un point de vue économique.
+        valider: Créer notre réseau social !
+        consequences:
+          - texte: |
+              Ne recourir qu’à des alternatives européennes : un choix audacieux ! Risqué d’un point de vue économique, il permet aux journalistes d’exercer leur métier comme [[fact-checkers]] des contenus.
+
+              Les plateformes qui ne respectent pas vos règles sont bannies. La concurrence en prend un coup, et votre économie, largement basée sur les services numériques, aussi. Mais les gens se sentent nettement plus libres et en sécurité sur Internet, qui redevient peu à peu un lieu sain et sûr.
+        effets: { emp: 2, dem: 1, env: 1, eco: -2 }
+        resume: Vous avez créé un réseau social européen et banni les plateformes hors des règles.
+        debrief: Quitteriez-vous vos réseaux sociaux actuels pour une alternative européenne plus sûre ? Pourquoi ?
+      - id: negocier-gafam
+        carte: Négocier avec les sociétés américaines
+        detail: |
+          Vous pourriez entrer en pourparlers avec les sociétés américaines qui gouvernent le monde des réseaux sociaux. Qui sait ? Vous pourriez booster votre croissance tout en augmentant votre contrôle sur ces dernières.
+        pour: Booster votre croissance tout en augmentant votre contrôle sur les plateformes.
+        contre: Mauvaise idée… Ces sociétés gouvernent déjà le monde des réseaux sociaux.
+        valider: Vers un bon deal !
+        consequences:
+          - texte: |
+              Les géants du numérique s’en frottent les mains ! En quête de [[données organiques]], ils s’intéressent à votre posture, et de nombreux accords sont conclus avec les entreprises de votre pays.
+
+              Toutefois, vous vous rendez vite compte que les choses se compliquent sur Internet, sans régulation digne de ce nom.
+            image: s2/negocier-gafam
+          - texte: |
+              De nouvelles IA émergent sur le marché à mesure que la concurrence augmente. De nombreux [[bots]] génèrent des [[fake news]] qui déstabilisent les services numériques.
+
+              L’autorité du numérique est assaillie de plaintes, et les discours racistes et haineux sont aujourd’hui la norme sur les réseaux sociaux.
+        effets: { eco: 2, dem: -2, env: -2, san: -1 }
+        resume: Vous avez négocié avec les géants américains du numérique.
+        debrief: Que gagne-t-on, et que perd-on, à confier nos données aux géants du numérique en échange de croissance ?
+      - id: donnees-ouvertes
+        carte: Privilégier les données ouvertes
+        detail: |
+          Vous souhaitez booster votre économie sans sacrifier la démocratie. Plutôt que de vendre vos données publiques, vous pourriez en faire des [[données ouvertes]], accessibles à toutes et tous. Les sociétés qui capitalisent sur la rétention de données devraient offrir des garanties, et les services numériques vertueux seraient favorisés.
+        pour: Booster votre économie sans sacrifier la démocratie.
+        contre: Non merci, les données, ça se vend !
+        valider: OK, ouvrir les données !
+        consequences:
+          - texte: |
+              Faire des données publiques votre fer de lance : un coup de génie ! Vous exigez des garanties de la part des sociétés qui capitalisent sur la rétention de données, et vous favorisez celles qui proposent des services numériques vertueux.
+
+              Après quelques mois, votre politique fonctionne ! Des investisseurs en phase avec votre objectif de [[souveraineté numérique]] y voient une réelle opportunité d’avenir.
+        effets: { dem: 2, env: 1, eco: 1, emp: 1 }
+        resume: Vous avez fait des données publiques ouvertes votre fer de lance.
+        debrief: À qui devraient appartenir les données produites par un pays et ses habitant·es ? À tout le monde, à l’État, aux entreprises ?
+  - id: menace-etrangere
+    numero: 3
+    titre: Une menace (virtuellement) étrangère
+    image: s2/menace-etrangere
+    intro:
+      - texte: |
+          Vos proches conseillers vous alarment quant à l’existence d’une menace virtuelle étrangère.
+
+          Grâce à l’utilisation massive de [[deep fakes]], les comptes de plusieurs fonctionnaires ont été piratés. L’État responsable a été identifié : il s’agit du Technistan, un nouvel État qui doit son développement fulgurant à des investissements massifs dans les technologies numériques.
+    question: |
+      Comment allez-vous réagir face au Technistan ?
+    options:
+      - id: voie-democratique
+        carte: Choisir la voie démocratique
+        detail: |
+          Contre la dictature digitale, il n’y a qu’un rempart : la démocratie digitale ! Vous pourriez créer un nouveau ministère pour la [[souveraineté numérique]].
+
+          Parallèlement, vous rompriez les accords commerciaux en cours avec le Technistan (achat d’infrastructures et d’équipements numériques).
+        pour: Un ministère pour défendre la souveraineté numérique du pays.
+        contre: Non, ça serait bien trop coûteux.
+        valider: Oui, créer un ministère pour la souveraineté numérique
+        consequences:
+          - texte: |
+              Le ministère pour la souveraineté numérique voit le jour, et les accords commerciaux avec le Technistan sont rompus.
+        effets: { env: -1, eco: -1, dem: 1 }
+        resume: Vous avez créé un ministère pour la souveraineté numérique et rompu avec le Technistan.
+        debrief: Peut-on se passer d’un fournisseur étranger d’équipements numériques sans en payer le prix ? Qui le paie ?
+      - id: riposte
+        carte: Choisir la riposte digitale
+        detail: |
+          C’est intolérable ! Vous pourriez réagir avec force en menant une riposte numérique et commerciale contre cet État voyou.
+        pour: Réagir avec force contre cet État voyou.
+        contre: Riposter, c’est risqué…
+        valider: Oui, nous ripostons !
+        consequences:
+          - texte: |
+              Pendant des mois, vous organisez secrètement une vague de cyberattaques contre le Technistan, contre l’avis de certains de vos plus proches conseillers…
+
+              Mais lorsque le Technistan découvre votre stratégie, votre réputation internationale s’écroule. Votre pays est même comparé à votre adversaire dans la presse internationale !
+            image: s2/riposte
+          - texte: |
+              De plus, de nombreux services numériques publics tombent en panne : ils reposaient sur des infrastructures et des équipements achetés… au Technistan. Vous avez peut-être commis une erreur…
+        effets: { eco: -2, dem: -2, san: -1 }
+        resume: Vous avez riposté par une vague de cyberattaques contre le Technistan.
+        debrief: Une cyberattaque « de riposte » est-elle acceptable pour un État démocratique ? Qu’en a pensé votre table ?
+      - id: diplomatie
+        carte: Choisir la diplomatie
+        detail: |
+          Vous prônez la voie de la modération : conclure un accord international de respect mutuel des « frontières numériques » serait une excellente idée.
+
+          Vous pourriez vous engager dans une ouverture politique face au Technistan, que vous estimez être un État jeune en quête d’identité.
+        pour: Un accord international de respect mutuel des « frontières numériques ».
+        contre: C’est trop aléatoire…
+        valider: Bonne idée, vive la diplomatie !
+        consequences:
+          - texte: |
+              Votre initiative est saluée par vos alliés internationaux, adeptes du [[soft power]], mais l’accord tant attendu met du temps à tomber. Dans un premier temps, vous ne parvenez pas à établir un dialogue politique avec le Technistan.
+
+              Mais un jour, le Technistan arrive avec une solution inattendue : une proposition d’accord politique, un accord financier portant sur un nouveau système d’IA avec lequel travailler et, enfin, une réelle politique de gestion des données par l’État.
+          - texte: |
+              Comme quoi, la diplomatie a porté ses fruits ! Ce nouveau système d’IA est gourmand en ressources, mais il vous offre de nouvelles opportunités d’emploi et redonne un souffle à votre économie.
+
+              Ce n’est pas encore la démocratie au Technistan, mais vous pouvez peut-être montrer l’exemple ?
+        effets: { env: -1, eco: 2, dem: 1, emp: 1 }
+        resume: Vous avez choisi la diplomatie et conclu un accord avec le Technistan.
+        debrief: Peut-on travailler avec un État non démocratique sans renoncer à ses valeurs ? Où placez-vous la limite ?
+cloture:
+  titre: Scénario 2 · La Bataille des données
+  points:
+    - Ne faites pas une confiance aveugle aux modèles génératifs ni à l’information diffusée sur Internet ; vérifiez, en multipliant les sources.
+    - La désinformation et les biais algorithmiques sont un risque pour la démocratie, et les réseaux sociaux comme l’IA accélèrent leur propagation.
+    - Pour lutter contre la désinformation, l’éducation est un outil, la régulation en est un autre, comme l’AI Act européen.
+  sections:
+    - titre: L’IA ne ment pas, elle crache des données
+      texte: |
+        Dans ce scénario, l’histoire s’est focalisée sur l’importance des données et sur les utilisations, bonnes ou mauvaises, qu’il est possible d’en faire. Il a été question de réseaux sociaux, de campagne électorale, de manipulation de l’information, etc.
+
+        Dans son livre blanc « Les Grands Défis de l’IA générative », l’association Data for Good recommande de « [n]e pas faire une confiance aveugle aux modèles génératifs, et plus généralement à l’information diffusée sur internet. Quand cela est possible, l’idéal est de vérifier la qualité de la production, notamment en multipliant les sources d’informations » (1).
+    - titre: La désinformation et les biais algorithmiques, un risque pour la démocratie
+      texte: |
+        En 2018 déjà, « ==plus de 80 %== des citoyens de l’Union européenne considèrent que l’existence de fausses nouvelles constitue un problème pour leur pays et pour la démocratie en général », selon le Conseil de l’Europe (2).
+
+        Les réseaux sociaux jouent un rôle particulièrement important dans la propagation des fausses informations (ou [[fake news]]). Et l’IA aussi. En effet, l’un des problèmes majeurs de l’IA réside dans les [[biais algorithmiques]] : les jeux de données servant à l’entraînement de l’IA comportent des informations qui ne sont pas neutres, mais biaisées (racistes ou sexistes, par exemple) (3). C’est Joy Buolamwini, une chercheuse américaine, qui a identifié ce problème et qui, aujourd’hui, travaille activement sur la question. Elle souligne d’ailleurs que ce problème est particulièrement important lorsqu’il s’agit de prendre des décisions qui ont un impact sur des collectivités humaines dans leur ensemble (3).
+
+        Il existe des outils pour lutter contre ce phénomène de désinformation qui déstabilise nos démocraties. L’éducation à ces problématiques en est certainement un, et la régulation en est un autre. L’Union européenne s’est par exemple dotée de la première loi au monde sur l’IA, surnommée « [[AI Act]] ».
+  bibliographie:
+    - texte: >-
+        Data for Good, « Les Grands Défis de l’IA générative. Le Livre Blanc », juillet 2023, p. 26.
+      url: https://dataforgood.fr/iagenerative/
+    - texte: >-
+        Conseil de l’Europe, « Faire face à la propagande, à la désinformation et aux fausses nouvelles ».
+    - texte: >-
+        Ian Tucker, « ‘A white mask worked better’: why algorithms are not colour blind », TheGuardian.com, 28 mai 2017.
+      url: https://www.theguardian.com/technology/2017/may/28/joy-buolamwini-when-algorithms-are-racist-facial-recognition-bias
+  questions:
+    - À quel moment de la partie avez-vous été tenté·es de sacrifier la vérité ou la démocratie pour gagner ? Qu’est-ce qui vous a retenu·es… ou pas ?
+    - Quelles traces de ce scénario retrouvez-vous dans l’actualité (campagnes électorales, réseaux sociaux, deep fakes, cyberattaques) ?
+    - Comment vérifiez-vous une information vue sur les réseaux sociaux avant de la partager ?
+    - Entre éducation et régulation, quel rôle une loi comme l’AI Act peut-elle jouer face à la désinformation ? Que ne pourra-t-elle jamais faire ?

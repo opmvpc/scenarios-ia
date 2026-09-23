@@ -1,0 +1,293 @@
+# Scénario 3 : « Notre âme est-elle câblée ? »
+# Adapté du Moiki de T. Braibant & S. Corrillon (EPHEC, MétropédIA, CC BY-NC-SA 4.0).
+# Ids réécrits : les ids Moiki du S3 sont recyclés du S2 et ne veulent rien dire ici.
+id: s3
+numero: 3
+slug: notre-ame-est-elle-cablee
+titre: "Notre âme est-elle câblée ?"
+sousTitre: "Art, santé mentale et transhumanisme face à l'IA"
+accroche: |
+  Ce scénario met en lumière les aspects artistiques, mais aussi psychologiques et philosophiques, du débat de société que provoque aujourd'hui l'émergence de l'[[intelligence artificielle générative|IA générative]].
+
+  Une œuvre satirique qui fâche les brasseurs, une IA de compagnie à l'hôpital, un œil qui enregistre vos souvenirs : à vous de trancher.
+themes: [IA générative, art, santé mentale, transhumanisme]
+duree: 30
+image: s3/couverture
+preparation:
+  equipe: |
+    **Une équipe de conseil.** Vous êtes responsable politique mais… vous ne comprenez rien à l'IA. Vous vous entourez de proches conseiller·es issu·es du monde politique, citoyen et technique afin de prendre les bonnes décisions.
+
+    Pour ancrer vos actions dans une légitimité démocratique suffisante, vous consultez notamment une citoyenne ou un citoyen engagé·e dans la préservation de l'environnement.
+  fiche: |
+    **Des priorités politiques.** Pour mener à bien vos prises de décision, cinq orientations guideront les discussions :
+
+    - l'environnement ;
+    - les opportunités économiques ;
+    - l'emploi ;
+    - la démocratie ;
+    - la santé et le bien-être des personnes.
+prologue:
+  - texte: |
+      L'IA peut-elle générer des œuvres d'art ? C'est la difficile question à laquelle vous et votre équipe êtes confronté·es aujourd'hui.
+
+      Depuis quelque temps, le mécontentement monte dans le monde de la culture : « L'IA est une menace ! Il faut la réguler ! Nous perdons nos emplois ! »
+
+      Le problème est complexe, car tous les artistes ne pensent pas de la même manière…
+situations:
+  - id: ceci-n-est-pas-une-biere
+    numero: 1
+    titre: "Ceci n'est pas une bière"
+    image: s3/ceci-n-est-pas-une-biere
+    intro:
+      - texte: |
+          Récemment, le [[néo-prompteur|prompt]] José Tagritte, créateur influent du MPS (Mouvement du Prompting Satirique), a fait grand bruit avec son œuvre *Ceci n'est pas une bière*.
+
+          Imposteur pour les un·es, génie pour les autres, il revendique l'IA comme moyen d'expression artistique. Il l'assume : l'œuvre, comme toutes les siennes, a été entièrement générée par IA, pour « provoquer le débat autour de la présence de l'IA dans le monde de l'art ».
+
+          Inconnu il y a six mois, Tagritte est aujourd'hui votre pire cauchemar…
+      - texte: |
+          Car le débat ne s'est pas arrêté au monde de l'art… L'œuvre a proliféré sur Internet avec un succès retentissant, et certains industriels de la bière l'ont perçue comme une attaque directe contre leur marque.
+
+          « Sous couvert d'un débat artistique, s'offusque le porte-parole de l'Abbé InBeffe, grand producteur belge, Tagritte tient des propos ouvertement dénigrants pour notre marque de bière. »
+    question: |
+      Après cet incident, vous êtes dans une situation délicate. Vous faites appel à votre équipe afin d'être conseillé·e.
+
+      Qu'allez-vous faire ?
+    options:
+      - id: interdire-ia-art
+        carte: "Interdire l'IA en contexte artistique"
+        detail: |
+          Il faut protéger l'industrie brassicole ! Vous pourriez protéger les marques des brasseurs de tout préjudice en interdisant l'utilisation des systèmes d'IA en contexte de création artistique. Vos voisins vous suivraient dans cette idée.
+        pour: "Les marques des brasseurs seraient protégées, avec le soutien de vos voisins."
+        contre: "Les industriels exagèrent et puis… je n'aime pas la Beffe."
+        valider: "Protéger l'industrie brassicole"
+        consequences:
+          - texte: |
+              Votre décision ravit les grands groupes brassicoles, sans rien changer pour eux sur le plan économique. En revanche, l'Union des graphistes vous bénit et vous faites la une du monde de l'art !
+
+              La grogne du monde de l'art se calme. Mais le MPS saisit la justice pour « atteinte à la liberté d'expression » ! Des entreprises le rejoignent vite : elles craignent de perdre en compétitivité face à des concurrents étrangers qui, eux, peuvent créer du contenu avec l'IA.
+        effets: { env: -1, dem: -1, emp: 1 }
+        resume: "Vous avez interdit l'IA en contexte artistique pour protéger l'industrie brassicole."
+        debrief: "Interdire un outil de création pour protéger des marques : qui y gagne vraiment, et que devient la liberté d'expression ?"
+      - id: creer-cca
+        carte: "Réguler en créant une instance adéquate"
+        detail: |
+          Plutôt que d'interdire, vous pourriez réguler l'usage des systèmes d'IA en créant la CCA, la Commission pour la Création Augmentée. Elle recueillerait les plaintes des actrices et acteurs de l'art qui mobilisent l'IA et, si elle constatait un préjudice pour autrui, pourrait supprimer les œuvres concernées et sanctionner.
+        pour: "Plutôt que d'interdire, une instance tranche les plaintes et sanctionne les préjudices."
+        contre: "Non merci, trop compliqué tout ça."
+        valider: "Créer la CCA"
+        consequences:
+          - texte: |
+              La CCA met les différents acteurs en contact et jette les bases d'un système de régulation inédit. Au début, c'est le chaos : la fraude est monnaie courante. Puis, aidé·e par des logiciels de détection performants, vous adaptez son cadre législatif à la réalité.
+
+              Au fil du temps, l'art du [[prompting]] devient une démarche artistique (presque) comme une autre. Vos choix emportent la confiance du plus grand nombre, et le public se réintéresse à la démarche des artistes.
+        effets: { eco: 1, dem: 2, emp: 1 }
+        resume: "Vous avez créé la CCA, la Commission pour la Création Augmentée, pour réguler l'IA dans l'art."
+        debrief: "Une commission qui peut supprimer des œuvres : garantie démocratique ou risque de censure ? Qu'en pensait votre table ?"
+      - id: dedommager-brasseurs
+        carte: "Laisser libre cours à la créativité et dédommager les brasseurs"
+        detail: |
+          Vous pourriez dédommager les acteurs du secteur brassicole qui s'estiment lésés. Et encourager, par la même occasion, la création par l'IA : une superbe expression artistique de la modernité, selon vous !
+        pour: "La création par l'IA serait encouragée, et les brasseurs lésés, dédommagés."
+        contre: "Non, les industriels vont trop loin."
+        valider: "OK pour dédommager (et booster l'industrie) !"
+        consequences:
+          - texte: |
+              Mais il y a un imprévu : à l'annonce des dédommagements, les demandes affluent, bien plus nombreuses que prévu. Toutes brandissent le même « risque de préjudice » : « Que se passera-t-il si notre marque est la cible du MPS ? »
+
+              Vous croulez sous les dossiers, et cela coûte très cher au gouvernement. Les spécialistes du [[prompting]], eux, font des bénéfices comme jamais : ils vendent leurs prompts sur Internet, leurs œuvres sur le marché de l'art…
+            image: s3/dedommager-brasseurs
+          - texte: |
+              Puis survient un fait inattendu : Tagritte et le MPS reversent les fonds récoltés à des institutions de santé mentale, sous-financées ces derniers temps par votre ministère de la Santé.
+
+              Et ils prennent soin de souligner qu'à défaut de soutien gouvernemental, ce sont les citoyen·nes qui doivent s'en charger.
+        effets: { eco: -1, san: 1, emp: 1 }
+        resume: "Vous avez laissé libre cours à la création par l'IA et dédommagé les brasseurs."
+        debrief: "Qui a finalement payé la liberté de création, et qui en a profité ? Votre table avait-elle vu venir l'afflux de demandes ?"
+    conclusion:
+      - texte: |
+          Comme quoi, tout ne se passe pas toujours comme prévu…
+  - id: bonjour-dominique
+    numero: 2
+    titre: "Bonjour Dominique®"
+    image: s3/bonjour-dominique
+    intro:
+      - texte: |
+          Une nouvelle tendance est récemment apparue dans la société. Partout où la solitude est présente, les gens commencent à utiliser Dominique®, un système d'IA qui s'intègre à de nombreux supports : téléphone, ordinateur, console de chambre d'hôpital, robot domestique.
+
+          Son but ? « Faire en sorte que les patients se sentent mieux, moins seuls et accompagnés. »
+    question: |
+      Dominique® n'en est qu'au stade de prototype, mais les systèmes d'IA de ce genre se multiplient. Faut-il les intégrer officiellement dans les soins de santé, les interdire, ou trouver une autre voie ?
+
+      Qu'allez-vous faire ?
+    options:
+      - id: integrer-dominique
+        carte: "Intégrer Dominique® dans les soins de santé"
+        detail: |
+          Vous pourriez faire de Dominique® une véritable accompagnatrice thérapeutique. Cela réglerait bien des problèmes de santé, c'est certain.
+        pour: "Les patients se sentiraient mieux, moins seuls et accompagnés."
+        contre: "Les patients ont besoin de vrais soignants pour les écouter."
+        valider: "OK, faire de Dominique® une accompagnatrice thérapeutique"
+        consequences:
+          - texte: |
+              « Bienvenue Dominique® ! » C'est ce qu'on peut lire dans beaucoup d'hôpitaux, de maisons de repos et de centres de santé mentale. Votre solution est un succès instantané !
+
+              Elle permet de faire des économies dans les soins de santé en licenciant pas mal de monde, et de traiter plus efficacement les « plaintes » des patients (qui ne sont finalement que des clients des hôpitaux, non ?).
+          - texte: |
+              Mais un jour, le drame arrive : un patient met fin à ses jours. Dans le mot qu'il laisse, il explique que Dominique® l'a conforté dans son désespoir. D'autres décès suivent.
+
+              Une longue bataille juridique s'ouvre sur la responsabilité de ces morts. Les familles des victimes se tournent vers vous.
+            sensible: true
+        effets: { eco: 1, san: -1, emp: -1 }
+        resume: "Vous avez intégré Dominique® dans les soins de santé comme accompagnatrice thérapeutique."
+        debrief: "Peut-on confier l'écoute de personnes seules ou fragiles à une IA ? Et qui est responsable quand elle leur fait du mal ?"
+      - id: interdire-ia-sante
+        carte: "Interdire l'IA dans le secteur de la santé"
+        detail: |
+          Vous ne souhaitez pas que les soins de santé soient contaminés par la prolifération des systèmes d'IA. Il s'agirait d'interdire l'IA dans tout le secteur de la santé : pas seulement Dominique®, mais tous les systèmes d'IA utilisés dans les soins.
+        pour: "Les soins de santé seraient protégés de la prolifération des systèmes d'IA."
+        contre: "Non, c'est trop radical."
+        valider: "Interdire l'IA dans le secteur de la santé"
+        consequences:
+          - texte: |
+              Premier point positif : limiter drastiquement l'IA dans la santé apporte un léger « gain » environnemental. Moins de technologie, moins d'émissions de CO2.
+
+              Mais une partie du corps médical s'insurge contre « le manque de nuance de votre texte », qui met des bâtons dans les roues des spécialistes de l'imagerie médicale : ils utilisent l'IA tous les jours.
+          - texte: |
+              C'est aussi un problème pour les spécialistes du cancer, dont les recherches menées grâce à l'IA sont toujours plus concluantes et permettent de lutter efficacement contre la maladie.
+
+              Devant cette levée de boucliers, vous n'êtes plus très à l'aise avec votre choix, il faut le dire.
+        effets: { env: 1, eco: -1, san: -1 }
+        resume: "Vous avez interdit l'IA dans tout le secteur de la santé."
+        debrief: "Fallait-il traiter de la même façon une IA de compagnie et l'IA d'imagerie médicale ? Où votre table plaçait-elle la limite ?"
+      - id: recherche-ia-sante
+        carte: "Choisir une voie alternative : miser sur la recherche"
+        detail: |
+          L'assistance aux patients, c'est bien, mais le personnel médical le fait déjà. Sans nier l'utilité de l'IA pour la santé, il faudrait avancer avec prudence : la recherche prend du temps, mais c'est par là qu'il faudrait commencer.
+        pour: "L'IA peut servir la santé, à condition d'avancer avec prudence."
+        contre: "Ce sera trop cher, et la croissance n'attend pas !"
+        valider: "Lancer un projet de recherche sur une IA au service de la santé"
+        consequences:
+          - texte: |
+              Si Dominique® est populaire, ce système n'en reste pas moins la création d'une entreprise qui capitalise sur les données de santé des patients, et rien ne dit que l'Union européenne l'accepterait. Après analyse, vos juristes vous alertent : sa politique de conservation des données est inhabituelle pour une application de ce genre.
+
+              Vous avez fait le bon choix !
+          - texte: |
+              Vous placez plusieurs équipes sur ce projet qui vous tient à cœur : développer en priorité, pour les hôpitaux, une [[IA frugale]], à plus faible coût environnemental.
+
+              Assez rapidement, c'est un succès : le secteur des soins de santé se relève et mobilise à bon escient ce système d'IA, pourtant encore à l'état de prototype !
+        effets: { env: 1, san: 2, emp: 1 }
+        resume: "Vous avez lancé un projet de recherche sur une IA frugale au service de la santé."
+        debrief: "Prendre le temps de la recherche plutôt que suivre la tendance : est-ce tenable face à la pression économique ? Qui l'a défendu à votre table ?"
+  - id: regarder-nos-souvenirs
+    numero: 3
+    titre: "Regarder nos souvenirs"
+    image: s3/regarder-nos-souvenirs
+    intro:
+      - texte: |
+          Une entreprise belge lance NeoOculus, un « œil augmenté permettant d'enregistrer ses meilleurs souvenirs sur le [[cloud]] », selon le célèbre entrepreneur à l'origine du projet.
+
+          Avant même que les instances compétentes aient pu être consultées, NeoOculus fait la une des journaux : un projet « unique au monde », « un boost incroyable pour l'économie belge ».
+      - texte: |
+          Après l'art, la santé… et maintenant le [[transhumanisme]]… C'est vraiment fatigant, la politique !
+
+          D'autant que la commission d'éthique chargée d'étudier le projet ne voit pas d'un bon œil (sans mauvais jeu de mots) ce nouvel implant sorti tout droit d'une mauvaise série de science-fiction…
+    question: |
+      Vous sollicitez vos proches conseiller·es afin de prendre une décision.
+
+      Qu'allez-vous faire ?
+    options:
+      - id: accueillir-neooculus
+        carte: "Accueillir NeoOculus à bras ouverts"
+        detail: |
+          Vous pourriez accueillir ce projet fou d'implant oculaire intelligent, convaincu·e qu'il améliorerait le quotidien des citoyennes et citoyens en « réduisant les risques de criminalité par l'enregistrement potentiel des criminels par les victimes » ! En plus, il apporterait une belle croissance économique, c'est certain.
+        pour: "Une belle croissance économique pour votre pays, c'est certain."
+        contre: "Non merci, c'est un cauchemar…"
+        valider: "C'est parti pour NeoOculus"
+        consequences:
+          - texte: |
+              Vous passez outre l'avis de la commission d'éthique, qui fustige un projet « de surveillance de masse, faisant de chaque personne implantée un sujet de surveillance permanent ».
+
+              Un problème émerge toutefois : NeoOculus vous demande l'accès aux données personnelles des citoyen·nes implanté·es pour préparer son projet suivant, DoubleBrain. Après tout, on n'est pas à une entorse démocratique près…
+          - texte: |
+              NeoOculus est un succès commercial, même si votre gouvernement attend encore les retombées promises en matière de lutte contre la criminalité.
+
+              Mais très vite, les conséquences psychosociales se multiplient chez les personnes implantées. La reconnaissance par IA embarquée permet de générer des [[deepfakes]] en direct, et certaines personnes font l'expérience d'un nouveau type de trouble mental.
+            image: s3/accueillir-neooculus
+        effets: { env: -1, eco: 2, san: -1, dem: -1 }
+        resume: "Vous avez accueilli NeoOculus à bras ouverts, malgré l'avis de la commission d'éthique."
+        debrief: "Passer outre un avis éthique au nom de la croissance et de la sécurité : quelles limites un pouvoir politique devrait-il se fixer ?"
+      - id: enqueter-neooculus
+        carte: "Enquêter sur NeoOculus avant de décider"
+        detail: |
+          Avant de vous lancer, vous pourriez enquêter : qui est vraiment derrière NeoOculus ? Quels sont les risques psychosociaux liés à cette technologie ? Quel en est le coût environnemental ?
+        pour: "Savoir qui est vraiment derrière NeoOculus avant de s'engager."
+        contre: "Ce serait très impopulaire, et ça coûterait du temps et de l'argent."
+        valider: "Oui, enquêter"
+        consequences:
+          - texte: |
+              Vous lancez une vaste opération qui mobilise plusieurs de vos équipes : comment fonctionne l'implant ? Quelles données NeoOculus stocke-t-il ?
+
+              Vous découvrez que le projet est en fait piloté par une entreprise américaine, intéressée par l'accumulation de [[données organiques]] pour entraîner un modèle d'IA présenté comme un « cerveau artificiel ».
+          - texte: |
+              L'enquête n'est pas terminée, mais vous en savez assez. Vous fermez la porte à NeoOculus et allouez le reste du budget aux soins de santé.
+
+              Vous créez aussi la Commission de Sauvegarde des Libertés Numériques (CSLN). Grâce aux amendes administratives que la CSLN inflige aux pratiques abusives sur Internet, vous renforcez le contrôle démocratique en ligne. Bien joué !
+        effets: { env: 1, san: 1, dem: 2, emp: 1 }
+        resume: "Vous avez enquêté sur NeoOculus, fermé la porte au projet et créé la CSLN."
+        debrief: "Enquêter avant de décider coûte du temps et de l'argent : à votre table, qui trouvait que ça en valait la peine, et pourquoi ?"
+      - id: financer-transhumanisme
+        carte: "Financer les projets transhumanistes"
+        detail: |
+          « Notre âme est câblée ! », soutiennent les partisans du MTB, le Mouvement Transhumaniste Belge. Selon eux, le transhumanisme permettra à la population de « prolonger sa durée de vie, de mieux vivre les effets du changement climatique et de transcender son existence ». Vous pourriez financer leurs projets.
+        pour: "Le MTB promet de prolonger la durée de vie et de transcender l'existence."
+        contre: "Non merci, ces gens sont fous."
+        valider: "Financer les projets transhumanistes"
+        consequences:
+          - texte: |
+              Après NeoOculus, vous soutenez DoubleBrain, une entreprise qui mise sur le clonage partiel du cerveau humain grâce à la « duplication des [[données organiques]] qu'il contient, sous forme numérique ».
+
+              Le projet s'avère peu porteur sur le plan politique, même si la compétitivité des entreprises belges fait parler d'elle.
+          - texte: |
+              Mais les problèmes de santé s'aggravent, et le fossé se creuse entre les membres du MTB et le reste de la population.
+
+              Le bilan de votre politique est très tranché : bon sur le plan économique, désastreux sur le plan social et démocratique. Le transhumanisme ne fait pas l'unanimité…
+        effets: { env: -1, eco: 2, san: -1, dem: -1, emp: 1 }
+        resume: "Vous avez financé les projets transhumanistes du MTB, jusqu'à DoubleBrain."
+        debrief: "Prolonger la vie, « transcender son existence » : où s'arrête le soin et où commence le rêve transhumaniste ? Et qui devrait en décider ?"
+cloture:
+  titre: "Scénario 3 · Notre âme est-elle câblée ?"
+  points:
+    - "Le transhumanisme n'est pas une légende urbaine : des implants cérébraux sont déjà posés sur des humains."
+    - "Les chatbots à vocation relationnelle, comme Replika, posent de vives questions sur le vivre-ensemble."
+    - "Pour une partie du monde académique, formuler un prompt peut être un acte artistique : la création est bousculée."
+  sections:
+    - titre: "Le transhumanisme, une légende urbaine ?"
+      texte: |
+        Dans ce scénario, l'histoire se termine sur des considérations transhumanistes passablement inquiétantes. Ces débats existent pourtant, et des projets tout à fait concrets existent dans la réalité.
+
+        ==Début 2024==, le milliardaire Elon Musk lance sa première opération d'implant cérébral. Officiellement, cette technologie permettrait de transmettre des signaux cérébraux afin de les transformer en actions, grâce à une interface conçue pour ce faire (1).
+    - titre: "L'IA, une personne comme une autre ?"
+      texte: |
+        En ==2013== sort le film de science-fiction *Her*. Son personnage principal, Theodore Twombly (incarné par Joaquin Phoenix), tombe éperdument amoureux de Samantha, un système d'IA adaptatif installé sur le système d'exploitation de son ordinateur.
+
+        Aujourd'hui, on ne compte plus les chatbots à vocation relationnelle, tels que Replika. Cette réalité pose de vives questions sur le vivre-ensemble à notre époque.
+    - titre: "L'art échapperait-il à l'IA ?"
+      texte: |
+        Ce n'est pas certain. Une partie du monde académique considère aujourd'hui le « prompt », c'est-à-dire le fait de formuler une requête (ou commande) à l'IA, comme un acte potentiellement artistique (2).
+
+        En ==2023==, le photographe Boris Eldagsen remporte le premier prix du concours Sony World Photography Awards. L'auteur, qui refuse le prix, explique avoir voulu provoquer un débat sur le futur de la photographie en soumettant au concours une image générée par IA (3).
+
+        Il y a donc lieu de s'interroger, aujourd'hui, sur les conséquences de cette évolution majeure dans le monde de la création artistique.
+  bibliographie:
+    - texte: "Les Echos, « Neuralink : après sa première implantation dans un cerveau humain, la puce rencontre un dysfonctionnement », LesEchos.fr, 9 mai 2024."
+      url: https://www.lesechos.fr/tech-medias/hightech/neuralink-apres-sa-premiere-implantation-dans-un-cerveau-humain-la-puce-rencontre-un-dysfonctionnement-2093989
+    - texte: "Jonas Oppenlaender, Rhema Linder, Johanna Silvennoinen, « Prompting AI Art: An Investigation into the Creative Skill of Prompt Engineering », ResearchGate, décembre 2023."
+      url: http://dx.doi.org/10.48550/arXiv.2303.13534
+    - texte: "Paul Glynn, « Sony World Photography Award 2023: Winner refuses award after revealing AI creation », BBC.com, 18 avril 2023."
+      url: https://www.bbc.com/news/entertainment-arts-65296763
+  questions:
+    - "Dans les trois situations, qui a été consulté avant de décider : les artistes, les soignant·es, la commission d'éthique ? Qui aurait dû l'être ?"
+    - "Une image générée par IA peut-elle être une œuvre d'art ? Qu'est-ce que cela change pour les artistes et pour leur métier ?"
+    - "Une IA de compagnie peut-elle remplacer une présence humaine auprès de personnes seules ou fragiles ? À quelles conditions l'accepteriez-vous ?"
+    - "Interdire, réguler par une commission, laisser faire : quelle réponse vous a semblé la plus juste face à ces technologies, et pourquoi ?"
