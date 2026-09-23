@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     families: [
       { name: 'Bricolage Grotesque', provider: 'google', weights: ['400 800'] },
       { name: 'Atkinson Hyperlegible Next', provider: 'google', weights: ['400 800'], styles: ['normal', 'italic'] },
-      { name: 'Atkinson Hyperlegible Mono', provider: 'google', weights: ['400 700'] },
+      { name: 'Atkinson Hyperlegible Mono', provider: 'google', weights: ['400 700'], styles: ['normal'] },
     ],
   },
   app: {

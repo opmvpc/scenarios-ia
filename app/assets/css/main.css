@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Direction artistique « Tract » (docs/decisions/ADR-003)
+   Papier, encre noire, une encre spot par scénario.
+   ------------------------------------------------------------------ */
+
+:root {
+  --papier: #f3efe6;
+  --papier-2: #e8e2d4;
+  --papier-3: #dcd4c2;
+  --encre: #17171c;
+  --encre-2: #4b4a52;
+  --encre-3: #6e6c72;
+  --jaune: #ffdf3d;
+
+  /* encre du scénario courant (surchargée par [data-encre]) */
+  --accent: #17171c;
+  --accent-texte: #17171c;
+  --accent-pale: #e8e2d4;
+}
+
+[data-encre="s1"] {
+  --accent: #2b45e0;
+  --accent-texte: #1e33b0;
+  --accent-pale: #dfe1f1;
+}
+[data-encre="s2"] {
+  --accent: #e5412d;
+  --accent-texte: #a8261c;
+  --accent-pale: #f4dcd3;
+}
+[data-encre="s3"] {
+  --accent: #0f8a84;
+  --accent-texte: #0a625e;
+  --accent-pale: #d6e6de;
+}
+
+@theme inline {
+  --color-papier: var(--papier);
+  --color-papier-2: var(--papier-2);
+  --color-papier-3: var(--papier-3);
+  --color-encre: var(--encre);
+  --color-encre-2: var(--encre-2);
+  --color-encre-3: var(--encre-3);
+  --color-jaune: var(--jaune);
+  --color-accent: var(--accent);
+  --color-accent-texte: var(--accent-texte);
+  --color-accent-pale: var(--accent-pale);
+  --color-s1: #2b45e0;
+  --color-s2: #e5412d;
+  --color-s3: #0f8a84;
+
+  --font-titre: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --font-texte: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    background: var(--papier);
+    color: var(--encre);
+    font-family: var(--font-texte);
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100dvh;
+    background: var(--papier);
+    font-size: 1.125rem;
+    line-height: 1.55;
+  }
+  /* grain d'impression, très léger, derrière tout */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.35;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.09  0 0 0 0 0.09  0 0 0 0 0.11  0 0 0 0.09 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>");
+  }
+  h1, h2, h3 {
+    font-family: var(--font-titre);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  a { color: inherit; text-underline-offset: 0.18em; text-decoration-thickness: 0.08em; }
+  :focus-visible {
+    outline: 3px solid var(--encre);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  ::selection { background: var(--jaune); color: var(--encre); }
+}
+
+@layer components {
+  /* titre en double impression décalée (effet repérage riso) — grands titres seulement */
+  .titre-riso {
+    font-family: var(--font-titre);
+    font-weight: 800;
+    text-shadow: 0.045em 0.035em 0 var(--accent);
+  }
+  /* trame de points pour les marges et aplats */
+  .trame {
+    background-image: radial-gradient(var(--accent) 1.1px, transparent 1.3px);
+    background-size: 9px 9px;
+  }
+  .trame-encre {
+    background-image: radial-gradient(var(--encre) 1px, transparent 1.2px);
+    background-size: 8px 8px;
+  }
+  /* cadre « fiche » : trait épais, coins légèrement arrondis comme les cartes papier */
+  .cadre {
+    border: 2.5px solid var(--encre);
+    border-radius: 14px;
+    background: var(--papier);
+  }
+  .etiquette {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .bouton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    min-height: 3rem;
+    padding: 0.7rem 1.4rem;
+    border: 2.5px solid var(--encre);
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    background: var(--papier);
+    color: var(--encre);
+    cursor: pointer;
+    transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+    box-shadow: 3px 3px 0 var(--encre);
+    text-decoration: none;
+  }
+  .bouton:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--encre); }
+  .bouton:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--encre); }
+  .bouton-plein { background: var(--encre); color: var(--papier); box-shadow: 3px 3px 0 var(--accent); }
+  .bouton-plein:hover { box-shadow: 4px 4px 0 var(--accent); }
+  .bouton-discret {
+    border-color: transparent;
+    box-shadow: none;
+    background: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .bouton-discret:hover { box-shadow: none; transform: none; background: var(--papier-2); }
+  .bouton[disabled] { opacity: 0.45; cursor: not-allowed; transform: none; }
+  /* surlignage marqueur pour les chiffres clés */
+  .surligne {
+    background: linear-gradient(transparent 55%, color-mix(in srgb, var(--jaune) 85%, transparent) 55%);
+    padding: 0 0.1em;
+  }
+  /* texte de lecture à voix haute */
+  .lecture {
+    font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.625rem);
+    line-height: 1.5;
+    max-width: 38em;
+  }
+  .lecture p + p { margin-top: 0.75em; }
+  .lecture ul { margin-top: 0.6em; display: grid; gap: 0.4em; }
+  .lecture li { padding-left: 1.3em; position: relative; }
+  .lecture li::before {
+    content: "";
+    position: absolute;
+    left: 0.15em;
+    top: 0.62em;
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .lecture strong { font-weight: 800; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
