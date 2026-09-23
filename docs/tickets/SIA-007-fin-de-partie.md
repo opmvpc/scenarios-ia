@@ -1,0 +1,19 @@
+---
+id: SIA-007
+titre: Fin de partie : bilan, révélation, clôture
+statut: ouvert
+priorité: haute
+dépend-de: ['SIA-006']
+créé: 2026-09-24
+mis-à-jour: 2026-09-24
+---
+## Contexte
+Récapitulatif, gagnant·es, fiche de clôture intégrée, débriefing.
+
+## Critères d'acceptation
+- [ ] Bilan des jauges + frise des décisions
+- [ ] Révélation des objectifs protégée par une confirmation
+- [ ] Fiche de clôture par scénario avec sources cliquables
+
+## Journal du ticket
+- 2026-09-24 : créé.
