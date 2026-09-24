@@ -6,7 +6,7 @@ useHead({ title: 'Projecteur · Décrypter l\'IA en jouant' })
 /* ---------- compte à rebours par phases (Date.now, pas de compteur d'intervalles) ---------- */
 const phases = ref([
   { nom: 'Préparation', consigne: 'Formez vos groupes, distribuez les fiches, scannez le QR code de votre scénario.', minutes: 5 },
-  { nom: 'Partie', consigne: 'Lisez à voix haute, négociez, et laissez la ou le décisionnaire trancher.', minutes: 30 },
+  { nom: 'Partie', consigne: 'Lisez à voix haute, négociez, et laissez la ou le décisionnaire trancher.', minutes: 45 },
   { nom: 'Débriefing', consigne: 'Lisez la fiche de clôture. Notez votre code de partie.', minutes: 10 },
 ])
 const courante = ref(0)

@@ -34,7 +34,7 @@ const principe = [
           Négociez, décidez, bougez les pions… puis découvrez <span class="surligne">qui défendait quoi</span>.
         </p>
         <ul class="mt-6 flex flex-wrap gap-2" aria-label="En bref">
-          <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">35 à 45 min en classe</li>
+          <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">1 h à 1 h 20 en classe</li>
           <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">3 à 5 joueuses et joueurs</li>
           <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">Un écran par groupe</li>
         </ul>

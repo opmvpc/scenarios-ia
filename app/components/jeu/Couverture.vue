@@ -19,7 +19,7 @@ const resumeReprise = computed(() => {
   <section class="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-16 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
     <div>
       <NuxtLink to="/#scenarios" class="etiquette text-encre-2 no-underline hover:underline">← Tous les scénarios</NuxtLink>
-      <p class="etiquette text-accent-texte mt-6">Scénario {{ s.numero }} · environ 35 minutes · 3 à 5 joueur·ses</p>
+      <p class="etiquette text-accent-texte mt-6">Scénario {{ s.numero }} · environ 45 minutes · 3 à 5 joueur·ses</p>
       <h1 class="titre-riso text-5xl sm:text-7xl mt-3">{{ insecable(s.titre) }}</h1>
       <p class="font-titre text-2xl sm:text-3xl font-semibold mt-4 text-encre-2">{{ s.sousTitre }}</p>
       <div class="lecture mt-6"><Texte :source="s.accroche" /></div>
@@ -44,7 +44,7 @@ const resumeReprise = computed(() => {
           <ul class="mt-3 grid gap-1.5 text-lg">
             <li>✓ les fiches personnages (3 à 5) ;</li>
             <li>✓ la fiche enjeux et 5 pions ;</li>
-            <li>✓ 35 minutes devant vous (lecture, trois débats, débriefing).</li>
+            <li>✓ 45 minutes à une heure devant vous (lecture, trois débats, débriefing).</li>
           </ul>
           <button type="button" class="bouton bouton-plein mt-6 !text-xl" @click="partie.effacer(); partie.commencer(joueurs)">
             Commencer la partie <span aria-hidden="true">→</span>
