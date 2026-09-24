@@ -1,5 +1,5 @@
 # Scénario 1 · The Future of AI
-# Adapté de « Décrypter l'IA en jouant » (T. Braibant & S. Corrillon, EPHEC,
+# Adapté de « Décrypter l’IA en jouant » (T. Braibant & S. Corrillon, EPHEC,
 # projet MétropédIA), CC BY-NC-SA 4.0. Source : tools/moiki/sources/s1.json.
 # Changements de fond : docs/research/reecriture-s1.md.
 id: s1
@@ -8,21 +8,21 @@ slug: the-future-of-ai
 titre: The Future of AI
 sousTitre: Des data centers à quel prix ?
 accroche: |
-  Une personnalité politique en vogue veut mettre son pays en avant en y développant l'intelligence artificielle. Seul hic : tout reste à construire. Métaux rares, eau, électricité… quels impacts ce projet va-t-il engendrer ?
+  Une personnalité politique en vogue veut mettre son pays en avant en y développant l’intelligence artificielle. Seul hic : tout reste à construire. Métaux rares, eau, électricité… quels impacts ce projet va-t-il engendrer ?
 themes: [data centers, métaux rares, eau, énergie]
 duree: 30
 image: s1/couverture
 preparation:
   equipe: |
-    Pour mener son projet, la personnalité politique sollicite plusieurs protagonistes : une citoyenne ou un citoyen engagé·e dans la préservation de l'environnement, un·e data scientist et, si vous êtes plus nombreux·ses, un·e lobbyiste puis un·e représentant·e syndical·e. Elle devient la ou le décisionnaire politique : c'est elle qui tranche.
+    Pour mener son projet, la personnalité politique sollicite plusieurs protagonistes : une citoyenne ou un citoyen engagé·e dans la préservation de l’environnement, un·e data scientist et, si vous êtes plus nombreux·ses, un·e lobbyiste puis un·e représentant·e syndical·e. Elle devient la ou le décisionnaire politique : c’est elle qui tranche.
   fiche: |
-    Des priorités politiques : pour mener à bien le projet « Future of AI », cinq orientations guideront vos discussions et vos décisions. L'environnement, les opportunités économiques, l'emploi, la démocratie, ainsi que la santé et le bien-être des personnes.
+    Des priorités politiques : pour mener à bien le projet « Future of AI », cinq orientations guideront vos discussions et vos décisions. L’environnement, les opportunités économiques, l’emploi, la démocratie, ainsi que la santé et le bien-être des personnes.
 prologue:
   - titre: Un programme… politique !
     texte: |
-      Une personnalité politique en vogue souhaite mettre son pays en avant en y développant des projets d'IA. Son programme porte un nom : « Future of AI ».
+      Une personnalité politique en vogue souhaite mettre son pays en avant en y développant des projets d’IA. Son programme porte un nom : « Future of AI ».
 
-      Reste une question : quels types d'impact ce projet risque-t-il d'engendrer ?
+      Reste une question : quels types d’impact ce projet risque-t-il d’engendrer ?
 
       Pour le moment, le pays ne possède aucune infrastructure suffisante. Tout reste à construire.
 situations:
@@ -35,18 +35,18 @@ situations:
       - texte: |
           Pour mener le projet « Future of AI » dans votre pays, il faut construire des infrastructures capables de faire fonctionner les [[IA génératives|IA générative]] : des [[data centers|data center]].
     question: |
-      Pour commencer, il faut vous fournir en métaux et [[terres rares]] pour concevoir les composants de vos data centers, notamment les puces électroniques. Qu'allez-vous faire ?
+      Pour commencer, il faut vous fournir en métaux et [[terres rares]] pour concevoir les composants de vos data centers, notamment les puces électroniques. Qu’allez-vous faire ?
     options:
       - id: partenaires-sud
         carte: Travailler avec les partenaires habituels des pays du Sud
         detail: |
-          Vous pourriez travailler avec vos partenaires habituels des pays du Sud, dits « en voie de développement ». Vous auriez facilement accès à des ressources abondantes et diversifiées, dont les terres et métaux rares, au meilleur prix du marché, tout comme la main-d'œuvre. Et vos partenaires savent déjà assembler les composants.
-        pour: Des ressources abondantes et une main-d'œuvre au meilleur prix.
+          Vous pourriez travailler avec vos partenaires habituels des pays du Sud, dits « en voie de développement ». Vous auriez facilement accès à des ressources abondantes et diversifiées, dont les terres et métaux rares, au meilleur prix du marché, tout comme la main-d’œuvre. Et vos partenaires savent déjà assembler les composants.
+        pour: Des ressources abondantes et une main-d’œuvre au meilleur prix.
         contre: Des conditions de travail désastreuses dans les mines.
         valider: On travaille avec les pays du Sud
         consequences:
           - texte: |
-              Bravo ! Vous êtes en bonne voie pour devenir un leader mondial de l'IA !
+              Bravo ! Vous êtes en bonne voie pour devenir un leader mondial de l’IA !
 
               Mais vous réalisez vite que vos décisions ont des conséquences sur la santé des travailleurs et travailleuses des mines. Et leurs conditions de travail sont désastreuses…
         effets: { env: -2, eco: 2, san: -1, dem: -1 }
@@ -66,26 +66,26 @@ situations:
               Néanmoins, respecter vos lois environnementales et sociales vous oblige à déplacer des habitant·es de certaines zones de votre pays pour extraire les matières premières. Un imprévu qui génère frustrations et mécontentements. Sans compter que le projet coûte beaucoup plus cher que prévu.
         effets: { env: 2, eco: -1, emp: 2 }
         resume: Vous avez travaillé avec des partenaires 100 % locaux.
-        debrief: Extraire chez soi plutôt qu'ailleurs, est-ce assumer le problème ou simplement le déplacer ?
+        debrief: Extraire chez soi plutôt qu’ailleurs, est-ce assumer le problème ou simplement le déplacer ?
       - id: location
-        carte: Louer les services d'un partenaire étranger
+        carte: Louer les services d’un partenaire étranger
         detail: |
-          Vous pourriez louer les services d'un partenaire étranger plutôt que construire des data centers sur votre sol, et concentrer votre expertise sur le développement de l'IA. Aucun chantier ne dérangerait vos habitant·es, et le projet avancerait vite : les data centers existent déjà !
+          Vous pourriez louer les services d’un partenaire étranger plutôt que construire des data centers sur votre sol, et concentrer votre expertise sur le développement de l’IA. Aucun chantier ne dérangerait vos habitant·es, et le projet avancerait vite : les data centers existent déjà !
         pour: Le projet avance vite, les data centers sont déjà construits.
         contre: Une dépendance financière et technologique envers un État tiers.
-        valider: On loue à l'étranger
+        valider: On loue à l’étranger
         consequences:
           - texte: |
-              Bravo ! Vous optez pour une solution alternative porteuse et n'endossez pas la responsabilité de la construction des infrastructures.
+              Bravo ! Vous optez pour une solution alternative porteuse et n’endossez pas la responsabilité de la construction des infrastructures.
 
               Cependant, vous instaurez une dépendance financière et technologique envers un État tiers. Et vous ne développez aucune compétence nationale en matière de conception.
         effets: { eco: -1, san: 1 }
-        resume: Vous avez loué les data centers d'un partenaire étranger.
-        debrief: Louer des data centers à l'étranger, est-ce éviter leurs impacts ou seulement ne plus les voir ?
+        resume: Vous avez loué les data centers d’un partenaire étranger.
+        debrief: Louer des data centers à l’étranger, est-ce éviter leurs impacts ou seulement ne plus les voir ?
       - id: import-assemblage
         carte: Importer les métaux, assembler les composants chez vous
         detail: |
-          Vous pourriez importer d'un pays du Sud les métaux et terres rares nécessaires, puis assembler les composants avec des partenaires installés sur votre territoire. Vous offririez quelques nouvelles possibilités de travail à la population et éviteriez en partie les effets néfastes du chantier sur la population d'autres pays.
+          Vous pourriez importer d’un pays du Sud les métaux et terres rares nécessaires, puis assembler les composants avec des partenaires installés sur votre territoire. Vous offririez quelques nouvelles possibilités de travail à la population et éviteriez en partie les effets néfastes du chantier sur la population d’autres pays.
         pour: Quelques emplois chez vous, et moins de dégâts ailleurs.
         contre: Les mines du Sud et leurs mauvaises conditions de travail restent dans la boucle.
         valider: On importe et on assemble ici
@@ -96,10 +96,10 @@ situations:
               Un inconvénient demeure : la santé des travailleurs et travailleuses des mines, qui subissent de mauvaises conditions de travail dans leur propre pays.
         effets: { env: -1, eco: 1, dem: 1, emp: 1 }
         resume: Vous avez importé les métaux et assemblé les composants sur votre territoire.
-        debrief: Avec ce compromis « modeste mais durable », qui y gagne vraiment, et qui continue d'en payer le prix ?
+        debrief: Avec ce compromis « modeste mais durable », qui y gagne vraiment, et qui continue d’en payer le prix ?
     conclusion:
       - texte: |
-          Le projet « Future of AI » avance à grands pas ! Toutefois, vous vous rendez compte qu'il entraîne déjà de nombreuses conséquences pour le moins… imprévues.
+          Le projet « Future of AI » avance à grands pas ! Toutefois, vous vous rendez compte qu’il entraîne déjà de nombreuses conséquences pour le moins… imprévues.
 
           Il est temps de planifier la suite.
 
@@ -113,12 +113,12 @@ situations:
         texte: |
           Les installations sont construites. Il va maintenant falloir gérer leur consommation.
 
-          Où trouver l'eau pour refroidir les data centers, et l'électricité nécessaire à leur fonctionnement ? Et comment financer ces nouveaux coûts ?
+          Où trouver l’eau pour refroidir les data centers, et l’électricité nécessaire à leur fonctionnement ? Et comment financer ces nouveaux coûts ?
       - si: { choisi: [location] }
         texte: |
           Vos data centers tournent chez votre partenaire étranger. Pas de chantier chez vous… mais leur consommation, elle, reste à votre charge.
 
-          Plus votre IA sert, plus il faut d'eau pour refroidir les machines et d'électricité pour les faire tourner. Comment financer ces nouveaux coûts ?
+          Plus votre IA sert, plus il faut d’eau pour refroidir les machines et d’électricité pour les faire tourner. Comment financer ces nouveaux coûts ?
     question: |
       Quel modèle choisissez-vous pour la suite du projet ?
     options:
@@ -126,176 +126,176 @@ situations:
         carte: Un modèle vertueux mais limité
         si: { pasChoisi: [location] }
         detail: |
-          Vous disposez d'une richesse rare : une cascade immense, que tous vos voisins vous envient, se déverse dans la célèbre Vallée du Lion. Son [[énergie hydroélectrique]] suffirait aux besoins de votre installation actuelle, et son eau pourrait refroidir vos data centers.
-        pour: L'énergie et l'eau de refroidissement se trouvent sur votre territoire.
-        contre: La cascade suffit pour l'installation actuelle, pas davantage.
-        valider: Utiliser l'énergie hydraulique
+          Vous disposez d’une richesse rare : une cascade immense, que tous vos voisins vous envient, se déverse dans la célèbre Vallée du Lion. Son [[énergie hydroélectrique]] suffirait aux besoins de votre installation actuelle, et son eau pourrait refroidir vos data centers.
+        pour: L’énergie et l’eau de refroidissement se trouvent sur votre territoire.
+        contre: La cascade suffit pour l’installation actuelle, pas davantage.
+        valider: Utiliser l’énergie hydraulique
         consequences:
           - image: s1/vertueux
             texte: |
-              Votre solution inspire à l'étranger : elle allie connaissance du territoire et prise de conscience environnementale.
+              Votre solution inspire à l’étranger : elle allie connaissance du territoire et prise de conscience environnementale.
 
               Toutefois, votre choix a ses limites :
 
-              - impossible d'agrandir vos data centers ;
+              - impossible d’agrandir vos data centers ;
               - des expropriations conséquentes : trois villages devront être déplacés, et les personnes expropriées, indemnisées ;
               - un bilan environnemental mitigé : la biodiversité de la Vallée du Lion en sera affectée.
         effets: { env: 1, eco: -1, san: -1, emp: 1 }
         resume: Vous avez alimenté et refroidi vos data centers grâce à la cascade de la Vallée du Lion.
-        debrief: Une énergie « propre » justifie-t-elle d'exproprier trois villages et d'abîmer une vallée ?
+        debrief: Une énergie « propre » justifie-t-elle d’exproprier trois villages et d’abîmer une vallée ?
       - id: competitif
-        carte: Un modèle compétitif mais dommageable pour l'environnement
+        carte: Un modèle compétitif mais dommageable pour l’environnement
         detail: |
-          Au diable l'environnement ! Vous pourriez miser sur un modèle compétitif, sans vous embarrasser de contraintes sociales ou environnementales. Après tout, « Future of AI » n'a pas été imaginé pour ça !
+          Au diable l’environnement ! Vous pourriez miser sur un modèle compétitif, sans vous embarrasser de contraintes sociales ou environnementales. Après tout, « Future of AI » n’a pas été imaginé pour ça !
         pour: Un modèle taillé pour la compétition, sans contraintes.
-        contre: Un modèle dommageable pour l'environnement.
-        valider: Au diable l'environnement !
+        contre: Un modèle dommageable pour l’environnement.
+        valider: Au diable l’environnement !
         consequences:
           - image: s1/competitif
             texte: |
               Entouré·e des meilleurs techniciens et techniciennes, vous obtenez un modèle puissant… mais gourmand en ressources.
 
-              Il exige des coupes budgétaires conséquentes et la vente de données pas toujours conforme à la législation européenne. De nombreuses organisations citoyennes sont en colère. Mais le projet rapporte (c'est ce qui compte, non ?) ! Les contrats se signent en série et l'économie est florissante… pour le moment.
+              Il exige des coupes budgétaires conséquentes et la vente de données pas toujours conforme à la législation européenne. De nombreuses organisations citoyennes sont en colère. Mais le projet rapporte (c’est ce qui compte, non ?) ! Les contrats se signent en série et l’économie est florissante… pour le moment.
         effets: { env: -2, eco: 2, dem: -1, emp: 1 }
-        resume: Vous avez choisi un modèle compétitif, au diable l'environnement.
-        debrief: « Le projet rapporte, c'est ce qui compte, non ? » Qui a défendu cette idée à la table, et avec quels arguments ?
+        resume: Vous avez choisi un modèle compétitif, au diable l’environnement.
+        debrief: « Le projet rapporte, c’est ce qui compte, non ? » Qui a défendu cette idée à la table, et avec quels arguments ?
       - id: booster
-        carte: Booster l'économie, mais pas que !
+        carte: Booster l’économie, mais pas que !
         detail: |
-          Vous pourriez booster l'économie sans sacrifier la démocratie, grâce à un cadre juridique souple et novateur : pour utiliser votre IA, les entreprises devraient s'installer sur votre territoire et payer une taxe raisonnable. Cette taxe paierait notamment l'électricité, achetée à l'étranger, qui fait tourner les infrastructures.
-        pour: Une taxe sur l'usage de l'IA qui paie l'électricité des infrastructures.
-        contre: L'électricité resterait achetée à l'étranger.
+          Vous pourriez booster l’économie sans sacrifier la démocratie, grâce à un cadre juridique souple et novateur : pour utiliser votre IA, les entreprises devraient s’installer sur votre territoire et payer une taxe raisonnable. Cette taxe paierait notamment l’électricité, achetée à l’étranger, qui fait tourner les infrastructures.
+        pour: Une taxe sur l’usage de l’IA qui paie l’électricité des infrastructures.
+        contre: L’électricité resterait achetée à l’étranger.
         valider: On lance la taxe
         consequences:
           - texte: |
-              Et ça marche ! Votre IA est puissante, européenne et respecte toutes les normes imposées par l'Union européenne.
+              Et ça marche ! Votre IA est puissante, européenne et respecte toutes les normes imposées par l’Union européenne.
 
-              C'est loin d'être le cas des technologies américaines, dont les firmes doivent retirer leurs [[chatbots|chatbot]] du marché européen (bonne nouvelle pour vous). Mieux : la taxe sert aussi à refinancer les services publics qui battent de l'aile, soins de santé et enseignement en priorité !
+              C’est loin d’être le cas des technologies américaines, dont les firmes doivent retirer leurs [[chatbots|chatbot]] du marché européen (bonne nouvelle pour vous). Mieux : la taxe sert aussi à refinancer les services publics qui battent de l’aile, soins de santé et enseignement en priorité !
           - texte: |
-              Votre programme étonne et fait des émules à l'étranger.
+              Votre programme étonne et fait des émules à l’étranger.
 
               Mais votre IA, aussi puissante soit-elle, est gourmande en énergie et ne crée pas les emplois escomptés… du moins à court terme. Un [[stress hydrique]] apparaît aussi dans certaines régions…
         effets: { env: -2, eco: 2, san: 2, dem: 1, emp: -1 }
-        resume: Vous avez boosté l'économie grâce à une taxe sur l'usage de votre IA.
+        resume: Vous avez boosté l’économie grâce à une taxe sur l’usage de votre IA.
         debrief: Une IA qui respecte toutes les règles européennes peut rester gourmande en eau et en énergie. Que faudrait-il réguler de plus ?
       - id: autre-projet
         carte: Réorienter vos objectifs en faveur de la collectivité
         detail: |
-          Vous pourriez réorienter vos ambitions vers un futur plus durable. Le changement climatique est un enjeu bien trop important pour priver les universités et les services publics d'un système d'IA digne de ce nom.
-        pour: La puissance de l'IA au service de projets forts et vertueux.
+          Vous pourriez réorienter vos ambitions vers un futur plus durable. Le changement climatique est un enjeu bien trop important pour priver les universités et les services publics d’un système d’IA digne de ce nom.
+        pour: La puissance de l’IA au service de projets forts et vertueux.
         contre: À court terme, le projet coûterait cher.
         valider: On réoriente le projet
         consequences:
           - si: { pasChoisi: [location] }
             texte: |
-              Les data centers ? Nous pouvons les utiliser pour la collectivité ! La puissance de l'IA mise au service de projets forts et vertueux, voilà un programme porteur !
+              Les data centers ? Nous pouvons les utiliser pour la collectivité ! La puissance de l’IA mise au service de projets forts et vertueux, voilà un programme porteur !
 
               À court terme, le projet coûte cher. Mais toutes les projections montrent que ses bénéfices à long terme dépassent de loin son coût pour la collectivité.
           - si: { choisi: [location] }
             texte: |
-              Les data centers loués à l'étranger ? Nous pouvons les mettre au service de la collectivité ! La puissance de l'IA mise au service de projets forts et vertueux, voilà un programme porteur !
+              Les data centers loués à l’étranger ? Nous pouvons les mettre au service de la collectivité ! La puissance de l’IA mise au service de projets forts et vertueux, voilà un programme porteur !
 
               À court terme, le projet coûte cher. Mais toutes les projections montrent que ses bénéfices à long terme dépassent de loin son coût pour la collectivité.
           - texte: |
-              La détection plus rapide des feux de forêt, des progrès fulgurants en imagerie médicale, le retour à l'emploi de personnes qui en cherchaient : ce ne sont que quelques exemples !
+              La détection plus rapide des feux de forêt, des progrès fulgurants en imagerie médicale, le retour à l’emploi de personnes qui en cherchaient : ce ne sont que quelques exemples !
 
-              Et ces avancées permettent à l'État de réaliser des économies substantielles.
+              Et ces avancées permettent à l’État de réaliser des économies substantielles.
         effets: { env: 2, eco: -1, san: 1, dem: 1, emp: 1 }
-        resume: Vous avez mis la puissance de l'IA au service de la collectivité.
-        debrief: Renoncer à la course à l'IA pour servir la collectivité, est-ce une utopie ou un vrai choix politique ?
+        resume: Vous avez mis la puissance de l’IA au service de la collectivité.
+        debrief: Renoncer à la course à l’IA pour servir la collectivité, est-ce une utopie ou un vrai choix politique ?
         fin: anticipee
         messageFin: Vous avez écourté la partie pour des raisons démocratiques. Félicitations pour ce choix audacieux… et pas si utopique !
 
   # ------------------------------------------------------------------ 3
   - id: pour-qui
     numero: 3
-    titre: À qui servira l'IA ?
+    titre: À qui servira l’IA ?
     image: s1/pour-qui
     intro:
       - texte: |
-          Vos infrastructures sont prêtes et les questions liées à la consommation sont réglées. Reste à décider qui pourra utiliser ce nouveau système d'IA.
+          Vos infrastructures sont prêtes et les questions liées à la consommation sont réglées. Reste à décider qui pourra utiliser ce nouveau système d’IA.
     question: |
-      À qui bénéficiera votre nouveau système d'IA ?
+      À qui bénéficiera votre nouveau système d’IA ?
     options:
       - id: grand-public
-        carte: Offrir l'IA sans restriction
+        carte: Offrir l’IA sans restriction
         detail: |
-          Vous pourriez ouvrir votre IA au grand public, sans restriction : tout le monde pourrait l'utiliser, moyennant un abonnement.
+          Vous pourriez ouvrir votre IA au grand public, sans restriction : tout le monde pourrait l’utiliser, moyennant un abonnement.
         pour: Tout le monde aurait accès à votre IA.
-        contre: Plus d'utilisateurs et d'utilisatrices, c'est aussi plus de consommation.
-        valider: On l'offre à tout le monde
+        contre: Plus d’utilisateurs et d’utilisatrices, c’est aussi plus de consommation.
+        valider: On l’offre à tout le monde
         consequences:
           - texte: |
-              Votre solution plaît au grand public, mais elle consomme bien plus que prévu. Sur le plan environnemental, c'est un désastre : l'[[inférence]], c'est-à-dire l'utilisation de l'IA, par le grand public pèse très lourd sur l'environnement.
+              Votre solution plaît au grand public, mais elle consomme bien plus que prévu. Sur le plan environnemental, c’est un désastre : l’[[inférence]], c’est-à-dire l’utilisation de l’IA, par le grand public pèse très lourd sur l’environnement.
 
-              Par ailleurs, trop peu d'utilisateurs et d'utilisatrices paient l'abonnement : les retours sur investissement sont bien trop faibles.
+              Par ailleurs, trop peu d’utilisateurs et d’utilisatrices paient l’abonnement : les retours sur investissement sont bien trop faibles.
         effets: { env: -2, eco: -1, dem: 1 }
-        resume: Vous avez offert l'IA au grand public, sans restriction.
-        debrief: Chaque utilisation d'une IA consomme de l'énergie. Faudrait-il limiter l'usage du grand public, et qui devrait en décider ?
+        resume: Vous avez offert l’IA au grand public, sans restriction.
+        debrief: Chaque utilisation d’une IA consomme de l’énergie. Faudrait-il limiter l’usage du grand public, et qui devrait en décider ?
       - id: entreprises
-        carte: Offrir l'IA aux entreprises uniquement
+        carte: Offrir l’IA aux entreprises uniquement
         detail: |
-          Vous pourriez réserver votre IA aux entreprises, pour qu'elles restent compétitives sur le plan international. Limité aux seules entreprises, son usage aurait aussi un impact environnemental plus contenu.
+          Vous pourriez réserver votre IA aux entreprises, pour qu’elles restent compétitives sur le plan international. Limité aux seules entreprises, son usage aurait aussi un impact environnemental plus contenu.
         pour: Des entreprises compétitives sur le plan international.
-        contre: L'argent public financerait une IA dont le public ne profiterait pas.
+        contre: L’argent public financerait une IA dont le public ne profiterait pas.
         valider: On la réserve aux entreprises
         consequences:
           - texte: |
-              Votre décision permet aux entreprises de rester compétitives sur le plan international. L'impact environnemental de votre système d'IA est bien réel, mais limité par son usage réservé aux entreprises.
+              Votre décision permet aux entreprises de rester compétitives sur le plan international. L’impact environnemental de votre système d’IA est bien réel, mais limité par son usage réservé aux entreprises.
           - texte: |
-              Votre stratégie a toutefois un défaut de taille : services publics et citoyen·nes s'indignent que de l'argent public soit dépensé pour une stratégie qui ne profite pas au système démocratique !
+              Votre stratégie a toutefois un défaut de taille : services publics et citoyen·nes s’indignent que de l’argent public soit dépensé pour une stratégie qui ne profite pas au système démocratique !
 
-              En outre, à court terme, le nouveau système d'IA fait perdre une série d'emplois, en particulier dans les métiers de la création visuelle.
+              En outre, à court terme, le nouveau système d’IA fait perdre une série d’emplois, en particulier dans les métiers de la création visuelle.
         effets: { eco: 2, dem: -1, emp: -1 }
-        resume: Vous avez réservé l'IA aux entreprises.
-        debrief: Faut-il dépenser de l'argent public pour une IA dont seules les entreprises profitent ?
+        resume: Vous avez réservé l’IA aux entreprises.
+        debrief: Faut-il dépenser de l’argent public pour une IA dont seules les entreprises profitent ?
       - id: services-publics
-        carte: Limiter l'usage de l'IA aux services publics
+        carte: Limiter l’usage de l’IA aux services publics
         si: { pasChoisi: [booster] }
         detail: |
           Vous pourriez réserver votre IA aux services publics : utiliser un outil puissant, mais le limiter pour des raisons démocratiques.
-        pour: Un outil puissant, mis au service de l'intérêt général.
+        pour: Un outil puissant, mis au service de l’intérêt général.
         contre: Un choix ambitieux, qui ne plairait pas tout de suite à la population.
         valider: On la réserve aux services publics
         consequences:
           - texte: |
               Votre choix est ambitieux et ne plaît pas tout de suite à la population. Mais après quelques mois, les collectivités, puis peu à peu les citoyennes et les citoyens, se rendent compte de sa justesse : utiliser un outil puissant, en le limitant pour des raisons démocratiques.
 
-              Créer des vidéos de chats, c'est sympa, mais ça ne sert pas vraiment l'intérêt général…
+              Créer des vidéos de chats, c’est sympa, mais ça ne sert pas vraiment l’intérêt général…
         effets: { env: 1, eco: 1, san: 1, dem: 2 }  # équilibrage (ADR-004) : dem +1 à l’origine
-        resume: Vous avez limité l'usage de l'IA aux services publics.
-        debrief: Quels usages de l'IA servent vraiment l'intérêt général ? Et lesquels seriez-vous prêt·es à abandonner ?
+        resume: Vous avez limité l’usage de l’IA aux services publics.
+        debrief: Quels usages de l’IA servent vraiment l’intérêt général ? Et lesquels seriez-vous prêt·es à abandonner ?
 
 cloture:
   titre: Scénario 1 · The Future of AI
   points:
-    - La construction et l'utilisation des systèmes d'IA ont des conséquences dans de nombreux domaines, à commencer par l'environnement.
-    - Refroidir les data centers demande beaucoup d'eau, et les besoins en électricité de l'IA ne cessent de grandir.
-    - Toutes proportions gardées, l'IA peut aussi servir des projets utiles à la collectivité.
+    - La construction et l’utilisation des systèmes d’IA ont des conséquences dans de nombreux domaines, à commencer par l’environnement.
+    - Refroidir les data centers demande beaucoup d’eau, et les besoins en électricité de l’IA ne cessent de grandir.
+    - Toutes proportions gardées, l’IA peut aussi servir des projets utiles à la collectivité.
   sections:
     - texte: |
-        Dans ce scénario, vous avez constaté que la construction et l'utilisation des systèmes d'IA ont des conséquences dans de nombreux domaines.
-    - titre: L'environnement en première ligne
+        Dans ce scénario, vous avez constaté que la construction et l’utilisation des systèmes d’IA ont des conséquences dans de nombreux domaines.
+    - titre: L’environnement en première ligne
       texte: |
-        En premier lieu, c'est peut-être l'environnement qui est touché et, avec lui, les territoires, les ressources naturelles et les populations qui y vivent. Une quantité d'eau conséquente sert à refroidir les data centers nécessaires au fonctionnement des systèmes d'IA. De même, les besoins en électricité des grandes entreprises derrière les chatbots les plus connus ne cessent de grandir (1).
+        En premier lieu, c’est peut-être l’environnement qui est touché et, avec lui, les territoires, les ressources naturelles et les populations qui y vivent. Une quantité d’eau conséquente sert à refroidir les data centers nécessaires au fonctionnement des systèmes d’IA. De même, les besoins en électricité des grandes entreprises derrière les chatbots les plus connus ne cessent de grandir (1).
 
-        À titre d'exemple, l'Agence internationale de l'énergie estime que le seul développement de l'IA consommera ==autant d'énergie que le Japon d'ici 2030== (2, 3).
+        À titre d’exemple, l’Agence internationale de l’énergie estime que le seul développement de l’IA consommera ==autant d’énergie que le Japon d’ici 2030== (2, 3).
 
-        Dans son livre blanc, l'association Data for Good rappelle qu'« en 2020, on estimait que les émissions de gaz à effet de serre du secteur du numérique étaient responsables de ==2,1 à 3,9 %== des émissions mondiales. Ce secteur est toujours en forte croissance et l'IA encore plus particulièrement. En 2025, ces émissions auront doublé et constitueront ==4 à 8 %== des émissions mondiales […]. Par ailleurs, l'impact du numérique est préoccupant, non seulement du point de vue des émissions de gaz à effet de serre, mais aussi en termes de consommation énergétique, d'utilisation de l'eau, des ressources minérales et métalliques, et de réduction de la biodiversité » (4).
+        Dans son livre blanc, l’association Data for Good rappelle qu’« en 2020, on estimait que les émissions de gaz à effet de serre du secteur du numérique étaient responsables de ==2,1 à 3,9 %== des émissions mondiales. Ce secteur est toujours en forte croissance et l’IA encore plus particulièrement. En 2025, ces émissions auront doublé et constitueront ==4 à 8 %== des émissions mondiales […]. Par ailleurs, l’impact du numérique est préoccupant, non seulement du point de vue des émissions de gaz à effet de serre, mais aussi en termes de consommation énergétique, d’utilisation de l’eau, des ressources minérales et métalliques, et de réduction de la biodiversité » (4).
     - titre: Une IA au service de la collectivité
       texte: |
-        Mais l'IA est un outil qui peut servir, toutes proportions gardées, des projets utiles à la collectivité. C'est ce que font par exemple les bénévoles de l'association Data for Good. Découvrez leurs projets sur [dataforgood.fr/projects](https://dataforgood.fr/projects).
+        Mais l’IA est un outil qui peut servir, toutes proportions gardées, des projets utiles à la collectivité. C’est ce que font par exemple les bénévoles de l’association Data for Good. Découvrez leurs projets sur [dataforgood.fr/projets](https://dataforgood.fr/projets).
   bibliographie:
     - texte: Maanvi Singh, « As the AI industry booms, what toll will it take on the environment? », The Guardian, 8 juin 2023.
       url: https://www.theguardian.com/technology/2023/jun/08/artificial-intelligence-industry-boom-environment-toll
     - texte: Fiona Harvey, « Energy demands from AI datacentres to quadruple by 2030, says report », The Guardian, 10 avril 2025.
       url: https://www.theguardian.com/technology/2025/apr/10/energy-demands-from-ai-datacentres-to-quadruple-by-2030-says-report
-    - texte: Agence internationale de l'énergie, Energy and AI, avril 2025.
-      url: https://iea.blob.core.windows.net/assets/601eaec9-ba91-4623-819b-4ded331ec9e8/EnergyandAI.pdf
-    - texte: Data for Good, Les Grands Défis de l'IA générative. Le Livre Blanc, juillet 2023.
-      url: https://dataforgood.fr/iagenerative/
+    - texte: Agence internationale de l’énergie, Energy and AI, avril 2025.
+      url: https://www.iea.org/reports/energy-and-ai
+    - texte: Data for Good, Les Grands Défis de l’IA générative. Le Livre Blanc, juillet 2023.
+      url: https://dataforgood.fr/projets/livre-blanc-de-l-ia-generative
   questions:
     - Quelle décision vous a le plus divisé·es ? Quels arguments ont finalement fait pencher la ou le décisionnaire ?
-    - Les impacts de vos data centers se sont-ils produits chez vous ou ailleurs ? Est-ce que ça a changé votre manière d'en débattre ?
-    - Qui devrait fixer des limites à la consommation d'eau et d'énergie de l'IA ? Les États, l'Union européenne, les entreprises, les utilisateurs et utilisatrices ?
-    - Quel projet d'IA vraiment utile à la collectivité aimeriez-vous voir naître près de chez vous ?
+    - Les impacts de vos data centers se sont-ils produits chez vous ou ailleurs ? Est-ce que ça a changé votre manière d’en débattre ?
+    - Qui devrait fixer des limites à la consommation d’eau et d’énergie de l’IA ? Les États, l’Union européenne, les entreprises, les utilisateurs et utilisatrices ?
+    - Quel projet d’IA vraiment utile à la collectivité aimeriez-vous voir naître près de chez vous ?

@@ -15,9 +15,9 @@ duree: 30
 image: s2/couverture
 preparation:
   equipe: |
-    Afin de mener une campagne au plus proche des réalités, la ou le décisionnaire politique consulte plusieurs protagonistes.
+    Vous êtes candidat·e et vous voulez mener une campagne au plus proche des réalités : vous consultez donc plusieurs protagonistes.
 
-    Pour ancrer ses actions dans une légitimité démocratique suffisante, elle ou il s’entoure d’abord d’une citoyenne ou d’un citoyen engagé·e dans la préservation de l’environnement, puis de spécialistes du numérique.
+    Pour ancrer vos actions dans une légitimité démocratique suffisante, vous vous entourez d’abord d’une citoyenne ou d’un citoyen engagé·e dans la préservation de l’environnement, puis de spécialistes du numérique.
   fiche: |
     Des priorités politiques : pour mener à bien votre mandat, cinq orientations guideront les discussions et les décisions prises.
 
@@ -49,7 +49,7 @@ situations:
       - id: verite-alternative
         carte: Utiliser la vérité alternative
         detail: |
-          Vous pourriez utiliser la « vérité alternative » pour faire parler de vous. Il est prouvé que ça rapporte des voix, car l’actualité sensationnaliste, c’est ça que les gens veulent !
+          Vous pourriez utiliser la « vérité alternative » pour faire parler de vous. On dit que ça rapporte des voix, car l’actualité sensationnaliste, c’est ça que les gens veulent !
 
           Et l’IA pourrait vous y aider grâce à des [[bots]] déployés sur les réseaux sociaux. À vous la victoire !
         pour: Le sensationnalisme rapporte des voix, et des bots peuvent le diffuser pour vous.
@@ -155,7 +155,7 @@ situations:
           - texte: |
               Faire des données publiques votre fer de lance : un coup de génie ! Vous exigez des garanties de la part des sociétés qui capitalisent sur la rétention de données, et vous favorisez celles qui proposent des services numériques vertueux.
 
-              Après quelques mois, votre politique fonctionne ! Des investisseurs en phase avec votre objectif de [[souveraineté numérique]] y voient une réelle opportunité d’avenir.
+              Après quelques mois, votre politique fonctionne ! Des investisseurs et investisseuses en phase avec votre objectif de [[souveraineté numérique]] y voient une réelle opportunité d’avenir.
         effets: { dem: 2, env: 1, eco: 1, emp: 1 }
         resume: Vous avez fait des données publiques ouvertes votre fer de lance.
         debrief: À qui devraient appartenir les données produites par un pays et ses habitant·es ? À tout le monde, à l’État, aux entreprises ?
@@ -165,7 +165,7 @@ situations:
     image: s2/menace-etrangere
     intro:
       - texte: |
-          Vos proches conseillers vous alarment quant à l’existence d’une menace virtuelle étrangère.
+          Vos proches conseiller·es vous alarment quant à l’existence d’une menace virtuelle étrangère.
 
           Grâce à l’utilisation massive de [[deep fakes]], les comptes de plusieurs fonctionnaires ont été piratés. L’État responsable a été identifié : il s’agit du Technistan, un nouvel État qui doit son développement fulgurant à des investissements massifs dans les technologies numériques.
     question: |
@@ -195,7 +195,7 @@ situations:
         valider: Oui, nous ripostons !
         consequences:
           - texte: |
-              Pendant des mois, vous organisez secrètement une vague de cyberattaques contre le Technistan, contre l’avis de certains de vos plus proches conseillers…
+              Pendant des mois, vous organisez secrètement une vague de cyberattaques contre le Technistan, contre l’avis de plusieurs de vos proches conseiller·es…
 
               Mais lorsque le Technistan découvre votre stratégie, votre réputation internationale s’écroule. Votre pays est même comparé à votre adversaire dans la presse internationale !
             image: s2/riposte
@@ -239,7 +239,7 @@ cloture:
         Dans son livre blanc « Les Grands Défis de l’IA générative », l’association Data for Good recommande de « [n]e pas faire une confiance aveugle aux modèles génératifs, et plus généralement à l’information diffusée sur internet. Quand cela est possible, l’idéal est de vérifier la qualité de la production, notamment en multipliant les sources d’informations » (1).
     - titre: La désinformation et les biais algorithmiques, un risque pour la démocratie
       texte: |
-        En 2018 déjà, « ==plus de 80 %== des citoyens de l’Union européenne considèrent que l’existence de fausses nouvelles constitue un problème pour leur pays et pour la démocratie en général », selon le Conseil de l’Europe (2).
+        En 2018 déjà, « ==plus de 80 %== des citoyens de l’Union européenne considèrent que l’existence de fausses nouvelles constitue un problème pour leur pays et pour la démocratie en général », selon le Conseil de l’Europe (2).
 
         Les réseaux sociaux jouent un rôle particulièrement important dans la propagation des fausses informations (ou [[fake news]]). Et l’IA aussi. En effet, l’un des problèmes majeurs de l’IA réside dans les [[biais algorithmiques]] : les jeux de données servant à l’entraînement de l’IA comportent des informations qui ne sont pas neutres, mais biaisées (racistes ou sexistes, par exemple) (3). C’est Joy Buolamwini, une chercheuse américaine, qui a identifié ce problème et qui, aujourd’hui, travaille activement sur la question. Elle souligne d’ailleurs que ce problème est particulièrement important lorsqu’il s’agit de prendre des décisions qui ont un impact sur des collectivités humaines dans leur ensemble (3).
 
@@ -247,9 +247,10 @@ cloture:
   bibliographie:
     - texte: >-
         Data for Good, « Les Grands Défis de l’IA générative. Le Livre Blanc », juillet 2023, p. 26.
-      url: https://dataforgood.fr/iagenerative/
+      url: https://dataforgood.fr/projets/livre-blanc-de-l-ia-generative
     - texte: >-
-        Conseil de l’Europe, « Faire face à la propagande, à la désinformation et aux fausses nouvelles ».
+        Conseil de l’Europe, « Faire face à la propagande, à la désinformation et aux fausses nouvelles », campagne « Des écoles démocratiques pour tous ».
+      url: https://www.coe.int/fr/web/campaign-free-to-speak-safe-to-learn/dealing-with-propaganda-misinformation-and-fake-news
     - texte: >-
         Ian Tucker, « ‘A white mask worked better’: why algorithms are not colour blind », TheGuardian.com, 28 mai 2017.
       url: https://www.theguardian.com/technology/2017/may/28/joy-buolamwini-when-algorithms-are-racist-facial-recognition-bias

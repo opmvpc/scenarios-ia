@@ -3,18 +3,18 @@
 - id: decideur
   nom: Décisionnaire politique
   aPartirDe: 3
-  public: Vous êtes la seule ou le seul à posséder un pouvoir de décision. C'est vous qui placez les pions sur les jauges en fin de tour.
+  public: Vous êtes la seule ou le seul à posséder un pouvoir de décision. C’est vous qui placez les pions sur les jauges en fin de tour.
   image: roles/decideur
 - id: citoyen
   nom: Citoyenne ou citoyen
   aPartirDe: 3
-  public: Vous êtes une personne civile engagée dans la préservation de l'environnement.
+  public: Vous êtes une personne civile engagée dans la préservation de l’environnement.
   objectif: { env: 1, dem: 1, san: 1 }
   image: roles/citoyen
 - id: data
   nom: Data scientist
   aPartirDe: 3
-  public: Vous êtes expert·e en science des données, capable de recueillir, d'analyser et de mettre en relation les données à caractère informatique.
+  public: Vous êtes expert·e en science des données, capable de recueillir, d’analyser et de mettre en relation les données à caractère informatique.
   objectif: { dem: 1, san: 1, emp: -1, env: -1 }
   image: roles/data
 - id: lobbyiste
