@@ -1,12 +1,10 @@
-# STATUS — mis à jour le 2026-09-25 (nuit)
+# STATUS — mis à jour le 2026-09-25 (après-midi)
 
 ## Où on en est
-v2 terminée, poussée et prête pour un test en classe. Les trois audits de la v1 (Codex, Opus,
-Fable) ont été traités : décision en trois temps (lire, négocier, trancher), état de partie
-fiable (historique, double clic, sauvegarde), révélation retravaillée, projecteur « Comparer
-les groupes », kit de débriefing, contenu relu et validateur renforcé. 71 tests, typecheck OK,
-`nuxt generate` produit 15 routes. Illustrations : 0,171 $ sur 1 $.
-Rapport pour Thibault : `docs/research/2026-09-25-rapport-v2.md`.
+v2 validée par Thibault (« superbe travail »), puis v3 : une image sur chacun des écrans de
+texte (70 illustrations, 0,40 $ sur 1 $), effet de chargement et préchargement, équilibrage
+retouché (6 effets appuyés par le texte), durée portée à 45 min de partie, licence
+CC BY-NC-SA 4.0 pour tout le dépôt (README, LICENSE). 71 tests, typecheck OK, 15 routes.
 
 ## Chantiers ouverts
 | Ticket | Sujet | Statut |
@@ -19,20 +17,18 @@ Rapport pour Thibault : `docs/research/2026-09-25-rapport-v2.md`.
 | SIA-008 | Accueil, enseignant, projecteur, crédits | terminé |
 | SIA-009 | Illustrations | terminé |
 | SIA-010 | Audit croisé → v2 | terminé |
-| SIA-011 | Équilibrage | en-cours — validation Thibault |
+| SIA-011 | Équilibrage | terminé (v3, feu vert de Thibault) |
 
 ## Recherches
 - DA, audit Moiki, critiques du plan, réécritures, illustrations, audits v1, contenu v2 :
   tout est dans docs/research/.
 
-## Questions pour Thibault (détail dans le rapport v2)
-1. Lecture « au moins » des objectifs (ADR-004) : à confirmer avec les auteurs ?
-2. Textes nouveaux du S2 : ok ?
-3. Crédits (nom), repo public ?, licence du code.
-4. Deux retouches d'équilibrage (SIA-011) à valider.
-5. Six effets sans appui dans le texte, santé des mineur·es sans effet en S1 : garder ?
+## Questions pour Thibault
+1. Textes nouveaux du S2 : pas encore relus.
+2. Images un peu en dessous du reste (utilisables) : s1/booster, s1/import-assemblage,
+   s3/creer-cca, s3/recherche-ia-sante, s3/interdire-ia-sante-2,
+   s3/ceci-n-est-pas-une-biere-intro-2 (docs/research/illustrations.md, lot v3).
 
 ## Prochaine action
-1. Attendre le retour de Thibault (test du site, réponses aux questions).
-2. Mineurs possibles : préchargement des images, `lang="en"` sur les titres anglais.
-3. Hébergement (Thibault) : `npm run generate`, publier `.output/public`.
+1. Attendre le retour de Thibault (test en classe, relecture du S2).
+2. Hébergement (Thibault) : `npm run generate`, publier `.output/public`.
