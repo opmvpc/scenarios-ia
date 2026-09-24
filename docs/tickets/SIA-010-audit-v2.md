@@ -1,11 +1,11 @@
 ---
 id: SIA-010
 titre: Audit croisé de la v1 et version 2
-statut: en-cours
+statut: terminé
 priorité: normale
 dépend-de: ['SIA-006', 'SIA-007', 'SIA-008', 'SIA-009']
 créé: 2026-09-24
-mis-à-jour: 2026-09-24
+mis-à-jour: 2026-09-25
 ---
 ## Contexte
 Relectures Fable (UX/DA/pédagogie), Opus (code/a11y/contenu), Codex Sol (croisé).
@@ -22,10 +22,11 @@ Contenu (agent opus) : liens morts, inclusif, S2 à la 2e personne, S3 raccourci
 
 ## Critères d'acceptation
 - [x] Rapports dans docs/research/
-- [ ] Corrections prioritaires appliquées
-- [ ] Rapport final pour Thibault
+- [x] Corrections prioritaires appliquées
+- [x] Rapport final pour Thibault
 
 ## Journal du ticket
 - 2026-09-24 : créé.
 - 2026-09-24 : audits v1 lancés : Fable (UX/DA/pédagogie, navigateur), Opus (code/a11y/contenu), Codex Sol medium (logique d'état).
 - 2026-09-24 : trois rapports reçus (Codex : 2 bloquants d'état ; Opus : 0 bloquant, 9 importants ; Fable : 1 bloquant UX, 10 importants). Plan v2 ci-dessus ; logique, UX et a11y faites par l'orchestrateur, contenu délégué à un agent opus.
+- 2026-09-25 : v2 appliquée et vérifiée (navigateur bureau et 375 px, 71 tests, typecheck, generate 15 routes), commits 4ccd083 à la règle « sensible pas en dernier ». Rapport : docs/research/2026-09-25-rapport-v2.md. Restent des mineurs listés dans le rapport.
