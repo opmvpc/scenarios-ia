@@ -1,0 +1,51 @@
+cle,avant,apres
+accueil/hero,dix mains en aplat noir et manchettes blanches (peau indéterminée),dix mains de teintes variées : papier + trame claire + trame dense + montre + bracelet
+accueil/regles,une main papier (blanche) qui pousse le pion,une main foncée en trame dense avec bracelet
+roles/decideur,bonhomme générique bras levés,femme de dos aux longues tresses en queue-de-cheval
+roles/citoyen,six bustes identiques à tête ronde,six bustes : afro + foulard + chignon + carré + crâne rasé + queue-de-cheval
+roles/data,bonhomme générique entre quatre bases de données,femme aux cheveux longs entre deux bases de données
+roles/lobbyiste,deux bonshommes identiques,femme au carré en tailleur jupe + homme chauve
+roles/syndicat,trois bonshommes identiques,homme trapu à l'afro + femme en foulard au poing levé + femme au chignon en robe
+s1/prologue,petit politicien blanc en costume,politicienne noire aux cheveux naturels
+s1/partenaires-sud,une dizaine de mineurs masculins en aplat noir et bleu,mineur·es varié·es : tresse + barbe grise + foulard sous le casque + peaux foncées + femme d'Asie de l'Est
+s1/partenaires-locaux,cinq villageois en silhouettes (dont visages bleus),villageois·es : vieille dame en foulard à la canne + père noir et enfant + jeune femme à l'afro + vieil homme à la lampe + enfants
+s1/location,homme blanc en costume dans le fauteuil,jeune femme bouclée à lunettes (peau en trame moyenne)
+s1/import-assemblage,deux ouvriers aux cheveux noirs (visages papier),ouvrière en foulard + jeune homme noir à lunettes
+s1/data-centers-fin,homme d'affaires blanc souriant,femme d'affaires au carré
+s1/consommation-intro-2,petit homme blanc qui vide son portefeuille,femme noire bouclée et ronde qui verse ses pièces
+s1/autre-projet,quatre petits citadins indistincts,femme noire aux tresses et enfant + vieil homme blanc à la canne + femme en foulard au portable + homme d'Asie de l'Est à lunettes
+s1/grand-public,foule de silhouettes noires (quelques visages bleus au fond),foule variée : foulards + afros + enfants + personnes âgées + fauteuil roulant
+s1/entreprises,quatre hommes d'affaires en silhouette,femme à queue-de-cheval + homme d'Asie de l'Est + femme noire aux cheveux gris + homme barbu au serveur
+s1/entreprises-2,portier blanc + foule d'hommes en colère,videuse au chignon + foule variée : hijab + locs + dame âgée à lunettes + afro + jeune homme d'Asie de l'Est
+s1/services-publics,petits citoyens en aplat bleu dans l'embrasure,file variée devant la mairie : femme en foulard et enfant + homme noir en fauteuil + dame à la canne + jeune homme à l'afro
+s2/campagne,homme blanc de dos au micro,candidate noire aux tresses au mégaphone
+s2/campagne-fin,candidat blanc qui se ronge les ongles,candidate noire bouclée qui se ronge les ongles
+s2/reseau-social-europeen,journaliste homme blanc + public surtout blanc,journaliste noire à l'afro + public : dame au chignon gris + homme au turban + barbu + adolescente + personne en fauteuil
+s2/diplomatie,diplomate homme blanc,diplomate âgée au chignon et lunettes (peau en trame)
+s2/diplomatie-2,deux avant-bras en costume + deux petits cueilleurs,poignée de main main foncée / main claire + cueilleuse en foulard + vieil homme à barbe blanche
+s2/donnees-ouvertes,file de petits citoyens blancs et d'investisseurs hommes,file variée : foulard + tresses + fauteuil + personnes âgées + investisseuse et investisseur
+s2/limiter-ia,politicien blanc à chapeau melon et moustache,politicienne à l'ancienne (chapeau + perles + sac)
+s2/negocier-gafam,petit homme blanc en costume,petite fonctionnaire d'Asie de l'Est au carré
+s2/negocier-gafam-2,petit fonctionnaire homme blanc,fonctionnaire sikh barbu au turban
+s2/reguler-ia,arbitre homme blanc,arbitre noire à la queue-de-cheval
+s2/riposte-2,petit fonctionnaire homme blanc debout,fonctionnaire âgé en fauteuil roulant
+s2/verite-alternative,foule de minuscules silhouettes,foule : femme en foulard + homme noir et enfant + dame à la canne + adolescente à l'afro + homme à lunettes
+s3/prologue,deux groupes d'artistes hommes blancs à béret,sept artistes : locs et béret + barbe grise + carré + boucles + hijab + dame à lunettes + adolescent sud-asiatique
+s3/ceci-n-est-pas-une-biere,trois minuscules brasseurs en silhouette,trois brasseurs : femme noire au foulard + homme chauve moustachu + homme au turban
+s3/ceci-n-est-pas-une-biere-intro-2,porte-parole homme blanc,porte-parole à l'afro (peau en trame)
+s3/ceci-n-est-pas-une-biere-fin,minuscule politicien en silhouette,politicien noir perdu dans le labyrinthe
+s3/interdire-ia-art,trois graphistes (dont une femme) + deux brasseurs (un visage sarcelle),graphistes en hijab et à l'afro + brasseuse à la tresse + brasseur moustachu
+s3/creer-cca,artiste + brasseur + officiel : trois hommes blancs,artiste aux locs + brasseur âgé + officielle en hijab + personne bouclée
+s3/dedommager-brasseurs-2,artiste moustachu + file de silhouettes,infirmier + femme enceinte noire + dame en foulard à la canne + père et enfant
+s3/integrer-dominique,deux infirmières en silhouette,infirmier noir + infirmière en hijab + infirmière âgée
+s3/integrer-dominique-3,cinq silhouettes noires de dos (une femme),groupe de trois quarts : fauteuil + femme aux cheveux gris + foulard + homme barbu (ton sobre gardé)
+s3/interdire-ia-sante,politicien blanc + médecin homme blanc,politicien blanc + médecins noires et médecin noir qui protestent
+s3/interdire-ia-sante-2,une douzaine de chercheurs presque tous hommes blancs,chercheurs et chercheuses : hijab + lunettes + peaux foncées + barbe + fauteuil roulant
+s3/recherche-ia-sante,trois juristes hommes blancs,juriste noire au chignon + juriste âgé
+s3/recherche-ia-sante-2,minuscule médecin blanc,médecin en hijab + infirmier noir
+s3/regarder-nos-souvenirs-intro-2,trois vieux experts hommes blancs,experte noire aux cheveux blancs + expert blanc + experte au chignon gris
+s3/accueillir-neooculus-1,file de minuscules silhouettes + politicien,file variée (foulard + canne + tresses + fauteuil + bébé) + politicienne aux cheveux gris
+s3/enqueter-neooculus,enquêteur blanc en imperméable,enquêtrice noire à l'afro + enquêteur âgé
+s3/enqueter-neooculus-2,petit politicien blanc,politicienne trapue au carré
+s3/financer-transhumanisme,profil noir anonyme (garçon),jeune fille noire aux locs de profil (traits en trame)
+s3/financer-transhumanisme-2,deux groupes d'hommes blancs,augmenté·es (homme blanc + femme d'Asie de l'Est + homme noir) face à des gens ordinaires variés (foulard + tresses + dame âgée)

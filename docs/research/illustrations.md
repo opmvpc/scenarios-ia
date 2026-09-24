@@ -84,3 +84,46 @@ Nommage : `<option>` pour le bloc [0], `<option>-2`, `-3` pour les suivants, `<s
 - **s1/import-assemblage** : c'est une vignette rectangulaire (mer en spot jusqu'aux bords du bloc), pas un sujet détouré comme les autres.
 - **s1/booster** : l'hôpital n'a pas de croix ; la version avec croix (v2) avait des bandes noires.
 - **s3/creer-cca** : le robot est minuscule, posé sur la table.
+
+## Lot diversité (25/09/2026)
+
+Signalement de l'enseignant : très peu de femmes, presque uniquement des personnes blanches. 50 clés refaites en **67 générations** P-Image (0,201 $, cumul 200 images, 0,600 $) : 7 de calibrage (toutes sur de vraies clés, 5 retenues), 60 de production. 50 retenues, 17 rejetées. Détail dans `tools/images/journal.csv` (lignes 133 à 199), avant/après par clé dans `tools/images/lot-diversite.csv`. Les anciens bruts sont gardés en `raw/<clé>--avant-diversite.jpg`, les essais en `--dN.jpg`, les recadrages en `--dNc.jpg`.
+
+### Inventaire
+
+70 images, dont 18 sans personne (couvertures S1, S2 et S3, s1/data-centers, consommation, vertueux, competitif, pour-qui, booster, booster-2, autre-projet-2, autre-projet-3, s2/riposte, temps-des-choix, voie-democratique, s3/bonjour-dominique, dedommager-brasseurs, regarder-nos-souvenirs). Sur les 52 autres :
+- **à refaire, 50** : les 2 images d'accueil (mains en aplat noir, main blanche), les 5 rôles (bonshommes génériques masculins) et 43 scènes où presque tous les personnages étaient des hommes blancs (visages papier), avec en plus quelques visages ou bras passés en encre de couleur (s1/services-publics et s1/grand-public en bleu, le brasseur de s3/interdire-ia-art en sarcelle).
+- **gardées, 2** : `s2/menace-etrangere` (des masques, pas de personnes) et `s3/accueillir-neooculus` (foule de silhouettes noires sans visage et doubles numériques en sarcelle, dont des femmes ; la sarcelle y est un choix de sens, pas une peau).
+
+### Recette retenue pour les peaux en deux encres
+
+**1. Bichromie : option trame (`tools/images/trame.txt`).** Le brut de P-Image peint les peaux en **gris neutre** et le seul objet spot en couleur **saturée**. L'ancienne bichromie passait tous les tons moyens en encre spot, d'où les visages bleus ou sarcelle. Pour les clés listées dans `trame.txt`, `bichromie.mjs` lit aussi le brut en couleur :
+- pixel saturé (écart max-min RGB > 40) : palette inchangée (encre, spot, papier) ;
+- pixel neutre : valeur ≤ 0,2 donne l'encre pleine (traits), ≥ 0,8 le papier (peau claire), entre les deux une **trame de points noirs** à 45°, période 4 px sur 1200 px, couverture de 0 à 85 % (au-delà, les traits du visage disparaissent).
+Une peau foncée devient une trame dense avec des traits lisibles, une peau mate une trame moyenne, une peau claire reste papier. Les clés non listées sortent **à l'octet près** comme avant (vérifié sur les 20 .webp non refaits). Les clés `test/<s1|s2|s3>/…` prennent l'encre de leur deuxième segment, pour les essais.
+
+**2. Prompt.**
+- **Nommer chaque personne** avec un marqueur lisible au trait : « a Black woman with long braids, an old white man with a cane, a young North African woman in a headscarf, an East Asian man with glasses ». Coiffures (afro, locs, tresses, chignon, turban, hijab), âge (cheveux gris, canne), corpulence, fauteuil roulant.
+- Phrase `[PEAUX]` dans le journal : « The people are drawn only in black ink and grey halftone, their skin tones range from pale paper to deep charcoal grey, each person a different shade. » Pour une seule personne : « She is drawn only in black ink and grey halftone, her skin deep charcoal grey. »
+- « **Only the <objet> is printed in <spot>** » : sans le « only », le spot va sur les vêtements, puis sur la peau.
+- **Aucun mot de couleur pour une personne** : « red-haired » a peint cheveux, bras et pieds en rouge.
+- Rôles : « pictogram figures with round heads and solid black bodies » plus une silhouette par figure (« a woman in a headscarf », « a round afro hair shape », « a round hair bun »).
+
+**Échecs restants.** 3 visages ou membres encore peints en spot par le générateur (s1/services-publics v1, s3/financer-transhumanisme-2 v1, s1/partenaires-sud v3) : « All the people and their clothes… » ou « Everyone's face, hands and legs are drawn only in black ink and grey halftone » a suffi au coup suivant. Cadre noir sur 10 essais (surtout en S3, scènes d'intérieur) : 9 recadrés et recentrés sur leur propre papier (1344×768) au lieu de régénérer.
+
+### Bilan
+
+- **Genre** : sur les 18 images à personnage principal unique, 15 femmes (décideuse, data scientist, politiciennes, candidate, arbitre, diplomate, porte-parole, fonctionnaire…) et 3 hommes. Dans les scènes de groupe, environ autant de femmes que d'hommes. Au total, nettement plus de femmes que d'hommes parmi les personnages identifiables, contre presque aucune avant.
+- **Origines** : des personnes non blanches clairement lisibles dans environ 40 des 50 images refaites (sans compter les 5 pictogrammes, sans peau). Restent blanches ou indéterminées : s1/data-centers-fin, s2/limiter-ia, s2/riposte-2, s3/enqueter-neooculus-2 (une femme ou une personne en fauteuil au premier plan), s3/integrer-dominique-3 (vue de dos, ton sobre).
+- **Rôles** : dirigeantes, candidate, arbitre, juriste, enquêtrice, médecin en hijab, chercheuses ; infirmiers et père avec enfant ; fonctionnaire sikh ; les rôles « négatifs » (femme d'affaires, lobbyiste, politicien qui débranche) sont répartis entre personnes blanches et non blanches. Mineur·es du S1 de toutes origines.
+
+### Images encore faibles
+
+- **s1/partenaires-sud** : les mineur·es soulèvent le trophée comme une victoire plutôt que de ployer dessous (v3, plus juste, avait deux visages bleus).
+- **s1/entreprises** : le groupe passe devant le globe ; seul le dernier monte, l'escalier en spirale est perdu.
+- **s1/consommation-intro-2** : plan serré recadré, corps coupé en bas.
+- **s3/creer-cca** et **s3/recherche-ia-sante** : le robot est minuscule ou assis sur le lit, comme dans les versions précédentes.
+- **s3/enqueter-neooculus** : le cerveau lointain est petit et n'est pas en spot.
+- **s3/integrer-dominique-3** : sobre et plus varié (fauteuil, foulard, cheveux gris), mais vue de dos, les peaux se lisent peu ; les dossiers ne sont plus en sarcelle.
+- **accueil/hero** : dix mains à plat, un peu figées ; la feuille montre bien cinq colonnes.
+- **roles/data** : deux bases de données au lieu de quatre.
