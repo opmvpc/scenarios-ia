@@ -148,7 +148,11 @@ export function validerScenario(s: Scenario, glossaire: readonly TermeGlossaire[
       if (o.fin === 'anticipee' && !o.messageFin) e(ouo, 'fin anticipée sans « messageFin »')
       if (o.fin === 'anticipee' && i === s.situations.length - 1) e(ouo, 'fin anticipée inutile sur la dernière situation')
     }
-    for (const o of sit.options) verifierBlocs(`${ou} › option « ${o.id} » › consequences`, o.consequences, i)
+    for (const o of sit.options) {
+      verifierBlocs(`${ou} › option « ${o.id} » › consequences`, o.consequences, i)
+      // le dernier bloc porte « bougez vos pions » : jamais à côté d'un passage sensible
+      if (o.consequences?.at(-1)?.sensible) e(`${ou} › option « ${o.id} »`, 'un bloc sensible ne peut pas être la dernière conséquence')
+    }
     verifierBlocs(`${ou} › conclusion`, sit.conclusion, i)
   }
 

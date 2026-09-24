@@ -95,6 +95,7 @@ describe('le validateur détecte les défauts injectés', () => {
     ['terme inconnu dans « messageFin »', (s) => { opt(s, 1, 3).messageFin = 'Bravo pour ce [[pivot]] !' }, 'messageFin', 'absent du glossaire'],
     ['HTML dans l’accroche', (s) => { s.accroche = 'Une <b>personnalité</b> politique.' }, 'accroche', 'HTML'],
     ['lien dans une source', (s) => { s.cloture.bibliographie[0]!.texte = '[Guardian](https://x.test)' }, 'source 1', 'lien'],
+    ['passage sensible en dernière conséquence', (s) => { opt(s, 0, 0).consequences.at(-1)!.sensible = true }, 'option', 'dernière conséquence'],
   ])('%s', (_cas, modifier, ou, motif) => {
     const erreurs = casser(modifier)
     expect(erreurs.some((x) => x.includes(ou) && x.includes(motif)), erreurs.join('\n') || 'aucune erreur').toBe(true)
