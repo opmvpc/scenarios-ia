@@ -4,6 +4,8 @@ import type { Option } from '~/utils/types'
 import { JAUGES, NOMS_JAUGES } from '~/utils/types'
 
 const props = defineProps<{ partie: Partie; anticipee: boolean; option?: Option }>()
+// pas de cet écran : un clic venu d'un écran qui s'efface (transition) est ignoré
+const ici = props.partie.pas.value
 const d = computed(() => props.partie.deroulementComplet.value)
 const annulations = computed(() =>
   (props.partie.etat.value?.annulations ?? []).map((a) => ({ ...a, option: trouverOption(props.partie.scenario, a.option)?.option })),
@@ -43,7 +45,7 @@ const annulations = computed(() =>
     </div>
 
     <template #actions>
-      <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant()">Révéler les objectifs <span aria-hidden="true">→</span></button>
+      <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant(ici)">Révéler les objectifs <span aria-hidden="true">→</span></button>
     </template>
   </JeuCadre>
 </template>

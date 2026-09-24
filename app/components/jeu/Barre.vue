@@ -5,6 +5,18 @@ const props = defineProps<{ partie: Partie }>()
 const emit = defineEmits<{ fiche: []; regles: []; quitter: [] }>()
 
 const maintenant = useMaintenant(15000)
+
+// menu : se referme après un choix ou un clic ailleurs
+const menu = ref<HTMLDetailsElement | null>(null)
+const fermerMenu = () => { if (menu.value) menu.value.open = false }
+function clicAilleurs(ev: MouseEvent) { if (menu.value && !menu.value.contains(ev.target as Node)) fermerMenu() }
+onMounted(() => document.addEventListener('click', clicAilleurs))
+onBeforeUnmount(() => document.removeEventListener('click', clicAilleurs))
+function choisir(action: 'regles' | 'quitter') {
+  fermerMenu()
+  if (action === 'regles') emit('regles')
+  else emit('quitter')
+}
 const minutes = computed(() => {
   const debut = props.partie.etat.value?.debut
   return debut ? Math.max(0, Math.floor((maintenant.value - debut) / 60000)) : 0
@@ -12,11 +24,13 @@ const minutes = computed(() => {
 const etapes = computed(() => {
   const n = props.partie.situationCourante.value
   const prep = props.partie.ecran.value?.type.startsWith('prep')
+  // fin anticipée : les situations non jouées ne sont pas « faites »
+  const jouees = props.partie.deroulementComplet.value.etapes.length
   return [
     { cle: 'p', libelle: 'Préparation', court: 'Prép.', actif: !!prep, fait: !prep },
     ...props.partie.scenario.situations.map((s) => ({
       cle: s.id, libelle: `Situation ${s.numero}`, court: String(s.numero),
-      actif: !prep && n === s.numero, fait: !prep && n > s.numero,
+      actif: !prep && n === s.numero, fait: !prep && n > s.numero && !(n === 4 && s.numero > jouees),
     })),
     { cle: 'f', libelle: 'Fin', court: 'Fin', actif: n === 4, fait: false },
   ]
@@ -39,7 +53,7 @@ const etapes = computed(() => {
         <li
           v-for="e in etapes"
           :key="e.cle"
-          class="etiquette rounded-full px-2 sm:px-3 py-1 border-2"
+          class="etiquette !text-[0.8125rem] rounded-full px-2 sm:px-3 py-1 border-2"
           :class="e.actif ? 'bg-encre text-papier border-encre' : e.fait ? 'border-encre text-encre' : 'border-transparent text-encre-3'"
           :aria-current="e.actif ? 'step' : undefined"
         >
@@ -47,21 +61,20 @@ const etapes = computed(() => {
         </li>
       </ol>
 
-      <p class="font-mono font-bold text-sm sm:text-base tabular-nums max-sm:hidden" :title="`Partie commencée il y a ${minutes} minutes, prévue en ${partie.scenario.duree}`">
+      <p class="font-mono font-bold text-sm sm:text-base tabular-nums max-sm:hidden" :title="`Partie commencée il y a ${minutes} minute${minutes > 1 ? 's' : ''}, prévue en ${partie.scenario.duree} minutes`">
         {{ minutes }}<span class="text-encre-3"> / {{ partie.scenario.duree }} min</span>
       </p>
       <button type="button" class="bouton !min-h-10 !px-3 sm:!px-4 !text-base" @click="emit('fiche')">
         <svg viewBox="0 0 20 20" class="size-5" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="5" r="2.2"/><circle cx="10" cy="11" r="2.2"/><circle cx="15" cy="7" r="2.2"/></g><path d="M5 2v16M10 2v16M15 2v16" stroke="currentColor" stroke-width="1.2" opacity=".5"/></svg>
         <span class="max-sm:sr-only">Fiche</span>
       </button>
-      <details class="relative">
+      <details ref="menu" class="relative">
         <summary class="bouton bouton-discret !min-h-10 !px-3 list-none cursor-pointer" aria-label="Menu">
           <svg viewBox="0 0 20 20" class="size-5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
         </summary>
         <div class="absolute right-0 mt-2 w-56 cadre p-2 grid gap-1 shadow-[4px_4px_0_var(--encre)]">
-          <button type="button" class="text-left px-3 py-2 rounded-lg hover:bg-papier-2 font-bold" @click="emit('regles')">Règles du jeu</button>
-          <NuxtLink to="/regles" target="_blank" class="px-3 py-2 rounded-lg hover:bg-papier-2 font-bold no-underline">Règles (nouvel onglet)</NuxtLink>
-          <button type="button" class="text-left px-3 py-2 rounded-lg hover:bg-papier-2 font-bold" @click="emit('quitter')">Quitter la partie</button>
+          <button type="button" class="text-left px-3 py-2 rounded-lg hover:bg-papier-2 font-bold" @click="choisir('regles')">Règles du jeu</button>
+          <button type="button" class="text-left px-3 py-2 rounded-lg hover:bg-papier-2 font-bold" @click="choisir('quitter')">Quitter (la partie reste sauvegardée)</button>
         </div>
       </details>
     </div>

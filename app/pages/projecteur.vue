@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { JAUGES, NOMS_JAUGES, type Scenario } from '~/utils/types'
+import { JAUGES, NOMS_JAUGES } from '~/utils/types'
 
 useHead({ title: 'Projecteur · Décrypter l\'IA en jouant' })
 
 /* ---------- compte à rebours par phases (Date.now, pas de compteur d'intervalles) ---------- */
 const phases = ref([
   { nom: 'Préparation', consigne: 'Formez vos groupes, distribuez les fiches, scannez le QR code de votre scénario.', minutes: 5 },
-  { nom: 'Partie', consigne: 'Lisez à voix haute, négociez, et laissez la ou le décisionnaire trancher.', minutes: 25 },
+  { nom: 'Partie', consigne: 'Lisez à voix haute, négociez, et laissez la ou le décisionnaire trancher.', minutes: 30 },
   { nom: 'Débriefing', consigne: 'Lisez la fiche de clôture. Notez votre code de partie.', minutes: 10 },
 ])
 const courante = ref(0)
@@ -50,41 +50,55 @@ async function pleinEcran() {
 }
 
 /* ---------- comparer les codes de partie des groupes ---------- */
+const vue = ref<'minuteur' | 'groupes'>('minuteur')
 const CLE_CODES = 'decrypter-ia:projecteur:codes'
 const saisie = ref('')
 onMounted(() => { try { saisie.value = localStorage.getItem(CLE_CODES) ?? '' } catch { /* stockage indisponible */ } })
 watch(saisie, (v) => { try { localStorage.setItem(CLE_CODES, v) } catch { /* idem */ } })
 
-interface Ligne { code: string; scenario?: Scenario; choix?: string[] }
-const lignes = computed<Ligne[]>(() => saisie.value
-  .split(/[\n,;]+/)
-  .map((c) => c.trim())
-  .filter(Boolean)
-  .map((code) => {
-    const scenario = SCENARIOS.find((s) => code.toUpperCase().startsWith(`S${s.numero}`))
-    const choix = scenario ? lireCodePartie(scenario, code) : undefined
-    return { code: code.toUpperCase(), scenario, choix }
-  }))
-
-function detail(l: Ligne) {
-  if (!l.scenario || !l.choix) return null
-  const { etapes, valeurs } = derouler(l.scenario, l.choix)
-  // tous les rôles : le site ne sait pas combien jouaient dans ce groupe
-  const gagnants = verdicts(valeurs, ROLES).filter((v) => v.gagne).map((v) => v.role)
-  return { etapes, valeurs, gagnants }
+interface Ligne {
+  code: string
+  choix: string[]
+  joueurs?: 3 | 4 | 5
+  etapes: ReturnType<typeof derouler>['etapes']
+  valeurs: ReturnType<typeof derouler>['valeurs']
+  gagnants: string[]
 }
+const codes = computed(() => saisie.value.split(/[\n,;]+/).map((c) => c.trim().toUpperCase()).filter(Boolean))
+const inconnus = computed(() => codes.value.filter((c) => !SCENARIOS.some((s) => lireCodePartie(s, c))))
+
+/** Un tableau par scénario joué, une ligne par groupe. */
+const tableaux = computed(() => SCENARIOS.map((scenario) => {
+  const lignes: Ligne[] = []
+  for (const code of codes.value) {
+    const choix = lireCodePartie(scenario, code)
+    if (!choix) continue
+    const joueurs = joueursDuCode(code)
+    const { etapes, valeurs } = derouler(scenario, choix)
+    // sans nombre de joueur·ses dans le code, on considère tous les rôles
+    const roles = joueurs ? rolesEnJeu(ROLES, joueurs) : ROLES
+    const gagnants = verdicts(valeurs, roles).filter((v) => v.gagne).map((v) => v.role.nom)
+    lignes.push({ code, choix, joueurs, etapes, valeurs, gagnants })
+  }
+  // une situation où les groupes n'ont pas tous fait le même choix : point de départ du débriefing
+  const divergentes = scenario.situations.map((_, i) => new Set(lignes.map((l) => l.choix[i] ?? '—')).size > 1)
+  return { scenario, lignes, divergentes }
+}).filter((t) => t.lignes.length))
 </script>
 
 <template>
   <div class="min-h-dvh flex flex-col" data-encre="s1">
-    <header class="flex items-center justify-between gap-4 px-4 sm:px-8 py-3 border-b-[2.5px] border-encre">
+    <header class="flex flex-wrap items-center justify-between gap-3 px-4 sm:px-8 py-3 border-b-[2.5px] border-encre">
       <NuxtLink to="/enseignant" class="font-bold underline underline-offset-4">← Espace enseignant·e</NuxtLink>
-      <p class="font-titre font-extrabold text-xl hidden sm:block">Décrypter l’IA en jouant</p>
+      <div class="flex rounded-full border-[2.5px] border-encre overflow-hidden" role="group" aria-label="Vue">
+        <button type="button" class="px-4 py-1.5 font-bold" :class="vue === 'minuteur' ? 'bg-encre text-papier' : 'hover:bg-papier-2'" :aria-pressed="vue === 'minuteur'" @click="vue = 'minuteur'">Minuteur</button>
+        <button type="button" class="px-4 py-1.5 font-bold" :class="vue === 'groupes' ? 'bg-encre text-papier' : 'hover:bg-papier-2'" :aria-pressed="vue === 'groupes'" @click="vue = 'groupes'">Comparer les groupes</button>
+      </div>
       <button type="button" class="bouton !min-h-10 !px-4 !text-base" @click="pleinEcran">Plein écran</button>
     </header>
 
     <!-- l'écran projeté -->
-    <section class="flex-1 grid gap-8 xl:gap-12 px-4 sm:px-8 py-8 xl:grid-cols-[1fr_1.15fr] items-center" aria-labelledby="titre-phase">
+    <section v-show="vue === 'minuteur'" class="flex-1 grid gap-8 xl:gap-12 px-4 sm:px-8 py-8 xl:grid-cols-[1fr_1.15fr] items-center" aria-labelledby="titre-phase">
       <div>
         <ol class="flex flex-wrap gap-2" aria-label="Phases">
           <li v-for="(p, k) in phases" :key="k">
@@ -130,47 +144,56 @@ function detail(l: Ligne) {
     </section>
 
     <!-- comparer les groupes -->
-    <section class="border-t-[2.5px] border-encre bg-papier-2 px-4 sm:px-8 py-10" aria-labelledby="titre-codes">
-      <div class="max-w-6xl">
-        <h2 id="titre-codes" class="text-4xl font-extrabold">Comparer les groupes</h2>
-        <p class="text-lg text-encre-2 mt-2 max-w-[46em]">
-          Chaque groupe obtient un code à la fin de sa partie, par exemple <strong class="font-mono">S2-B-A-C</strong>.
-          Tapez-les ici, un par ligne : le tableau montre leurs choix et leur fiche finale.
+    <section v-show="vue === 'groupes'" class="flex-1 px-4 sm:px-8 py-8" aria-labelledby="titre-codes">
+      <h1 id="titre-codes" class="titre-riso text-5xl sm:text-6xl">Comparer les groupes</h1>
+      <details class="mt-6 cadre p-4 sm:p-5 max-w-2xl" :open="!codes.length">
+        <summary class="cursor-pointer font-bold text-lg">Saisir les codes de partie ({{ codes.length }})</summary>
+        <p class="text-base text-encre-2 mt-2">
+          Un code par ligne, tel qu’affiché à la fin de chaque partie (par exemple <strong class="font-mono">S2-4-B-A-C</strong>).
+          Refermez ce cadre avant de projeter.
         </p>
-        <label for="codes" class="block font-bold mt-6">Codes de partie</label>
+        <label for="codes" class="sr-only">Codes de partie</label>
         <textarea
           id="codes"
           v-model="saisie"
-          rows="4"
+          rows="5"
           spellcheck="false"
-          class="mt-2 w-full max-w-md rounded-[14px] border-[2.5px] border-encre bg-papier p-3 font-mono text-lg uppercase"
-          placeholder="S1-C-C-A"
+          class="mt-3 w-full rounded-[14px] border-[2.5px] border-encre bg-papier p-3 font-mono text-lg uppercase"
+          placeholder="S1-4-C-C-A"
         />
-        <ul v-if="lignes.length" class="mt-8 grid gap-4">
-          <li v-for="(l, k) in lignes" :key="k" :data-encre="l.scenario?.id" class="cadre p-5">
-            <template v-if="detail(l)">
-              <div class="flex flex-wrap items-baseline justify-between gap-3">
-                <p class="font-mono font-bold text-2xl">{{ l.code }}</p>
-                <p class="font-bold text-accent-texte">{{ l.scenario!.titre }}</p>
-              </div>
-              <ol class="mt-3 grid gap-1 text-lg">
-                <li v-for="e in detail(l)!.etapes" :key="e.option.id"><span class="font-bold">{{ e.situation.numero }}.</span> {{ e.option.carte }}</li>
-              </ol>
-              <p class="mt-3 font-mono">
-                <span v-for="j in JAUGES" :key="j" class="mr-4 whitespace-nowrap">{{ NOMS_JAUGES[j] }} {{ signe(detail(l)!.valeurs[j]) }}</span>
-              </p>
-              <p class="mt-2 text-lg">
-                <template v-if="detail(l)!.gagnants.length">
-                  Objectif atteint :
-                  <strong>{{ detail(l)!.gagnants.map((r) => r.nom + (r.aPartirDe > 3 ? ` (si ${r.aPartirDe} joueur·ses ou plus)` : '')).join(', ') }}</strong>
-                </template>
-                <template v-else>Personne n’a atteint son objectif.</template>
-              </p>
-            </template>
-            <p v-else class="text-lg"><span class="font-mono font-bold">{{ l.code }}</span> : code inconnu. Vérifiez les lettres (S1, S2 ou S3, puis une lettre par décision).</p>
-          </li>
-        </ul>
-      </div>
+        <p v-if="inconnus.length" class="mt-2 text-base font-bold" role="status">
+          Codes non reconnus : <span class="font-mono">{{ inconnus.join(', ') }}</span>. Vérifiez les lettres.
+        </p>
+      </details>
+
+      <p v-if="!tableaux.length" class="mt-8 text-xl text-encre-2">Aucun code pour l’instant.</p>
+      <section v-for="t in tableaux" :key="t.scenario.id" :data-encre="t.scenario.id" class="mt-10" :aria-labelledby="`tab-${t.scenario.id}`">
+        <h2 :id="`tab-${t.scenario.id}`" class="text-3xl font-extrabold"><span class="text-accent-texte">Scénario {{ t.scenario.numero }}</span> · {{ t.scenario.titre }}</h2>
+        <div class="mt-4 overflow-x-auto cadre">
+          <table class="w-full text-lg border-collapse">
+            <thead>
+              <tr class="border-b-[2.5px] border-encre text-left align-bottom">
+                <th scope="col" class="p-3">Groupe</th>
+                <th v-for="(sit, i) in t.scenario.situations" :key="sit.id" scope="col" class="p-3" :class="t.divergentes[i] ? 'bg-accent-pale' : ''">
+                  Situation {{ sit.numero }}<span v-if="t.divergentes[i]" class="block etiquette text-accent-texte">les avis divergent</span>
+                </th>
+                <th v-for="j in JAUGES" :key="j" scope="col" class="p-3 text-center font-mono text-sm uppercase">{{ NOMS_JAUGES[j] }}</th>
+                <th scope="col" class="p-3">Objectif atteint</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="l in t.lignes" :key="l.code" class="border-b border-encre/25 align-top">
+                <th scope="row" class="p-3 font-mono whitespace-nowrap">{{ l.code }}<span v-if="l.joueurs" class="block text-sm font-normal text-encre-2">{{ l.joueurs }} joueur·ses</span></th>
+                <td v-for="(sit, i) in t.scenario.situations" :key="sit.id" class="p-3" :class="t.divergentes[i] ? 'bg-accent-pale/60' : ''">
+                  {{ l.etapes[i]?.option.carte ?? '— (partie écourtée)' }}
+                </td>
+                <td v-for="j in JAUGES" :key="j" class="p-3 text-center font-mono font-bold text-xl">{{ signe(l.valeurs[j]) }}</td>
+                <td class="p-3">{{ l.gagnants.length ? l.gagnants.join(', ') : 'personne' }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </section>
   </div>
 </template>

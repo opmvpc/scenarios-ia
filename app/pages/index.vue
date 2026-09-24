@@ -5,8 +5,14 @@ useHead({ title: 'Décrypter l\'IA en jouant · un jeu de rôle sur les enjeux d
 
 // parties en cours : lues après le montage (localStorage n'existe pas au prérendu)
 const enCours = ref<Record<string, Sauvegarde | null>>({})
+const terminees = ref<Record<string, boolean>>({})
 onMounted(() => {
   enCours.value = Object.fromEntries(SCENARIOS.map((s) => [s.id, partieSauvegardee(s)]))
+  // une partie dont toutes les décisions sont prises : on propose de revoir la fin
+  terminees.value = Object.fromEntries(SCENARIOS.map((s) => {
+    const e = enCours.value[s.id]
+    return [s.id, !!e && construireEcrans(s, e.choix).ecrans.at(-1)?.type === 'fin']
+  }))
 })
 
 const principe = [
@@ -28,7 +34,7 @@ const principe = [
           Négociez, décidez, bougez les pions… puis découvrez <span class="surligne">qui défendait quoi</span>.
         </p>
         <ul class="mt-6 flex flex-wrap gap-2" aria-label="En bref">
-          <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">30 minutes</li>
+          <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">35 à 45 min en classe</li>
           <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">3 à 5 joueuses et joueurs</li>
           <li class="etiquette rounded-full border-2 border-encre px-3 py-1.5">Un écran par groupe</li>
         </ul>
@@ -77,10 +83,10 @@ const principe = [
             </ul>
             <div class="mt-auto pt-6">
               <p v-if="enCours[s.id]" class="mb-3 text-base font-bold text-accent-texte">
-                Partie en cours, sauvegardée {{ depuis(enCours[s.id]!.maj) }}.
+                {{ terminees[s.id] ? 'Partie terminée' : 'Partie en cours' }}, sauvegardée {{ depuis(enCours[s.id]!.maj) }}.
               </p>
               <NuxtLink :to="`/jouer/${s.slug}`" class="bouton bouton-plein w-full">
-                {{ enCours[s.id] ? 'Reprendre la partie' : 'Jouer ce scénario' }} <span aria-hidden="true">→</span>
+                {{ !enCours[s.id] ? 'Jouer ce scénario' : terminees[s.id] ? 'Revoir la fin ou rejouer' : 'Reprendre la partie' }} <span aria-hidden="true">→</span>
               </NuxtLink>
             </div>
           </div>

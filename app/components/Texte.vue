@@ -3,9 +3,10 @@
 import { h, type VNode } from 'vue'
 import { parser, termesCites, type Inline } from '~/utils/markdown'
 
-const props = defineProps<{ source?: string; inline?: boolean }>()
+// `termes` : numérotation commune à plusieurs textes du même écran (sinon chacun repart de 1)
+const props = defineProps<{ source?: string; inline?: boolean; termes?: string[] }>()
 
-const notes = computed(() => termesCites(props.source))
+const notes = computed(() => props.termes ?? termesCites(props.source))
 
 function rendreInline(noeuds: Inline[]): (VNode | string)[] {
   return noeuds.map((n) => {

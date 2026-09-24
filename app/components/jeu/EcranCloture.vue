@@ -6,8 +6,12 @@ const s = props.partie.scenario
 const c = s.cloture
 const d = computed(() => props.partie.deroulementComplet.value)
 const gagnants = computed(() => verdicts(d.value.valeurs, props.partie.roles.value).filter((v) => v.gagne))
-const lecteurs = computed(() => (gagnants.value.length ? gagnants.value.map((g) => g.role.nom).join(', ') : 'la ou le décisionnaire politique'))
-const code = computed(() => codePartie(s, d.value.etapes.map((e) => e.option.id)))
+const lecteurs = computed(() => {
+  const noms = gagnants.value.map((g) => g.role.nom)
+  if (!noms.length) return 'la ou le décisionnaire politique'
+  return noms.length > 1 ? `${noms.slice(0, -1).join(', ')} et ${noms.at(-1)}` : noms[0]!
+})
+const code = computed(() => codePartie(s, d.value.etapes.map((e) => e.option.id), props.partie.etat.value?.joueurs))
 const debriefs = computed(() => d.value.etapes.filter((e) => e.option.debrief))
 
 function rejouer() {

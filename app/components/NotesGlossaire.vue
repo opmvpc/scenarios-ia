@@ -3,10 +3,11 @@
 import { termesCites } from '~/utils/markdown'
 import { cleGlossaire, indexGlossaire } from '~/utils/validation'
 
-const props = defineProps<{ source?: string }>()
+// `termes` : liste déjà calculée pour tout l'écran (voir Texte.vue)
+const props = defineProps<{ source?: string; termes?: string[] }>()
 const index = indexGlossaire(GLOSSAIRE)
 const notes = computed(() =>
-  termesCites(props.source)
+  (props.termes ?? termesCites(props.source))
     .map((terme, i) => ({ numero: i + 1, entree: index.get(cleGlossaire(terme)) }))
     .filter((n) => n.entree),
 )

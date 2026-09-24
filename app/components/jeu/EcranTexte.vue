@@ -3,6 +3,8 @@ import type { Partie } from '~/composables/usePartie'
 import type { Bloc, Situation } from '~/utils/types'
 
 const props = defineProps<{ partie: Partie; bloc: Bloc; situation?: Situation; etiquette: string }>()
+// pas de cet écran : un clic venu d'un écran qui s'efface (transition) est ignoré
+const ici = props.partie.pas.value
 const lecteur = computed(() => props.partie.lecteur(props.situation?.numero ?? 0))
 </script>
 
@@ -22,7 +24,7 @@ const lecteur = computed(() => props.partie.lecteur(props.situation?.numero ?? 0
       <Illustration v-if="bloc.image && !bloc.sensible" :cle="bloc.image" />
     </div>
     <template #actions>
-      <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant()">Suite <span aria-hidden="true">→</span></button>
+      <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant(ici)">Suite <span aria-hidden="true">→</span></button>
     </template>
   </JeuCadre>
 </template>

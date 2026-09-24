@@ -3,12 +3,17 @@ import type { Partie } from '~/composables/usePartie'
 import { JAUGES, NOMS_JAUGES, type Jauge } from '~/utils/types'
 
 const props = defineProps<{ partie: Partie }>()
+// pas de cet écran : un clic venu d'un écran qui s'efface (transition) est ignoré
+const ici = props.partie.pas.value
 const s = props.partie.scenario
 const mandat = computed(() => props.partie.etat.value?.mandat ?? [])
 const tourDeParole = computed({
   get: () => props.partie.etat.value?.tourDeParole ?? true,
   set: (v: boolean) => props.partie.regler('tourDeParole', v),
 })
+
+// un mandat, c'est deux priorités ou rien
+const mandatIncomplet = computed(() => mandat.value.length === 1)
 
 function basculer(j: Jauge) {
   const m = mandat.value.includes(j) ? mandat.value.filter((x) => x !== j) : [...mandat.value, j].slice(-2)
@@ -56,11 +61,13 @@ function basculer(j: Jauge) {
             @click="basculer(j)"
           >{{ NOMS_JAUGES[j] }}</button>
         </div>
+        <p v-if="mandatIncomplet" class="mt-3 text-base font-bold" role="status">Choisissez une deuxième priorité, ou retirez la première pour jouer sans mandat.</p>
       </fieldset>
     </div>
 
     <template #actions>
-      <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant()">Pions en place, on commence <span aria-hidden="true">→</span></button>
+      <p v-if="mandatIncomplet" class="text-base text-encre-2 mr-auto sm:mr-0">Mandat : il manque une priorité.</p>
+      <button type="button" class="bouton bouton-plein !text-xl" :disabled="mandatIncomplet" @click="partie.suivant(ici)">Pions en place, on commence <span aria-hidden="true">→</span></button>
     </template>
   </JeuCadre>
 </template>

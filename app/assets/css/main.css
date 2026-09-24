@@ -132,7 +132,7 @@
   }
   .etiquette {
     font-family: var(--font-mono);
-    font-size: 0.8125rem;
+    font-size: 0.9375rem; /* 15 px : lisible à 1–2 m */
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
