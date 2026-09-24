@@ -2,7 +2,7 @@
 
 ## Où on en est
 v2 validée par Thibault (« superbe travail »), puis v3 : une image sur chacun des écrans de
-texte (70 illustrations, 0,40 $ sur 1 $), effet de chargement et préchargement, équilibrage
+texte (70 illustrations, dont 50 refaites pour la diversité des personnes ; 0,60 $ sur 1 $), effet de chargement et préchargement, équilibrage
 retouché (6 effets appuyés par le texte), durée portée à 45 min de partie, licence
 CC BY-NC-SA 4.0 pour tout le dépôt (README, LICENSE). 71 tests, typecheck OK, 15 routes.
 
