@@ -1,7 +1,7 @@
 ---
 id: SIA-009
 titre: Illustrations P-Image bichromées
-statut: ouvert
+statut: terminé
 priorité: normale
 dépend-de: ['SIA-003', 'SIA-004', 'SIA-005']
 créé: 2026-09-24
@@ -11,10 +11,11 @@ mis-à-jour: 2026-09-24
 ≈ 50 images, budget ≤ 1 $ (objectif 0,20 $).
 
 ## Critères d'acceptation
-- [ ] Prompt calibré et documenté
-- [ ] Pipeline génération → bichromie → WebP
-- [ ] Planche contact relue, ratés régénérés
-- [ ] Compteur de budget à jour
+- [x] Prompt calibré et documenté
+- [x] Pipeline génération → bichromie → WebP
+- [x] Planche contact relue, ratés régénérés
+- [x] Compteur de budget à jour
 
 ## Journal du ticket
 - 2026-09-24 : créé.
+- 2026-09-24 : 25 illustrations, 54 générations, 0,162 $ (docs/research/illustrations.md). Faibles : accueil/hero (1 colonne de pions), accueil/regles (pion vers le bas), s2/riposte, s3/dedommager-brasseurs, s3/regarder-nos-souvenirs (un chien) : à reprendre en v2 si l'audit le confirme.
