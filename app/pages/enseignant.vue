@@ -201,7 +201,7 @@ function condition(s: Scenario, o: Option): string {
             Souvent, aucun personnage n’atteint son objectif : selon le scénario et le nombre de joueur·ses, d’une partie sur trois à huit sur dix. Le débriefing y gagne :
             qui s’en est approché, quels compromis ont coûté quoi.
           </p>
-          <p class="text-lg mt-3">Les objectifs se lisent « au moins » : une jauge à +3 satisfait un objectif de +1, et « −1 » veut dire « pas sous −1 ». Le site l’explique dès la préparation. C’est notre lecture des fiches originales, à confirmer avec leurs auteurs.</p>
+          <p class="text-lg mt-3">Les objectifs se lisent « au moins » : une jauge à +3 satisfait un objectif de +1, et « −1 » veut dire « pas sous −1 ». Le site l’explique dès la préparation. C’est la lecture littérale des fiches originales (« au moins arrivées à ces valeurs »).</p>
         </div>
       </div>
     </section>

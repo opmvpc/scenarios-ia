@@ -1,7 +1,7 @@
 ---
 id: ADR-004
 titre: Lecture littérale des objectifs (« au moins ») et équilibrage minimal
-statut: proposé
+statut: accepté
 date: 2026-09-24
 ---
 ## Contexte
@@ -31,5 +31,9 @@ deux suites de décisions distinctes, et jamais sur toutes.
 - Ne rien changer : la Citoyen·ne de S2 joue une partie perdue d'avance.
 
 ## Conséquences
-À confirmer avec T. Braibant et S. Corrillon. Si l'intention était « ≤ », il
+Validé par Thibault le 25/09/2026 (pas besoin de consulter les auteurs). Si l’intention était « ≤ », il
 faudra rééquilibrer S2 et S3 (une ligne de YAML par effet).
+
+Mise à jour du 25/09/2026 : six retouches supplémentaires, toutes appuyées par le texte
+(docs/CHANGELOG-contenu.md, section v3), avec le feu vert de Thibault pour ajouter des effets
+quand l'équilibre y gagne.
