@@ -75,12 +75,14 @@ const changements = [
     <section class="mx-auto max-w-4xl px-4 sm:px-6 py-12" aria-labelledby="titre-licence">
       <h2 id="titre-licence" class="text-3xl font-extrabold">Licence</h2>
       <p class="text-lg mt-4">
-        Comme l’original, le contenu de ce site (textes, scénarios, illustrations) est placé sous licence
+        Comme l’original, tout ce site (textes, scénarios, illustrations et code source) est placé sous licence
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license" class="font-bold">Creative Commons BY-NC-SA 4.0</a> :
-        vous pouvez le réutiliser et l’adapter, sans usage commercial, en citant les auteurs et en partageant dans les mêmes conditions.
+        vous pouvez le réutiliser et l’adapter, sans usage commercial, en citant les autrices et auteurs et en partageant dans les mêmes conditions.
+        Les polices gardent leur propre licence (SIL Open Font License).
       </p>
       <p class="text-lg mt-4">
-        Code source : <a href="https://github.com/opmvpc/scenarios-ia" rel="noopener" class="font-bold">github.com/opmvpc/scenarios-ia</a>.
+        Code source public : <a href="https://github.com/opmvpc/scenarios-ia" rel="noopener" class="font-bold">github.com/opmvpc/scenarios-ia</a>.
+        Une erreur, une idée ? Ouvrez une <em>issue</em> sur GitHub.
       </p>
     </section>
   </div>

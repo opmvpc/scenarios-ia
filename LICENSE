@@ -1,0 +1,17 @@
+Décrypter l'IA en jouant, version web
+
+Adaptation web par Thibault (IFOSUP), avec l'aide de Claude (Anthropic), de l'activité
+« Décrypter l'IA en jouant » de Thomas Braibant et Sylvain Corrillon (EPHEC), projet
+MétropédIA financé par le Pôle Louvain, elle-même placée sous licence CC BY-NC-SA 4.0.
+
+L'ensemble de ce dépôt (textes, scénarios, illustrations et code source) est mis à
+disposition selon les termes de la licence Creative Commons Attribution - Pas
+d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International
+(CC BY-NC-SA 4.0).
+
+Résumé : https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
+Texte juridique : https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr
+
+Exceptions : les polices Bricolage Grotesque, Atkinson Hyperlegible Next et Atkinson
+Hyperlegible Mono restent sous leur propre licence (SIL Open Font License 1.1). Les
+dépendances npm gardent chacune leur licence.

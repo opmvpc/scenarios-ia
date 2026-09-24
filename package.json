@@ -1,6 +1,7 @@
 {
   "name": "scenarios-ia",
   "private": true,
+  "license": "CC-BY-NC-SA-4.0",
   "type": "module",
   "description": "Décrypter l'IA en jouant — adaptation web de l'activité MétropédIA",
   "scripts": {
