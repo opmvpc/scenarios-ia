@@ -18,6 +18,8 @@ export interface Annulation { situation: string; option: string; le: number }
 
 export interface Sauvegarde {
   version: string
+  /** Identifiant du parcours, reporté dans `?r=` : les entrées d'historique d'un autre parcours sont ignorées. */
+  trace: string
   joueurs: 3 | 4 | 5
   mandat: Jauge[]
   tourDeParole: boolean
@@ -25,17 +27,33 @@ export interface Sauvegarde {
   pas: number
   pasMax: number
   annulations: Annulation[]
+  /** Minuteur de négociation en cours (survit à un retour arrière ou un rechargement). */
+  minuteur?: { situation: string; fin: number }
   debut: number
   maj: number
 }
 
 const EXPIRATION = 1000 * 60 * 60 * 12 // une partie de plus de 12 h est proposée comme « ancienne »
+/** À incrémenter quand la forme de `Sauvegarde` change. */
+const SCHEMA = 2
 
 function hash(texte: string): string {
   let h = 5381
   for (let i = 0; i < texte.length; i++) h = ((h << 5) + h + texte.charCodeAt(i)) | 0
   return (h >>> 0).toString(36)
 }
+
+/**
+ * Version d'un scénario pour la sauvegarde : seulement sa structure (ids, effets, conditions).
+ * Corriger une coquille dans un texte ne rend pas les parties en cours incompatibles.
+ */
+export function versionScenario(scenario: Scenario): string {
+  const structure = scenario.situations.map((s) => [s.id, s.options.map((o) => [o.id, o.effets, o.si ?? null, o.fin ?? null])])
+  return `${SCHEMA}-${hash(JSON.stringify(structure))}`
+}
+
+export const expiree = (s: Sauvegarde, maintenant = Date.now()) => maintenant - s.maj > EXPIRATION
+const nouvelleTrace = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6)
 
 function cle(scenario: Scenario) { return `decrypter-ia:partie:${scenario.id}` }
 
@@ -56,13 +74,13 @@ function ecrire(scenario: Scenario, s: Sauvegarde | null) {
 /** Pour l'accueil : la partie sauvegardée de ce scénario, si elle est encore jouable. Client uniquement. */
 export function partieSauvegardee(scenario: Scenario): Sauvegarde | null {
   const s = lire(scenario)
-  return s && s.version === hash(JSON.stringify(scenario)) ? s : null
+  return s && s.version === versionScenario(scenario) && !expiree(s) ? s : null
 }
 
 export function usePartie(scenario: Scenario) {
   const route = useRoute()
   const router = useRouter()
-  const version = hash(JSON.stringify(scenario))
+  const version = versionScenario(scenario)
 
   const etat = ref<Sauvegarde | null>(null)
   const existante = ref<Sauvegarde | null>(null)
@@ -116,40 +134,46 @@ export function usePartie(scenario: Scenario) {
     ecrire(scenario, etat.value)
   }
 
+  /** Reporte le pas courant dans l'URL (push = nouvelle entrée d'historique). */
+  function synchroniserUrl(push: boolean) {
+    if (!etat.value) return
+    const query = { ...route.query, pas: String(etat.value.pas), r: etat.value.trace }
+    if (String(route.query.pas) === query.pas && route.query.r === query.r) return
+    push ? router.push({ query }) : router.replace({ query })
+  }
+
   function allerA(n: number, { historique = true } = {}) {
     if (!etat.value) return
     const borne = Math.max(0, Math.min(n, ecrans.value.length - 1))
     etat.value.pas = borne
     etat.value.pasMax = Math.max(etat.value.pasMax, borne)
     sauver()
-    const query = { ...route.query, pas: String(borne) }
-    if (String(route.query.pas) !== String(borne)) {
-      historique ? router.push({ query }) : router.replace({ query })
-    }
+    synchroniserUrl(historique)
   }
 
   function commencer(joueurs: 3 | 4 | 5 = 3) {
     const maintenant = Date.now()
     etat.value = {
-      version, joueurs, mandat: [], tourDeParole: true, choix: [], pas: 0, pasMax: 0,
+      version, trace: nouvelleTrace(), joueurs, mandat: [], tourDeParole: true, choix: [], pas: 0, pasMax: 0,
       annulations: [], debut: maintenant, maj: maintenant,
     }
     sauver()
-    router.replace({ query: { pas: '0' } })
+    synchroniserUrl(false)
   }
 
-  /** Reprend la partie sauvegardée ; `pasVoulu` (rechargement avec ?pas=) prime, sans dépasser pasMax. */
-  function reprendre(pasVoulu?: number) {
+  /**
+   * Reprend la partie sauvegardée. `pasVoulu` (rechargement avec ?pas=) prime s'il vient
+   * du même parcours (`traceVoulue`), sans dépasser pasMax.
+   */
+  function reprendre(pasVoulu?: number, traceVoulue?: string) {
     if (!existante.value) return
     etat.value = existante.value
     // rejoue les choix : on écarte ceux que le contenu actuel n'accepte plus
     etat.value.choix = construireEcrans(scenario, etat.value.choix).choixValides
     // ecrans (calculé) tient compte des écrans de préparation et de fin
     etat.value.pasMax = Math.min(etat.value.pasMax, ecrans.value.length - 1)
-    const cible = pasVoulu !== undefined && Number.isInteger(pasVoulu) && pasVoulu >= 0
-      ? Math.min(pasVoulu, etat.value.pasMax)
-      : etat.value.pas
-    allerA(cible, { historique: false })
+    const urlValide = pasVoulu !== undefined && Number.isInteger(pasVoulu) && pasVoulu >= 0 && traceVoulue === etat.value.trace
+    allerA(urlValide ? Math.min(pasVoulu, etat.value.pasMax) : Math.min(etat.value.pas, etat.value.pasMax), { historique: false })
   }
 
   function effacer() {
@@ -158,12 +182,21 @@ export function usePartie(scenario: Scenario) {
     existante.value = null
   }
 
-  const suivant = () => allerA(pas.value + 1)
-  function precedent() {
-    if (pas.value <= 0) return
-    // après une reprise, l'historique du navigateur ne contient pas les pas précédents
-    const retourPossible = typeof window !== 'undefined' && window.history.state?.back?.includes('pas=')
-    if (retourPossible) router.back()
+  /**
+   * Avancer d'un écran. `depuis` = le pas de l'écran qui demande : un double clic, ou un clic
+   * sur l'écran qui s'efface pendant la transition, ne fait donc jamais sauter d'écran.
+   */
+  function suivant(depuis?: number) {
+    if (depuis !== undefined && depuis !== pas.value) return
+    allerA(pas.value + 1)
+  }
+  function precedent(depuis?: number) {
+    if (depuis !== undefined && depuis !== pas.value) return
+    if (pas.value <= 0 || !etat.value) return
+    // on n'utilise le retour du navigateur que si l'entrée précédente est bien le pas d'avant, dans ce parcours
+    const back = typeof window !== 'undefined' ? window.history.state?.back : undefined
+    const params = typeof back === 'string' ? new URLSearchParams(back.split('?')[1] ?? '') : null
+    if (params?.get('r') === etat.value.trace && params.get('pas') === String(pas.value - 1)) router.back()
     else allerA(pas.value - 1, { historique: false })
   }
 
@@ -189,23 +222,30 @@ export function usePartie(scenario: Scenario) {
     const idx = ecrans.value.findIndex((e) => e.type === 'decision' && e.situation.id === situation.id)
     etat.value.pasMax = Math.max(idx, 0)
     etat.value.pas = Math.max(idx, 0)
+    // nouveau parcours : les entrées « avant » de l'ancien choix ne mènent plus nulle part
+    etat.value.trace = nouvelleTrace()
     sauver()
+    synchroniserUrl(true)
   }
 
-  function regler<K extends 'joueurs' | 'mandat' | 'tourDeParole'>(k: K, v: Sauvegarde[K]) {
+  function regler<K extends 'joueurs' | 'mandat' | 'tourDeParole' | 'minuteur'>(k: K, v: Sauvegarde[K]) {
     if (!etat.value) return
     etat.value[k] = v
     sauver()
   }
 
-  // bouton retour / avant du navigateur
-  watch(() => route.query.pas, (q) => {
+  // bouton retour / avant du navigateur, ou ?pas= modifié à la main
+  watch(() => [route.query.pas, route.query.r] as const, ([q, r]) => {
     if (!etat.value || q === undefined) return
     const n = Number(q)
-    if (Number.isFinite(n) && n !== etat.value.pas) {
-      etat.value.pas = Math.max(0, Math.min(n, ecrans.value.length - 1))
+    const voulu = r === etat.value.trace && Number.isInteger(n)
+      ? Math.max(0, Math.min(n, etat.value.pasMax, ecrans.value.length - 1))
+      : etat.value.pas // entrée d'un autre parcours : on reste où l'on est
+    if (voulu !== etat.value.pas) {
+      etat.value.pas = voulu
       sauver()
     }
+    synchroniserUrl(false)
   })
 
   /** Rotation des lecteur·rices : une personne par situation, hors décisionnaire. */
@@ -218,7 +258,7 @@ export function usePartie(scenario: Scenario) {
   return {
     scenario, etat, existante, ecrans, ecran, pas, enCours, roles, valeurs, deroule, deroulementComplet,
     situationCourante, chercherSauvegarde, commencer, reprendre, effacer, suivant, precedent, allerA,
-    decider, changerDecision, regler, lecteur, expiree: (s: Sauvegarde) => Date.now() - s.maj > EXPIRATION,
+    decider, changerDecision, regler, lecteur, expiree,
   }
 }
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
-  appliquer, codePartie, construireEcrans, derouler, lireCodePartie, mandatTenu, objectifAtteint,
+  appliquer, codePartie, construireEcrans, derouler, joueursDuCode, lireCodePartie, mandatTenu, objectifAtteint,
   optionsVisibles, rolesEnJeu, suitesPossibles, valeursInitiales, verdicts,
 } from '~/utils/moteur'
 import { parser, termesCites, texteBrut } from '~/utils/markdown'
@@ -47,12 +47,14 @@ const roles: Role[] = [
 describe('écrans', () => {
   it("s'arrête sur la première décision non prise", () => {
     const { ecrans } = construireEcrans(fixture, [])
-    expect(ecrans.map((e) => e.type)).toEqual(['prologue', 'chapitre', 'intro', 'decision'])
+    expect(ecrans.map((e) => e.type)).toEqual(['prologue', 'chapitre', 'decision'])
+    // le premier bloc d'intro est porté par l'écran chapitre
+    expect(ecrans[1]).toMatchObject({ type: 'chapitre', bloc: { texte: 'Intro 1.' } })
   })
 
   it('filtre les blocs conditionnels et termine par un écran de fin', () => {
     const { ecrans } = construireEcrans(fixture, ['a', 'd', 'f'])
-    const intros = ecrans.filter((e) => e.type === 'intro').map((e) => (e.type === 'intro' ? e.bloc.texte : ''))
+    const intros = ecrans.map((e) => (e.type === 'intro' || e.type === 'chapitre' ? e.bloc?.texte : undefined)).filter(Boolean)
     expect(intros).toEqual(['Intro 1.', 'Après a.'])
     expect(ecrans.at(-1)).toEqual({ type: 'fin', anticipee: false })
     expect(ecrans.filter((e) => e.type === 'consequence' && e.dernier)).toHaveLength(3)
@@ -113,6 +115,7 @@ describe('gagnant·es', () => {
     expect(mandatTenu({ ...valeursInitiales(), eco: 1, dem: 2 }, ['eco', 'dem'])).toBe(true)
     expect(mandatTenu({ ...valeursInitiales(), eco: 1 }, ['eco', 'dem'])).toBe(false)
     expect(mandatTenu(valeursInitiales(), [])).toBe(false)
+    expect(mandatTenu({ ...valeursInitiales(), eco: 3 }, ['eco'])).toBe(false) // une seule priorité : pas de mandat
   })
 })
 
@@ -123,10 +126,21 @@ describe('analyse', () => {
   })
 
   it('code et relit une partie', () => {
-    expect(codePartie(fixture, ['b', 'd', 'g'])).toBe('S1-B-B-B')
+    // après b, c est masquée : d est affichée « A »
+    expect(codePartie(fixture, ['b', 'd', 'g'])).toBe('S1-B-A-B')
+    expect(lireCodePartie(fixture, 'S1-B-A-B')).toEqual(['b', 'd', 'g'])
     expect(lireCodePartie(fixture, 's1-a-a-b')).toEqual(['a', 'c', 'g'])
-    expect(lireCodePartie(fixture, 'S1-B-A')).toBeUndefined() // c masquée après b
+    expect(lireCodePartie(fixture, 'S1-A-C')).toEqual(['a', 'e']) // fin anticipée
+    expect(codePartie(fixture, ['a', 'e'])).toBe('S1-A-C')
+    expect(lireCodePartie(fixture, 'S1-B-C')).toBeUndefined() // pas de 3e option visible après b
+    expect(lireCodePartie(fixture, 'S1-B-A')).toBeUndefined() // partie incomplète
+    expect(lireCodePartie(fixture, 'S1')).toBeUndefined()
     expect(lireCodePartie(fixture, 'S2-A')).toBeUndefined()
+    // avec le nombre de joueur·ses
+    expect(codePartie(fixture, ['b', 'd', 'g'], 4)).toBe('S1-4-B-A-B')
+    expect(lireCodePartie(fixture, 'S1-4-B-A-B')).toEqual(['b', 'd', 'g'])
+    expect(joueursDuCode('S1-4-B-A-B')).toBe(4)
+    expect(joueursDuCode('S1-B-A-B')).toBeUndefined()
   })
 
   it('valide la fixture', () => {

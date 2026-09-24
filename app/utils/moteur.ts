@@ -44,7 +44,8 @@ export function trouverOption(scenario: Scenario, id: string): { situation: Situ
 
 export type Ecran =
   | { type: 'prologue'; bloc: Bloc }
-  | { type: 'chapitre'; situation: Situation }
+  /** Titre de la situation, avec son premier bloc d'introduction (un écran creux de moins). */
+  | { type: 'chapitre'; situation: Situation; bloc?: Bloc }
   | { type: 'intro'; situation: Situation; bloc: Bloc }
   | { type: 'decision'; situation: Situation }
   | { type: 'consequence'; situation: Situation; option: Option; bloc: Bloc; dernier: boolean }
@@ -64,8 +65,9 @@ export function construireEcrans(scenario: Scenario, choix: readonly string[]): 
   for (const bloc of blocsVisibles(scenario.prologue, faits)) ecrans.push({ type: 'prologue', bloc })
 
   for (const [i, situation] of scenario.situations.entries()) {
-    ecrans.push({ type: 'chapitre', situation })
-    for (const bloc of blocsVisibles(situation.intro, faits)) ecrans.push({ type: 'intro', situation, bloc })
+    const [premier, ...autres] = blocsVisibles(situation.intro, faits)
+    ecrans.push({ type: 'chapitre', situation, ...(premier ? { bloc: premier } : {}) })
+    for (const bloc of autres) ecrans.push({ type: 'intro', situation, bloc })
     ecrans.push({ type: 'decision', situation })
 
     const id = choix[i]
@@ -168,7 +170,8 @@ export function rolesEnJeu(roles: readonly Role[], joueurs: number): Role[] {
 
 /** Mandat facultatif de la ou du décisionnaire : chaque priorité annoncée doit finir à +1 ou plus. */
 export function mandatTenu(valeurs: Valeurs, priorites: readonly Jauge[]): boolean {
-  return priorites.length > 0 && priorites.every((j) => valeurs[j] >= 1)
+  // un mandat, ce sont exactement deux priorités (PrepFiche n'en accepte pas une seule)
+  return priorites.length === 2 && priorites.every((j) => valeurs[j] >= 1)
 }
 
 // ---------------------------------------------------------------- analyse
@@ -202,25 +205,38 @@ export function bilanEquilibre(scenario: Scenario, roles: readonly Role[]): Reco
   return compte
 }
 
-/** Code court d'une partie, pour la comparaison entre groupes (ex. « S2-B-A-C »). */
-export function codePartie(scenario: Scenario, choix: readonly string[]): string {
+/**
+ * Code court d'une partie (« S2-4-B-A-C » : scénario, nombre de joueur·ses, une lettre par
+ * décision) pour comparer les groupes. Chaque lettre est celle que le groupe a vue à l'écran :
+ * la position parmi les options visibles à ce moment-là.
+ */
+export function codePartie(scenario: Scenario, choix: readonly string[], joueurs?: number): string {
   const lettres = choix.map((id, i) => {
     const situation = scenario.situations[i]
-    const k = situation ? situation.options.findIndex((o) => o.id === id) : -1
+    const k = situation ? optionsVisibles(situation, choix.slice(0, i)).findIndex((o) => o.id === id) : -1
     return k < 0 ? '?' : String.fromCharCode(65 + k)
   })
-  return [`S${scenario.numero}`, ...lettres].join('-')
+  return [`S${scenario.numero}`, ...(joueurs ? [String(joueurs)] : []), ...lettres].join('-')
 }
 
-/** Inverse de `codePartie`. Renvoie `undefined` si le code ne correspond pas au scénario. */
+/** Nombre de joueur·ses inscrit dans un code de partie, s'il y est. */
+export function joueursDuCode(code: string): 3 | 4 | 5 | undefined {
+  const n = code.trim().split(/[-\s]+/)[1]
+  return n === '3' || n === '4' || n === '5' ? (Number(n) as 3 | 4 | 5) : undefined
+}
+
+/** Relit un code de partie ; `undefined` s'il est invalide ou si la partie n'est pas allée jusqu'au bout. */
 export function lireCodePartie(scenario: Scenario, code: string): string[] | undefined {
-  const [tete, ...lettres] = code.trim().toUpperCase().split(/[-\s]+/)
+  const [tete, ...reste] = code.trim().toUpperCase().split(/[-\s]+/)
   if (tete !== `S${scenario.numero}`) return undefined
+  const lettres = /^[3-5]$/.test(reste[0] ?? '') ? reste.slice(1) : reste
   const choix: string[] = []
   for (const [i, l] of lettres.entries()) {
-    const option = scenario.situations[i]?.options[l.charCodeAt(0) - 65]
+    const situation = scenario.situations[i]
+    const option = situation ? optionsVisibles(situation, choix)[l.charCodeAt(0) - 65] : undefined
     if (!option || l.length !== 1) return undefined
     choix.push(option.id)
   }
-  return construireEcrans(scenario, choix).choixValides.length === choix.length ? choix : undefined
+  const { ecrans, choixValides } = construireEcrans(scenario, choix)
+  return choixValides.length === choix.length && ecrans.at(-1)?.type === 'fin' ? choix : undefined
 }
