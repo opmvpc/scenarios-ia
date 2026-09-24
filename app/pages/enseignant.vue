@@ -45,7 +45,7 @@ function condition(s: Scenario, o: Option): string {
       <p class="etiquette text-accent-texte">Espace enseignant·e</p>
       <h1 class="titre-riso text-5xl sm:text-7xl mt-3">Animer l’activité</h1>
       <p class="lecture mt-6">
-        1 h à 1 h 20 en classe, de 3 à 30 personnes réparties en groupes de 3 à 5.
+        1 h à 1 h 20 en classe, de 3 à 30 personnes réparties en groupes de 3 à 5. La fiche d’activité d’origine annonce 35 à 45 minutes, dont 20 à 30 pour la partie ; en pratique, avec les débats, les groupes les plus lents mettent 45 minutes à une heure.
         Les étudiant·es explorent les enjeux de l’IA en négociant des décisions politiques, chacun·e dans un rôle.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
