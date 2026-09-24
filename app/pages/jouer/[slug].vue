@@ -24,6 +24,14 @@ onMounted(() => {
 
 useWakeLock(computed(() => partie.enCours.value))
 
+// illustrations de la situation en cours et de la suivante, en cache avant qu'on y arrive
+watch(() => pret.value && partie.situationCourante.value, (n) => {
+  if (n === false) return
+  const lancer = () => precharger(imagesAPrecharger(scenario, n))
+  if ('requestIdleCallback' in window) window.requestIdleCallback(lancer)
+  else setTimeout(lancer, 300)
+}, { immediate: true })
+
 const ecran = computed(() => partie.ecran.value)
 const cleEcran = computed(() => `${partie.pas.value}-${ecran.value?.type}`)
 
