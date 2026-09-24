@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
-const enPartie = computed(() => route.path.startsWith('/jouer/'))
+// partie et projection : plein écran, sans en-tête ni pied de page
+const enPartie = computed(() => route.path.startsWith('/jouer/') || route.path.replace(/\/$/, '') === '/projecteur')
 </script>
 
 <template>

@@ -19,7 +19,7 @@ const resumeReprise = computed(() => {
     <div>
       <NuxtLink to="/#scenarios" class="etiquette text-encre-2 no-underline hover:underline">← Tous les scénarios</NuxtLink>
       <p class="etiquette text-accent-texte mt-6">Scénario {{ s.numero }} · {{ s.duree }} minutes · 3 à 5 joueurs</p>
-      <h1 class="titre-riso text-5xl sm:text-7xl mt-3">{{ s.titre }}</h1>
+      <h1 class="titre-riso text-5xl sm:text-7xl mt-3">{{ insecable(s.titre) }}</h1>
       <p class="font-titre text-2xl sm:text-3xl font-semibold mt-4 text-encre-2">{{ s.sousTitre }}</p>
       <div class="lecture mt-6"><Texte :source="s.accroche" /></div>
       <ul class="mt-6 flex flex-wrap gap-2" aria-label="Thèmes">

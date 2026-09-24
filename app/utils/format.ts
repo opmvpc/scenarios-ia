@@ -18,3 +18,8 @@ export function depuis(ts: number, maintenant = Date.now()): string {
   if (h < 24) return `il y a ${h} h`
   return `il y a ${Math.round(h / 24)} j`
 }
+
+/** Titres : pas de coupure après un trait d'union (gluon U+2060), espace fine insécable avant « ? ». */
+export function insecable(titre: string): string {
+  return titre.replace(/-/g, '-⁠').replace(/ ([?!:;])/g, ' $1')
+}
