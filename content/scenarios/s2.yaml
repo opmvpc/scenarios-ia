@@ -11,7 +11,7 @@ accroche: |
 
   Votre parti doit s’entourer des meilleurs spécialistes afin de convaincre votre électorat que la toile n’est pas une zone de non-droit !
 themes: [réseaux sociaux, désinformation, données, démocratie]
-duree: 30
+duree: 45
 image: s2/couverture
 preparation:
   equipe: |
@@ -141,7 +141,7 @@ situations:
               De nouvelles IA émergent sur le marché à mesure que la concurrence augmente. De nombreux [[bots]] génèrent des [[fake news]] qui déstabilisent les services numériques.
 
               L’autorité du numérique est assaillie de plaintes, et les discours racistes et haineux sont aujourd’hui la norme sur les réseaux sociaux.
-        effets: { eco: 2, dem: -2, env: -2, san: -1 }
+        effets: { eco: 2, dem: -2, env: -1, san: -1 }  # équilibrage v3 : env -2 à l’origine, sans appui dans le texte
         resume: Vous avez négocié avec les géants américains du numérique.
         debrief: Que gagne-t-on, et que perd-on, à confier nos données aux géants du numérique en échange de croissance ?
       - id: donnees-ouvertes
@@ -156,7 +156,7 @@ situations:
               Faire des données publiques votre fer de lance : un coup de génie ! Vous exigez des garanties de la part des sociétés qui capitalisent sur la rétention de données, et vous favorisez celles qui proposent des services numériques vertueux.
 
               Après quelques mois, votre politique fonctionne ! Des investisseurs et investisseuses en phase avec votre objectif de [[souveraineté numérique]] y voient une réelle opportunité d’avenir.
-        effets: { dem: 2, env: 1, eco: 1, emp: 1 }
+        effets: { dem: 2, env: 1, eco: 2, emp: 1 }  # équilibrage v3 : eco +1 à l’origine (« un coup de génie », « votre politique fonctionne »)
         resume: Vous avez fait des données publiques ouvertes votre fer de lance.
         debrief: À qui devraient appartenir les données produites par un pays et ses habitant·es ? À tout le monde, à l’État, aux entreprises ?
   - id: menace-etrangere

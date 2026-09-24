@@ -6,7 +6,7 @@ useHead({ title: 'Espace enseignant·e · Décrypter l\'IA en jouant' })
 const deroule = [
   { duree: '5 min', titre: 'Former les groupes', texte: 'De 3 à 5 personnes. À 3, on joue sans lobbyiste ni syndicat ; à 4, avec le lobbyiste ; à 5, tout le monde.' },
   { duree: '5 min', titre: 'Distribuer et expliquer', texte: 'Un écran, une fiche enjeux, cinq pions et les fiches personnages par groupe. Insistez sur trois points : on lit à voix haute, on cache son verso, seule la ou le décisionnaire clique.' },
-  { duree: '25 à 35 min', titre: 'Jouer', texte: 'Chaque groupe ouvre son scénario (QR code ci-dessous ou page projecteur). Le site guide la préparation, les trois décisions et la révélation. Vous circulez, vous veillez aux règles, vous observez (grille ci-dessous).' },
+  { duree: '40 à 60 min', titre: 'Jouer', texte: 'Chaque groupe ouvre son scénario (QR code ci-dessous ou page projecteur). Le site guide la préparation, les trois décisions et la révélation. Vous circulez, vous veillez aux règles, vous observez (grille ci-dessous).' },
   { duree: '10 min', titre: 'Débriefer', texte: 'Chaque groupe lit sa fiche de clôture. Pour un débriefing collectif, relevez les codes de partie (« S2-4-B-A-C ») et tapez-les dans la page projecteur : le tableau montre où les groupes ont divergé.' },
 ]
 
@@ -45,7 +45,7 @@ function condition(s: Scenario, o: Option): string {
       <p class="etiquette text-accent-texte">Espace enseignant·e</p>
       <h1 class="titre-riso text-5xl sm:text-7xl mt-3">Animer l’activité</h1>
       <p class="lecture mt-6">
-        35 à 45 minutes en classe, de 3 à 30 personnes réparties en groupes de 3 à 5.
+        1 h à 1 h 20 en classe, de 3 à 30 personnes réparties en groupes de 3 à 5.
         Les étudiant·es explorent les enjeux de l’IA en négociant des décisions politiques, chacun·e dans un rôle.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
@@ -198,7 +198,7 @@ function condition(s: Scenario, o: Option): string {
         <div class="cadre p-6">
           <h3 class="text-2xl font-extrabold">Personne ne gagne ? C’est normal</h3>
           <p class="text-lg mt-3">
-            Souvent, aucun personnage n’atteint son objectif : selon le scénario et le nombre de joueur·ses, de la moitié à plus de huit parties sur dix. Le débriefing y gagne :
+            Souvent, aucun personnage n’atteint son objectif : selon le scénario et le nombre de joueur·ses, d’une partie sur trois à huit sur dix. Le débriefing y gagne :
             qui s’en est approché, quels compromis ont coûté quoi.
           </p>
           <p class="text-lg mt-3">Les objectifs se lisent « au moins » : une jauge à +3 satisfait un objectif de +1, et « −1 » veut dire « pas sous −1 ». Le site l’explique dès la préparation. C’est notre lecture des fiches originales, à confirmer avec leurs auteurs.</p>

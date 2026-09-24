@@ -123,3 +123,31 @@ Aucun bloc de S2 ne dépassait 90 mots : pas de coupe de rythme.
 | Interdire l'IA en santé, conséquence | « des spécialistes… : ils utilisent l'IA » | « des spécialistes…, qui utilisent l'IA » | Tournure neutre |
 | Conséquences les plus longues (interdire l'IA dans l'art, CCA, dédommager, Dominique®, recherche, NeoOculus ×2, enquêter ×2) et intro sit. 1 | 56 à 77 mots | 52 à 67 mots (−10 à −16 % sur les plus longs) | Rythme de lecture à voix haute (audit Fable I1) ; aucune information du débat retirée |
 | Clôture, réf. (2) Oppenlaender et al. | « ResearchGate, décembre 2023 », `http://dx.doi.org/…` | « arXiv, 2023 », `https://doi.org/10.48550/arXiv.2303.13534` | Source réelle du DOI |
+
+## v3 — 25/09/2026 (équilibrage, feu vert de Thibault)
+
+Principe : ne retoucher que des effets que le texte ne justifiait pas, ou que le texte
+justifie davantage. Chaque changement est commenté dans le YAML avec la valeur d'origine.
+
+| Scénario · option | Avant | Après | Raison |
+|---|---|---|---|
+| S1 · Booster l'économie | Emploi −1 | **0** | Le texte dit « ne crée pas les emplois escomptés » : pas de gain, mais pas de pertes |
+| S1 · Services publics | Santé +1 | **+2** | Phrase ajoutée : l'IA aide les hôpitaux à trier les dossiers et raccourcit les listes d'attente |
+| S2 · Négocier avec les GAFAM | Environnement −2 | **−1** | Aucun appui dans le texte (audit Opus M3) |
+| S2 · Données ouvertes | Économie +1 | **+2** | « Un coup de génie », « votre politique fonctionne », les investisseurs suivent |
+| S3 · Interdire l'IA dans l'art | Environnement −1 | **0** | Aucun appui dans le texte (audit Opus M3) |
+| S3 · Enquêter sur NeoOculus | Santé +1 | **+2** | « Vous allouez le reste du budget aux soins de santé » |
+
+Écarté : Santé −1 pour S1 · Importer et assembler (le texte évoque la santé des mineur·es,
+mais « en partie » épargnée) : le ou la syndicaliste tomberait à une seule suite gagnante.
+
+Parties où personne ne gagne (toutes les suites de décisions) :
+
+| | 3 joueur·ses | 4 | 5 |
+|---|---|---|---|
+| S1 | 85 % → 79 % | 76 % → 67 % | 73 % → 61 % |
+| S2 | 70 % → 70 % | 67 % → 59 % | 67 % → 59 % |
+| S3 | 74 % → 59 % | 48 % → 33 % | 48 % → 33 % |
+
+Rôle le moins gagnant à 5 joueur·ses : S1 syndicat 2 → 5 suites sur 33, S2 lobbyiste 3 → 5 sur 27,
+S3 syndicat 3 → 4 sur 27.

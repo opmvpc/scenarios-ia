@@ -11,7 +11,7 @@ accroche: |
 
   Une œuvre satirique qui fâche les brasseurs, une IA de compagnie à l’hôpital, un œil qui enregistre vos souvenirs : à vous de trancher.
 themes: [IA générative, art, santé mentale, transhumanisme]
-duree: 30
+duree: 45
 image: s3/couverture
 preparation:
   equipe: |
@@ -66,7 +66,7 @@ situations:
               Votre décision ravit les grands groupes brassicoles, sans rien changer pour eux sur le plan économique. L’Union des graphistes vous bénit : vous faites la une du monde de l’art, et sa grogne se calme.
 
               Mais le MPS saisit la justice pour « atteinte à la liberté d’expression » ! Des entreprises le rejoignent vite : elles craignent de perdre en compétitivité face à l’étranger, où l’IA reste permise.
-        effets: { env: -1, dem: -1, emp: 1 }
+        effets: { dem: -1, emp: 1 }  # équilibrage v3 : env -1 à l’origine, sans appui dans le texte
         resume: "Vous avez interdit l’IA en contexte artistique pour protéger l’industrie brassicole."
         debrief: "Interdire un outil de création pour protéger des marques : qui y gagne vraiment, et que devient la liberté d’expression ?"
       - id: creer-cca
@@ -234,7 +234,7 @@ situations:
               L’enquête n’est pas terminée, mais vous en savez assez : vous fermez la porte à NeoOculus et allouez le reste du budget aux soins de santé.
 
               Vous créez aussi la Commission de Sauvegarde des Libertés Numériques (CSLN) : ses amendes administratives contre les pratiques abusives sur Internet renforcent le contrôle démocratique en ligne. Bien joué !
-        effets: { env: 1, san: 1, dem: 2, emp: 1 }
+        effets: { env: 1, san: 2, dem: 2, emp: 1 }  # équilibrage v3 : san +1 à l’origine (« le reste du budget aux soins de santé »)
         resume: "Vous avez enquêté sur NeoOculus, fermé la porte au projet et créé la CSLN."
         debrief: "Enquêter avant de décider coûte du temps et de l’argent : à votre table, qui trouvait que ça en valait la peine, et pourquoi ?"
       - id: financer-transhumanisme

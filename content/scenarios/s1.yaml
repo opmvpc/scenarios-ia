@@ -10,7 +10,7 @@ sousTitre: Des data centers à quel prix ?
 accroche: |
   Une personnalité politique en vogue veut mettre son pays en avant en y développant l’intelligence artificielle. Seul hic : tout reste à construire. Métaux rares, eau, électricité… quels impacts ce projet va-t-il engendrer ?
 themes: [data centers, métaux rares, eau, énergie]
-duree: 30
+duree: 45
 image: s1/couverture
 preparation:
   equipe: |
@@ -175,7 +175,7 @@ situations:
               Votre programme étonne et fait des émules à l’étranger.
 
               Mais votre IA, aussi puissante soit-elle, est gourmande en énergie et ne crée pas les emplois escomptés… du moins à court terme. Un [[stress hydrique]] apparaît aussi dans certaines régions…
-        effets: { env: -2, eco: 2, san: 2, dem: 1, emp: -1 }
+        effets: { env: -2, eco: 2, san: 2, dem: 1 }  # équilibrage v3 : emp -1 à l’origine (« ne crée pas les emplois escomptés » : pas de pertes)
         resume: Vous avez boosté l’économie grâce à une taxe sur l’usage de votre IA.
         debrief: Une IA qui respecte toutes les règles européennes peut rester gourmande en eau et en énergie. Que faudrait-il réguler de plus ?
       - id: autre-projet
@@ -259,10 +259,10 @@ situations:
         valider: On la réserve aux services publics
         consequences:
           - texte: |
-              Votre choix est ambitieux et ne plaît pas tout de suite à la population. Mais après quelques mois, les collectivités, puis peu à peu les citoyennes et les citoyens, se rendent compte de sa justesse : utiliser un outil puissant, en le limitant pour des raisons démocratiques.
+              Votre choix est ambitieux et ne plaît pas tout de suite à la population. Mais après quelques mois, les collectivités, puis peu à peu les citoyennes et les citoyens, se rendent compte de sa justesse : utiliser un outil puissant, en le limitant pour des raisons démocratiques. Dans les hôpitaux, elle aide à trier les dossiers et raccourcit les listes d’attente.
 
               Créer des vidéos de chats, c’est sympa, mais ça ne sert pas vraiment l’intérêt général…
-        effets: { env: 1, eco: 1, san: 1, dem: 2 }  # équilibrage (ADR-004) : dem +1 à l’origine
+        effets: { env: 1, eco: 1, san: 2, dem: 2 }  # équilibrage : dem +1 et san +1 à l’origine (ADR-004, puis san +2 en v3 avec la phrase sur les hôpitaux)
         resume: Vous avez limité l’usage de l’IA aux services publics.
         debrief: Quels usages de l’IA servent vraiment l’intérêt général ? Et lesquels seriez-vous prêt·es à abandonner ?
 
