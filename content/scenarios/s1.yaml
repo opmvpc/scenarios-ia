@@ -18,7 +18,8 @@ preparation:
   fiche: |
     Des priorités politiques : pour mener à bien le projet « Future of AI », cinq orientations guideront vos discussions et vos décisions. L’environnement, les opportunités économiques, l’emploi, la démocratie, ainsi que la santé et le bien-être des personnes.
 prologue:
-  - titre: Un programme… politique !
+  - image: s1/prologue
+    titre: Un programme… politique !
     texte: |
       Une personnalité politique en vogue souhaite mettre son pays en avant en y développant des projets d’IA. Son programme porte un nom : « Future of AI ».
 
@@ -45,7 +46,8 @@ situations:
         contre: Des conditions de travail désastreuses dans les mines.
         valider: On travaille avec les pays du Sud
         consequences:
-          - texte: |
+          - image: s1/partenaires-sud
+            texte: |
               Bravo ! Vous êtes en bonne voie pour devenir un leader mondial de l’IA !
 
               Mais vous réalisez vite que vos décisions ont des conséquences sur la santé des travailleurs et travailleuses des mines. Et leurs conditions de travail sont désastreuses…
@@ -60,7 +62,8 @@ situations:
         contre: Un projet qui risque de coûter beaucoup plus cher que prévu.
         valider: On reste 100 % local
         consequences:
-          - texte: |
+          - image: s1/partenaires-locaux
+            texte: |
               Bravo ! Vous allez concevoir la première « IA locale », une révolution dans le domaine !
 
               Néanmoins, respecter vos lois environnementales et sociales vous oblige à déplacer des habitant·es de certaines zones de votre pays pour extraire les matières premières. Un imprévu qui génère frustrations et mécontentements. Sans compter que le projet coûte beaucoup plus cher que prévu.
@@ -75,7 +78,8 @@ situations:
         contre: Une dépendance financière et technologique envers un État tiers.
         valider: On loue à l’étranger
         consequences:
-          - texte: |
+          - image: s1/location
+            texte: |
               Bravo ! Vous optez pour une solution alternative porteuse et n’endossez pas la responsabilité de la construction des infrastructures.
 
               Cependant, vous instaurez une dépendance financière et technologique envers un État tiers. Et vous ne développez aucune compétence nationale en matière de conception.
@@ -90,7 +94,8 @@ situations:
         contre: Les mines du Sud et leurs mauvaises conditions de travail restent dans la boucle.
         valider: On importe et on assemble ici
         consequences:
-          - texte: |
+          - image: s1/import-assemblage
+            texte: |
               Bravo ! Votre approche nuancée impressionne plusieurs pays voisins. Vos avancées sont modestes, mais durables.
 
               Un inconvénient demeure : la santé des travailleurs et travailleuses des mines, qui subissent de mauvaises conditions de travail dans leur propre pays.
@@ -98,7 +103,8 @@ situations:
         resume: Vous avez importé les métaux et assemblé les composants sur votre territoire.
         debrief: Avec ce compromis « modeste mais durable », qui y gagne vraiment, et qui continue d’en payer le prix ?
     conclusion:
-      - texte: |
+      - image: s1/data-centers-fin
+        texte: |
           Le projet « Future of AI » avance à grands pas ! Toutefois, vous vous rendez compte qu’il entraîne déjà de nombreuses conséquences pour le moins… imprévues.
 
           Il est temps de planifier la suite.
@@ -114,7 +120,8 @@ situations:
           Les installations sont construites. Il va maintenant falloir gérer leur consommation.
 
           Où trouver l’eau pour refroidir les data centers, et l’électricité nécessaire à leur fonctionnement ? Et comment financer ces nouveaux coûts ?
-      - si: { choisi: [location] }
+      - image: s1/consommation-intro-2
+        si: { choisi: [location] }
         texte: |
           Vos data centers tournent chez votre partenaire étranger. Pas de chantier chez vous… mais leur consommation, elle, reste à votre charge.
 
@@ -167,11 +174,13 @@ situations:
         contre: L’électricité resterait achetée à l’étranger.
         valider: On lance la taxe
         consequences:
-          - texte: |
+          - image: s1/booster
+            texte: |
               Et ça marche ! Votre IA est puissante, européenne et respecte toutes les normes imposées par l’Union européenne.
 
               C’est loin d’être le cas des technologies américaines, dont les firmes doivent retirer leurs [[chatbots|chatbot]] du marché européen (bonne nouvelle pour vous). Mieux : la taxe sert aussi à refinancer les services publics qui battent de l’aile, soins de santé et enseignement en priorité !
-          - texte: |
+          - image: s1/booster-2
+            texte: |
               Votre programme étonne et fait des émules à l’étranger.
 
               Mais votre IA, aussi puissante soit-elle, est gourmande en énergie et ne crée pas les emplois escomptés… du moins à court terme. Un [[stress hydrique]] apparaît aussi dans certaines régions…
@@ -186,17 +195,20 @@ situations:
         contre: À court terme, le projet coûterait cher.
         valider: On réoriente le projet
         consequences:
-          - si: { pasChoisi: [location] }
+          - image: s1/autre-projet
+            si: { pasChoisi: [location] }
             texte: |
               Les data centers ? Nous pouvons les utiliser pour la collectivité ! La puissance de l’IA mise au service de projets forts et vertueux, voilà un programme porteur !
 
               À court terme, le projet coûte cher. Mais toutes les projections montrent que ses bénéfices à long terme dépassent de loin son coût pour la collectivité.
-          - si: { choisi: [location] }
+          - image: s1/autre-projet-2
+            si: { choisi: [location] }
             texte: |
               Les data centers loués à l’étranger ? Nous pouvons les mettre au service de la collectivité ! La puissance de l’IA mise au service de projets forts et vertueux, voilà un programme porteur !
 
               À court terme, le projet coûte cher. Mais toutes les projections montrent que ses bénéfices à long terme dépassent de loin son coût pour la collectivité.
-          - texte: |
+          - image: s1/autre-projet-3
+            texte: |
               La détection plus rapide des feux de forêt, des progrès fulgurants en imagerie médicale, le retour à l’emploi de personnes qui en cherchaient : ce ne sont que quelques exemples !
 
               Et ces avancées permettent à l’État de réaliser des économies substantielles.
@@ -225,7 +237,8 @@ situations:
         contre: Plus d’utilisateurs et d’utilisatrices, c’est aussi plus de consommation.
         valider: On l’offre à tout le monde
         consequences:
-          - texte: |
+          - image: s1/grand-public
+            texte: |
               Votre solution plaît au grand public, mais elle consomme bien plus que prévu. Sur le plan environnemental, c’est un désastre : l’[[inférence]], c’est-à-dire l’utilisation de l’IA, par le grand public pèse très lourd sur l’environnement.
 
               Par ailleurs, trop peu d’utilisateurs et d’utilisatrices paient l’abonnement : les retours sur investissement sont bien trop faibles.
@@ -240,9 +253,11 @@ situations:
         contre: L’argent public financerait une IA dont le public ne profiterait pas.
         valider: On la réserve aux entreprises
         consequences:
-          - texte: |
+          - image: s1/entreprises
+            texte: |
               Votre décision permet aux entreprises de rester compétitives sur le plan international. L’impact environnemental de votre système d’IA est bien réel, mais limité par son usage réservé aux entreprises.
-          - texte: |
+          - image: s1/entreprises-2
+            texte: |
               Votre stratégie a toutefois un défaut de taille : services publics et citoyen·nes s’indignent que de l’argent public soit dépensé pour une stratégie qui ne profite pas au système démocratique !
 
               En outre, à court terme, le nouveau système d’IA fait perdre une série d’emplois, en particulier dans les métiers de la création visuelle.
@@ -258,7 +273,8 @@ situations:
         contre: Un choix ambitieux, qui ne plairait pas tout de suite à la population.
         valider: On la réserve aux services publics
         consequences:
-          - texte: |
+          - image: s1/services-publics
+            texte: |
               Votre choix est ambitieux et ne plaît pas tout de suite à la population. Mais après quelques mois, les collectivités, puis peu à peu les citoyennes et les citoyens, se rendent compte de sa justesse : utiliser un outil puissant, en le limitant pour des raisons démocratiques. Dans les hôpitaux, elle aide à trier les dossiers et raccourcit les listes d’attente.
 
               Créer des vidéos de chats, c’est sympa, mais ça ne sert pas vraiment l’intérêt général…

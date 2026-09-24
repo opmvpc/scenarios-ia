@@ -24,13 +24,13 @@ const lecteur = computed(() => props.partie.lecteur(props.situation.numero))
           Ce passage évoque le suicide. Si ce sujet vous touche, vous pouvez en parler avec l’enseignant·e ou appeler le
           <strong>Centre de Prévention du Suicide</strong> au <a href="tel:080032123" class="font-bold">0800 32 123</a>, gratuit, anonyme, 24 h/24.
         </p>
-        <Illustration v-if="dernier && bloc.image && !bloc.sensible" :cle="bloc.image" class="mt-8" />
+        <Illustration v-if="dernier && bloc.image && !bloc.sensible" :cle="bloc.image" priorite class="mt-8" />
       </div>
       <div v-if="dernier && etape" class="grid gap-5 lg:sticky lg:top-24">
         <PanneauPions :mouvements="etape.mouvements" />
         <FicheEnjeux :valeurs="etape.apres" :mouvements="etape.mouvements" taille="petite" :priorites="partie.etat.value?.mandat" />
       </div>
-      <Illustration v-else-if="bloc.image && !bloc.sensible" :cle="bloc.image" />
+      <Illustration v-else-if="bloc.image && !bloc.sensible" :cle="bloc.image" priorite />
     </div>
     <template #actions>
       <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant(ici)">

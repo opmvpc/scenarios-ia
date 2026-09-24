@@ -21,7 +21,7 @@ const lecteur = computed(() => props.partie.lecteur(props.situation?.numero ?? 0
         <div class="lecture mt-6"><Texte :source="bloc.texte" /></div>
         <NotesGlossaire :source="bloc.texte" />
       </div>
-      <Illustration v-if="bloc.image && !bloc.sensible" :cle="bloc.image" />
+      <Illustration v-if="bloc.image && !bloc.sensible" :cle="bloc.image" priorite />
     </div>
     <template #actions>
       <button type="button" class="bouton bouton-plein !text-xl" @click="partie.suivant(ici)">Suite <span aria-hidden="true">→</span></button>

@@ -63,3 +63,24 @@ Suffixe commun : « Bold flat shapes, high contrast black ink with one light <bl
 - **s2/negocier-gafam** : main géante humaine en costume et non métallique, choix volontaire pour éviter le cliché « main robot / main humaine ».
 
 Écran sensible du scénario 3 : aucune image, comme demandé.
+
+## Lot v3 : les 45 écrans sans image
+
+24/09/2026. 45 clés (S1 16, S2 11, S3 18) en **76 générations** P-Image (0,228 $, cumul 133 images, 0,399 $) : 45 retenues, 31 rejetées. Correspondance écran → clé dans `tools/images/lot-v3.csv`, détail dans `tools/images/journal.csv` (lignes 57 à 132). L'écran sensible du S3 (`bonjour-dominique.integrer-dominique[1]`) n'a pas d'image. L'écran qui le suit (`integrer-dominique[2]`, la bataille juridique) a un ton sobre : « quiet and sober mood » à la place de « satirical ».
+
+Nommage : `<option>` pour le bloc [0], `<option>-2`, `-3` pour les suivants, `<situation>-intro-2` pour intro[1], `<situation>-fin` pour la conclusion. Exception : `s3/accueillir-neooculus` existait déjà (bloc [1]), le bloc [0] est donc `s3/accueillir-neooculus-1`.
+
+**Leçons**
+- **Les bandes noires** sont la première cause de rejet : 19 images sur 76. La formule « small vignette floating in the middle of a blank off-white page » les **provoque** : 4 images sur 6, car le modèle dessine une feuille posée sur un fond sombre. Le suffixe v3b corrige : « centered subject with plenty of empty off-white space around it, the entire image is one sheet of plain off-white paper edge to edge, no frame, no border, no black bands ». Il ne reste alors que 4 cas sur 33, tous sur des scènes avec un sol ou un décor d'intérieur (tribunal, groupe autour d'un chevalet). « figures standing on nothing, no floor » aide sur ces scènes.
+- **Un cadre noir uniforme se recadre** au lieu de régénérer, quand le sujet est bon : on mesure la bordure, on coupe à l'intérieur, puis on remet en 1344×768 (`fit: cover`). Deux clés sont passées par là : s2/voie-democratique et s3/prologue. Le brut d'origine reste dans `--v3.jpg`. Après recadrage, la normalisation change un peu : le rouge de s2/voie-democratique sort plus sombre.
+- « solid flat medium teal » tient bien en S3 : la sarcelle survit à la bichromie sur les 18 clés.
+- Rôles inversés : « a robot in a courtroom dock, a gavel above » a donné un robot juge. Nommer l'humain qui tient l'objet (« a human judge… bangs a gavel ») ne suffit pas non plus (bandes, décor envahi). Ce qui a marché : un objet géant qui agit seul (« a giant gavel coming down from the top »).
+- Les expressions figurées dessinées au pied de la lettre (« bâtons dans les roues ») échouent deux fois sur deux : le bâton n'est jamais dans la roue. Il vaut mieux montrer une action simple (un politicien qui débranche le scanner).
+
+**Images qui ne me satisfont pas entièrement**
+- **s3/recherche-ia-sante** : le robot est couché dans le lit, et non à côté. L'armoire à dossiers et les juristes à la loupe portent le sens.
+- **s3/interdire-ia-sante-2** : les boucliers sont de simples disques, le politicien est au milieu des chercheurs et non face à eux.
+- **s3/ceci-n-est-pas-une-biere-intro-2** : les cadres de bière sont rangés en grille ; ce sont des oiseaux qui volent à côté.
+- **s1/import-assemblage** : c'est une vignette rectangulaire (mer en spot jusqu'aux bords du bloc), pas un sujet détouré comme les autres.
+- **s1/booster** : l'hôpital n'a pas de croix ; la version avec croix (v2) avait des bandes noires.
+- **s3/creer-cca** : le robot est minuscule, posé sur la table.

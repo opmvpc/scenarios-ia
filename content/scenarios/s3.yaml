@@ -27,7 +27,8 @@ preparation:
     - la démocratie ;
     - la santé et le bien-être des personnes.
 prologue:
-  - texte: |
+  - image: s3/prologue
+    texte: |
       L’IA peut-elle générer des œuvres d’art ? C’est la difficile question à laquelle vous et votre équipe êtes confronté·es aujourd’hui.
 
       Depuis quelque temps, le mécontentement monte dans le monde de la culture : « L’IA est une menace ! Il faut la réguler ! Nous perdons nos emplois ! »
@@ -45,7 +46,8 @@ situations:
           Imposteur pour les un·es, génie pour les autres, il revendique l’IA comme moyen d’expression artistique : l’œuvre, comme toutes les siennes, a été entièrement générée par IA, pour « provoquer le débat autour de la présence de l’IA dans le monde de l’art ».
 
           Inconnu il y a six mois, Tagritte est aujourd’hui votre pire cauchemar…
-      - texte: |
+      - image: s3/ceci-n-est-pas-une-biere-intro-2
+        texte: |
           Car le débat ne s’est pas arrêté au monde de l’art… L’œuvre a proliféré sur Internet avec un succès retentissant, et certains industriels de la bière l’ont perçue comme une attaque directe contre leur marque.
 
           « Sous couvert d’un débat artistique, s’offusque le porte-parole de l’Abbé InBeffe, grand producteur belge, Tagritte tient des propos ouvertement dénigrants pour notre marque de bière. »
@@ -62,7 +64,8 @@ situations:
         contre: "Les industriels exagèrent et puis… je n’aime pas la Beffe."
         valider: "Protéger l’industrie brassicole"
         consequences:
-          - texte: |
+          - image: s3/interdire-ia-art
+            texte: |
               Votre décision ravit les grands groupes brassicoles, sans rien changer pour eux sur le plan économique. L’Union des graphistes vous bénit : vous faites la une du monde de l’art, et sa grogne se calme.
 
               Mais le MPS saisit la justice pour « atteinte à la liberté d’expression » ! Des entreprises le rejoignent vite : elles craignent de perdre en compétitivité face à l’étranger, où l’IA reste permise.
@@ -77,7 +80,8 @@ situations:
         contre: "Non merci, trop compliqué tout ça."
         valider: "Créer la CCA"
         consequences:
-          - texte: |
+          - image: s3/creer-cca
+            texte: |
               La CCA met en contact toutes les parties et jette les bases d’une régulation inédite. Au début, c’est le chaos : la fraude est monnaie courante. Puis, aidé·e par des logiciels de détection performants, vous adaptez son cadre à la réalité.
 
               Peu à peu, l’art du [[prompting]] devient une démarche artistique (presque) comme une autre. Le grand public vous fait confiance et se réintéresse au travail des artistes.
@@ -97,7 +101,8 @@ situations:
 
               Vous croulez sous les dossiers, et la facture est salée pour le gouvernement. Les spécialistes du [[prompting]], de leur côté, font des bénéfices records : prompts vendus sur Internet, œuvres sur le marché de l’art…
             image: s3/dedommager-brasseurs
-          - texte: |
+          - image: s3/dedommager-brasseurs-2
+            texte: |
               Puis survient un fait inattendu : Tagritte et le MPS reversent les fonds récoltés à des institutions de santé mentale, sous-financées ces derniers temps par votre ministère de la Santé.
 
               Et ils prennent soin de souligner qu’à défaut de soutien gouvernemental, ce sont les citoyen·nes qui doivent s’en charger.
@@ -105,7 +110,8 @@ situations:
         resume: "Vous avez laissé libre cours à la création par l’IA et dédommagé les brasseurs."
         debrief: "Qui a finalement payé la liberté de création, et qui en a profité ? Votre table avait-elle vu venir l’afflux de demandes ?"
     conclusion:
-      - texte: |
+      - image: s3/ceci-n-est-pas-une-biere-fin
+        texte: |
           Comme quoi, tout ne se passe pas toujours comme prévu…
   - id: bonjour-dominique
     numero: 2
@@ -129,7 +135,8 @@ situations:
         contre: "Les patient·es ont besoin d’une vraie équipe soignante pour les écouter."
         valider: "OK, faire de Dominique® une accompagnatrice thérapeutique"
         consequences:
-          - texte: |
+          - image: s3/integrer-dominique
+            texte: |
               « Bienvenue Dominique® ! », peut-on lire dans beaucoup d’hôpitaux, de maisons de repos et de centres de santé mentale. Votre solution est un succès instantané !
 
               Elle permet des économies dans les soins de santé en licenciant pas mal de monde, et traite plus efficacement les « plaintes » des patient·es (qui ne sont finalement que des client·es des hôpitaux, non ?).
@@ -137,7 +144,8 @@ situations:
               Mais un jour, le drame arrive : un patient met fin à ses jours. Dans le mot qu’il laisse, il explique que Dominique® l’a conforté dans son désespoir. D’autres décès suivent.
             sensible: true
           # bloc séparé : les pions se déplacent sur l’écran suivant, pas à côté du passage sensible
-          - texte: |
+          - image: s3/integrer-dominique-3
+            texte: |
               Une longue bataille juridique s’ouvre sur la responsabilité de ces morts. Les familles des victimes se tournent vers vous.
         effets: { eco: 1, san: -1, emp: -1 }
         resume: "Vous avez intégré Dominique® dans les soins de santé comme accompagnatrice thérapeutique."
@@ -150,11 +158,13 @@ situations:
         contre: "Non, c’est trop radical."
         valider: "Interdire l’IA dans le secteur de la santé"
         consequences:
-          - texte: |
+          - image: s3/interdire-ia-sante
+            texte: |
               Premier point positif : limiter drastiquement l’IA dans la santé apporte un léger « gain » environnemental. Moins de technologie, moins d’émissions de CO2.
 
               Mais une partie du corps médical s’insurge contre « le manque de nuance de votre texte », qui met des bâtons dans les roues des spécialistes de l’imagerie médicale, qui utilisent l’IA tous les jours.
-          - texte: |
+          - image: s3/interdire-ia-sante-2
+            texte: |
               C’est aussi un problème pour les spécialistes du cancer, dont les recherches menées grâce à l’IA sont toujours plus concluantes et permettent de lutter efficacement contre la maladie.
 
               Devant cette levée de boucliers, vous n’êtes plus très à l’aise avec votre choix, il faut le dire.
@@ -169,11 +179,13 @@ situations:
         contre: "Ce sera trop cher, et la croissance n’attend pas !"
         valider: "Lancer un projet de recherche sur une IA au service de la santé"
         consequences:
-          - texte: |
+          - image: s3/recherche-ia-sante
+            texte: |
               Dominique® a beau être populaire, c’est la création d’une entreprise qui capitalise sur les données de santé des patient·es, et rien ne dit que l’Union européenne l’accepterait. Vos juristes vous alertent d’ailleurs : sa politique de conservation des données est inhabituelle pour une application de ce genre.
 
               Vous avez fait le bon choix !
-          - texte: |
+          - image: s3/recherche-ia-sante-2
+            texte: |
               Vous placez plusieurs équipes sur ce projet qui vous tient à cœur : développer en priorité, pour les hôpitaux, une [[IA frugale]], à plus faible coût environnemental.
 
               Assez rapidement, c’est un succès : le secteur des soins de santé se relève et mobilise à bon escient ce système d’IA, pourtant encore à l’état de prototype !
@@ -189,7 +201,8 @@ situations:
           Une entreprise belge lance NeoOculus, un « œil augmenté permettant d’enregistrer ses meilleurs souvenirs sur le [[cloud]] », selon le célèbre entrepreneur à l’origine du projet.
 
           Avant même que les instances compétentes aient pu être consultées, NeoOculus fait la une des journaux : un projet « unique au monde », « un boost incroyable pour l’économie belge ».
-      - texte: |
+      - image: s3/regarder-nos-souvenirs-intro-2
+        texte: |
           Après l’art, la santé… et maintenant le [[transhumanisme]]… C’est vraiment fatigant, la politique !
 
           D’autant que la commission d’éthique chargée d’étudier le projet ne voit pas d’un bon œil (sans mauvais jeu de mots) ce nouvel implant sorti tout droit d’une mauvaise série de science-fiction…
@@ -206,7 +219,8 @@ situations:
         contre: "Non merci, c’est un cauchemar…"
         valider: "C’est parti pour NeoOculus"
         consequences:
-          - texte: |
+          - image: s3/accueillir-neooculus-1
+            texte: |
               Vous passez outre l’avis de la commission d’éthique, qui fustige un projet « de surveillance de masse, faisant de chaque personne implantée un sujet de surveillance permanent ».
 
               Un problème émerge toutefois : NeoOculus réclame les données personnelles des citoyen·nes implanté·es pour préparer son projet suivant, DoubleBrain. Après tout, on n’est pas à une entorse démocratique près…
@@ -226,11 +240,13 @@ situations:
         contre: "Ce serait très impopulaire, et ça coûterait du temps et de l’argent."
         valider: "Oui, enquêter"
         consequences:
-          - texte: |
+          - image: s3/enqueter-neooculus
+            texte: |
               Plusieurs de vos équipes enquêtent : comment fonctionne l’implant ? Quelles données NeoOculus stocke-t-il ?
 
               Surprise : le projet est en fait piloté par une entreprise américaine, qui accumule des [[données organiques]] pour entraîner un modèle d’IA présenté comme un « cerveau artificiel ».
-          - texte: |
+          - image: s3/enqueter-neooculus-2
+            texte: |
               L’enquête n’est pas terminée, mais vous en savez assez : vous fermez la porte à NeoOculus et allouez le reste du budget aux soins de santé.
 
               Vous créez aussi la Commission de Sauvegarde des Libertés Numériques (CSLN) : ses amendes administratives contre les pratiques abusives sur Internet renforcent le contrôle démocratique en ligne. Bien joué !
@@ -245,11 +261,13 @@ situations:
         contre: "Non merci, ces gens sont fous."
         valider: "Financer les projets transhumanistes"
         consequences:
-          - texte: |
+          - image: s3/financer-transhumanisme
+            texte: |
               Dans la foulée, vous soutenez DoubleBrain, une entreprise qui mise sur le clonage partiel du cerveau humain grâce à la « duplication des [[données organiques]] qu’il contient, sous forme numérique ».
 
               Le projet s’avère peu porteur sur le plan politique, même si la compétitivité des entreprises belges fait parler d’elle.
-          - texte: |
+          - image: s3/financer-transhumanisme-2
+            texte: |
               Mais les problèmes de santé s’aggravent, et le fossé se creuse entre les membres du MTB et le reste de la population.
 
               Le bilan de votre politique est très tranché : bon sur le plan économique, désastreux sur le plan social et démocratique. Le transhumanisme ne fait pas l’unanimité…

@@ -56,7 +56,8 @@ situations:
         contre: Hors de question de faire campagne à coups de fausses informations.
         valider: Utiliser la vérité alternative
         consequences:
-          - texte: |
+          - image: s2/verite-alternative
+            texte: |
               Vos bots diffusent vos « vérités alternatives » sur les réseaux sociaux, et l’on parle beaucoup de vous.
         effets: { eco: 1, env: -1, dem: -2 }
         resume: Vous avez fait campagne à coups de « vérités alternatives ».
@@ -71,7 +72,8 @@ situations:
         contre: Réguler, ça freine l’économie !
         valider: OK pour réguler
         consequences:
-          - texte: |
+          - image: s2/reguler-ia
+            texte: |
               Durant votre campagne, vous dénoncez l’usage abusif de l’IA par les autres partis et défendez un cadre juridique clair contre ses abus.
         effets: { dem: 1, san: 1, eco: -1 }
         resume: Vous avez fait campagne pour réguler l’IA.
@@ -86,14 +88,16 @@ situations:
         contre: Il ne faut pas exagérer…
         valider: C’est clair, il faut limiter l’IA
         consequences:
-          - texte: |
+          - image: s2/limiter-ia
+            texte: |
               Durant votre campagne, vous défendez votre projet de loi : le recours à l’IA serait largement limité, pour la population comme pour le monde politique.
         # Retouche d’équilibrage (ADR-004) : san +1 ajouté (origine : env +1, dem +1, eco -1).
         effets: { env: 1, dem: 1, eco: -1, san: 1 }
         resume: Vous avez fait campagne pour limiter drastiquement l’IA.
         debrief: Interdire plutôt que réguler, est-ce réaliste ? Qui y gagne et qui y perd ?
     conclusion:
-      - texte: |
+      - image: s2/campagne-fin
+        texte: |
           La campagne touche peu à peu à son terme et les résultats finissent par tomber…
   - id: temps-des-choix
     numero: 2
@@ -117,7 +121,8 @@ situations:
         contre: Un choix risqué d’un point de vue économique.
         valider: Créer notre réseau social !
         consequences:
-          - texte: |
+          - image: s2/reseau-social-europeen
+            texte: |
               Ne recourir qu’à des alternatives européennes : un choix audacieux ! Risqué d’un point de vue économique, il permet aux journalistes d’exercer leur métier comme [[fact-checkers]] des contenus.
 
               Les plateformes qui ne respectent pas vos règles sont bannies. La concurrence en prend un coup, et votre économie, largement basée sur les services numériques, aussi. Mais les gens se sentent nettement plus libres et en sécurité sur Internet, qui redevient peu à peu un lieu sain et sûr.
@@ -137,7 +142,8 @@ situations:
 
               Toutefois, vous vous rendez vite compte que les choses se compliquent sur Internet, sans régulation digne de ce nom.
             image: s2/negocier-gafam
-          - texte: |
+          - image: s2/negocier-gafam-2
+            texte: |
               De nouvelles IA émergent sur le marché à mesure que la concurrence augmente. De nombreux [[bots]] génèrent des [[fake news]] qui déstabilisent les services numériques.
 
               L’autorité du numérique est assaillie de plaintes, et les discours racistes et haineux sont aujourd’hui la norme sur les réseaux sociaux.
@@ -152,7 +158,8 @@ situations:
         contre: Non merci, les données, ça se vend !
         valider: OK, ouvrir les données !
         consequences:
-          - texte: |
+          - image: s2/donnees-ouvertes
+            texte: |
               Faire des données publiques votre fer de lance : un coup de génie ! Vous exigez des garanties de la part des sociétés qui capitalisent sur la rétention de données, et vous favorisez celles qui proposent des services numériques vertueux.
 
               Après quelques mois, votre politique fonctionne ! Des investisseurs et investisseuses en phase avec votre objectif de [[souveraineté numérique]] y voient une réelle opportunité d’avenir.
@@ -181,7 +188,8 @@ situations:
         contre: Non, ça serait bien trop coûteux.
         valider: Oui, créer un ministère pour la souveraineté numérique
         consequences:
-          - texte: |
+          - image: s2/voie-democratique
+            texte: |
               Le ministère pour la souveraineté numérique voit le jour, et les accords commerciaux avec le Technistan sont rompus.
         effets: { env: -1, eco: -1, dem: 1 }
         resume: Vous avez créé un ministère pour la souveraineté numérique et rompu avec le Technistan.
@@ -199,7 +207,8 @@ situations:
 
               Mais lorsque le Technistan découvre votre stratégie, votre réputation internationale s’écroule. Votre pays est même comparé à votre adversaire dans la presse internationale !
             image: s2/riposte
-          - texte: |
+          - image: s2/riposte-2
+            texte: |
               De plus, de nombreux services numériques publics tombent en panne : ils reposaient sur des infrastructures et des équipements achetés… au Technistan. Vous avez peut-être commis une erreur…
         effets: { eco: -2, dem: -2, san: -1 }
         resume: Vous avez riposté par une vague de cyberattaques contre le Technistan.
@@ -214,11 +223,13 @@ situations:
         contre: C’est trop aléatoire…
         valider: Bonne idée, vive la diplomatie !
         consequences:
-          - texte: |
+          - image: s2/diplomatie
+            texte: |
               Votre initiative est saluée par vos alliés internationaux, adeptes du [[soft power]], mais l’accord tant attendu met du temps à tomber. Dans un premier temps, vous ne parvenez pas à établir un dialogue politique avec le Technistan.
 
               Mais un jour, le Technistan arrive avec une solution inattendue : une proposition d’accord politique, un accord financier portant sur un nouveau système d’IA avec lequel travailler et, enfin, une réelle politique de gestion des données par l’État.
-          - texte: |
+          - image: s2/diplomatie-2
+            texte: |
               Comme quoi, la diplomatie a porté ses fruits ! Ce nouveau système d’IA est gourmand en ressources, mais il vous offre de nouvelles opportunités d’emploi et redonne un souffle à votre économie.
 
               Ce n’est pas encore la démocratie au Technistan, mais vous pouvez peut-être montrer l’exemple ?
